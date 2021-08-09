@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.12)  9 AUG 2021 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.12)  9 AUG 2021 17:47
 entering extended mode
 **./guia-react.tex
 (guia-react.tex
@@ -1237,54 +1237,61 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.63 \chapter
-             *{What is this book about?} [1
+             *{Entorno de Desarrollo} [1
 
 ]
-LaTeX Info: Redefining \. on input line 63.
-LaTeX Info: Redefining \% on input line 63.
- [2] [3
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
-] [4
-
-]
-Overfull \hbox (18.48071pt too wide) in paragraph at lines 75--76
-[][]\OT1/cmr/m/n/12 VS Code ES7 React/Redux/React-Native/JS snippets[][] which 
-provides JavaScript
  []
 
-[5
 
-] [6
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+
+ []
+
+[2
+
+] [3
 
 ]
 Cap\'{\i }tulo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Overfull \hbox (17.4555pt too wide) in paragraph at lines 81--82
+[]\OT1/cmr/m/n/12 En este captulo explicaremos los conceptos de JavaScript y 
+las construcciones
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
-Overfull \hbox (3.39037pt too wide) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+[4
+
+]
+Overfull \hbox (3.39037pt too wide) in paragraph at lines 91--93
 []\OT1/cmr/m/n/12 The JavaScript language is governed by a standard under the r
 esponsibility
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
-[7
-
-]
 \openout3 = `guia-react.pyg'.
 
- (_minted-guia-react/default-pyg-prefix.pygstyle)
+(_minted-guia-react/default-pyg-prefix.pygstyle)
 (_minted-guia-react/enrique.pygstyle)
 (_minted-guia-react/7674C16B8AF11E0A67190DB89849E8F1E48ED164E11496ADF10785F3BEA
 9E35A.pygtex
@@ -1295,7 +1302,7 @@ LaTeX Font Warning: Font shape `OT1/cmtt/c/n' undefined
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
@@ -1309,7 +1316,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/c/n' undefined
 (Font)              using `OT1/cmr/m/n' instead on input line 2.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
@@ -1323,18 +1330,18 @@ E2ADA.pygtex)
 
 (_minted-guia-react/9C8F1FBBA7D7B370A9F8C2625736CCF6326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+ [5]
 \openout3 = `guia-react.pyg'.
 
 
 (_minted-guia-react/BA4ED0212D98BA4293653FD9FFBA273F326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
-LaTeX Info: Redefining \. on input line 156.
-LaTeX Info: Redefining \% on input line 156.
-[8]
 \openout3 = `guia-react.pyg'.
 
 
@@ -1345,7 +1352,7 @@ LaTeX Font Warning: Font shape `OT1/cmtt/c/it' undefined
 (Font)              using `OT1/cmtt/c/n' instead on input line 2.
 
 )
-Overfull \hbox (4.089pt too wide) in paragraph at lines 172--173
+Overfull \hbox (4.089pt too wide) in paragraph at lines 166--167
 []\OT1/cmr/c/n/12 Lets move now to \OT1/cmr/bx/n/12 functions\OT1/cmr/c/n/12 . 
 In the following code snippet we are declaring
  []
@@ -1365,14 +1372,14 @@ E2ADA.pygtex)
 
 (_minted-guia-react/D37CB922148C3532D6CEEC16972E0D87326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (8.61707pt too wide) in paragraph at lines 209--210
+Overfull \hbox (8.61707pt too wide) in paragraph at lines 203--204
 \OT1/cmr/c/n/12 class object of programming languages are \OT1/cmr/m/it/12 vari
 ables\OT1/cmr/c/n/12 . Variables are denominated
  []
 
-LaTeX Info: Redefining \. on input line 210.
-LaTeX Info: Redefining \% on input line 210.
-[9]
+LaTeX Info: Redefining \. on input line 204.
+LaTeX Info: Redefining \% on input line 204.
+[6]
 \openout3 = `guia-react.pyg'.
 
 
@@ -1403,9 +1410,9 @@ E2ADA.pygtex)
 
 (_minted-guia-react/D015A072AC469816939A7C335782A4BD326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
- [10])
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [7])
 \openout3 = `guia-react.pyg'.
 
 
@@ -1423,7 +1430,7 @@ E2ADA.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
- [11])
+ [8])
 \openout3 = `guia-react.pyg'.
 
 
@@ -1461,7 +1468,7 @@ D223F.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
- [12])
+ [9])
 \openout4 = `guia-react.pyg'.
 
 
@@ -1524,7 +1531,7 @@ D223F.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [13])
+ [10])
 \openout4 = `guia-react.pyg'.
 
 
@@ -1545,15 +1552,15 @@ E2ADA.pygtex)
 
 (_minted-guia-react/84CCDC28DC85BB9E4C719B916B3AFE5C326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-LaTeX Info: Redefining \. on input line 500.
-LaTeX Info: Redefining \% on input line 500.
- [14]
+LaTeX Info: Redefining \. on input line 494.
+LaTeX Info: Redefining \% on input line 494.
+ [11]
 \openout3 = `guia-react.pyg'.
 
 
 (_minted-guia-react/05CE2C582A868F43C228EE70CE8B0683326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (8.67293pt too wide) in paragraph at lines 523--524
+Overfull \hbox (8.67293pt too wide) in paragraph at lines 517--518
 \OT1/cmr/c/n/12 property-value pairs but also for arrays, other objects like \O
 T1/cmr/m/it/12 address \OT1/cmr/c/n/12 and functions
  []
@@ -1570,7 +1577,7 @@ E2ADA.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [15])
+ [12])
 \openout4 = `guia-react.pyg'.
 
 
@@ -1601,9 +1608,9 @@ E2ADA.pygtex)
 
 (_minted-guia-react/4B2E95529EC20A6621C640060F5DAE57326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-LaTeX Info: Redefining \. on input line 608.
-LaTeX Info: Redefining \% on input line 608.
- [16]
+LaTeX Info: Redefining \. on input line 602.
+LaTeX Info: Redefining \% on input line 602.
+ [13]
 \openout3 = `guia-react.pyg'.
 
 
@@ -1629,40 +1636,40 @@ D223F.pygtex)
 
 (_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (4.21335pt too wide) in paragraph at lines 636--638
+Overfull \hbox (4.21335pt too wide) in paragraph at lines 630--632
 \OT1/cmr/c/n/12 classes, just objects. We don't have that difference between cl
 asses and objects.
  []
 
 
-Overfull \hbox (0.6315pt too wide) in paragraph at lines 636--638
+Overfull \hbox (0.6315pt too wide) in paragraph at lines 630--632
 \OT1/cmr/c/n/12 inheritance relationship (which cannot be changed at runtime) v
 s the \OT1/cmr/m/it/12 dynamic
  []
 
-LaTeX Info: Redefining \. on input line 638.
-LaTeX Info: Redefining \% on input line 638.
-[17]
+LaTeX Info: Redefining \. on input line 632.
+LaTeX Info: Redefining \% on input line 632.
+[14]
 \openout3 = `guia-react.pyg'.
 
 
 (_minted-guia-react/ED72A8DBA679BF3E417287CAEA38F715326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 664--666
+Underfull \hbox (badness 10000) in paragraph at lines 658--660
 
  []
 
-LaTeX Info: Redefining \. on input line 666.
-LaTeX Info: Redefining \% on input line 666.
-[18]
-Overfull \hbox (13.11928pt too wide) in paragraph at lines 667--669
+LaTeX Info: Redefining \. on input line 660.
+LaTeX Info: Redefining \% on input line 660.
+[15]
+Overfull \hbox (13.11928pt too wide) in paragraph at lines 661--663
 []\OT1/cmr/c/n/12 Each object in JavaScript can have a \OT1/cmr/bx/n/12 prototy
 pe \OT1/cmr/c/n/12 object, to \OT1/cmr/m/it/12 inherit \OT1/cmr/c/n/12 properti
 es
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--669
+Underfull \hbox (badness 10000) in paragraph at lines 661--663
 
  []
 
@@ -1681,7 +1688,7 @@ D223F.pygtex)
 
 (_minted-guia-react/45664C4F5C8867B152F8459AAC900D8722411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (10.57085pt too wide) in paragraph at lines 670--671
+Overfull \hbox (10.57085pt too wide) in paragraph at lines 664--665
 []\OT1/cmr/c/n/12 Each constructor function have access to a special property c
 alled prototype,
  []
@@ -1698,7 +1705,7 @@ D223F.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
- [19])
+ [16])
 \openout4 = `guia-react.pyg'.
 
 
@@ -1739,7 +1746,7 @@ D223F.pygtex)
 
 (_minted-guia-react/AF45E546ACAEA22183A5F4026D2D15C022411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (3.11241pt too wide) in paragraph at lines 717--718
+Overfull \hbox (3.11241pt too wide) in paragraph at lines 711--712
 []\OT1/cmr/c/n/12 JavaScript will first find the [] method in the [] instance.
  []
 
@@ -1768,13 +1775,13 @@ D223F.pygtex)
 
 (_minted-guia-react/2BBC1933FE5431742E5DE9161772DC9122411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (5.03177pt too wide) in paragraph at lines 730--731
+Overfull \hbox (5.03177pt too wide) in paragraph at lines 724--725
 []\OT1/cmr/c/n/12 JavaScript will try to find the method [] in the [] instance.
 
  []
 
 
-Overfull \hbox (2.31537pt too wide) in paragraph at lines 730--731
+Overfull \hbox (2.31537pt too wide) in paragraph at lines 724--725
 \OT1/cmr/c/n/12 Then on their prototype and finally on the prototype object of 
 their prototype,
  []
@@ -1859,9 +1866,9 @@ D223F.pygtex)
 
 (_minted-guia-react/FF7EE3207CD5073B7E6F7BB1E8E8DEAF22411A3E68D43EF9CA14E692750
 D223F.pygtex)
-LaTeX Info: Redefining \. on input line 757.
-LaTeX Info: Redefining \% on input line 757.
- [20]
+LaTeX Info: Redefining \. on input line 751.
+LaTeX Info: Redefining \% on input line 751.
+ [17]
 \openout3 = `guia-react.pyg'.
 
 
@@ -1882,7 +1889,7 @@ D223F.pygtex)
 
 (_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (11.34366pt too wide) in paragraph at lines 777--778
+Overfull \hbox (11.34366pt too wide) in paragraph at lines 771--772
 []\OT1/cmr/c/n/12 We will implement our [] and [] constructor functions with pr
 ototype
  []
@@ -1894,7 +1901,7 @@ ototype
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- [21])
+ [18])
 \openout4 = `guia-react.pyg'.
 
 
@@ -1960,14 +1967,14 @@ D223F.pygtex)
 
 (_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (1.15327pt too wide) in paragraph at lines 831--832
+Overfull \hbox (1.15327pt too wide) in paragraph at lines 825--826
 \OT1/cmr/c/n/12 instances using the [] keyword, [] is bind to the object being 
 instantiated.
  []
 
-LaTeX Info: Redefining \. on input line 832.
-LaTeX Info: Redefining \% on input line 832.
-[22]
+LaTeX Info: Redefining \. on input line 826.
+LaTeX Info: Redefining \% on input line 826.
+[19]
 \openout3 = `guia-react.pyg'.
 
 
@@ -2073,9 +2080,9 @@ D223F.pygtex)
 
 (_minted-guia-react/002BCAA7BE0E2AA3D666479C6A58CC9122411A3E68D43EF9CA14E692750
 D223F.pygtex)
-LaTeX Info: Redefining \. on input line 874.
-LaTeX Info: Redefining \% on input line 874.
- [23]
+LaTeX Info: Redefining \. on input line 868.
+LaTeX Info: Redefining \% on input line 868.
+ [20]
 \openout3 = `guia-react.pyg'.
 
 
@@ -2111,10 +2118,10 @@ E2ADA.pygtex)
 
 (_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
 D223F.pygtex)
-LaTeX Info: Redefining \. on input line 927.
-LaTeX Info: Redefining \% on input line 927.
- [24]
-Overfull \hbox (1.5704pt too wide) in paragraph at lines 930--931
+LaTeX Info: Redefining \. on input line 921.
+LaTeX Info: Redefining \% on input line 921.
+ [21]
+Overfull \hbox (1.5704pt too wide) in paragraph at lines 924--925
 \OT1/cmr/c/n/12 the possibility of defining modules. Before this release there 
 were other options
  []
@@ -2129,7 +2136,7 @@ D223F.pygtex)
 
 (_minted-guia-react/451C6F6F942EBA07F20DE1721BE7400222411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (3.68959pt too wide) in paragraph at lines 932--933
+Overfull \hbox (3.68959pt too wide) in paragraph at lines 926--927
 []\OT1/cmr/c/n/12 Its use is pretty simple. You can define functions, classes, 
 objects, constants
  []
@@ -2146,7 +2153,7 @@ E2ADA.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [25])
+ [22])
 \openout4 = `guia-react.pyg'.
 
 
@@ -2162,9 +2169,9 @@ D223F.pygtex)
 
 (_minted-guia-react/FADC9205592E451D7D190B2A08FD84E8326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-LaTeX Info: Redefining \. on input line 1020.
-LaTeX Info: Redefining \% on input line 1020.
- [26]
+LaTeX Info: Redefining \. on input line 1014.
+LaTeX Info: Redefining \% on input line 1014.
+ [23]
 \openout4 = `guia-react.pyg'.
 
 
@@ -2175,7 +2182,7 @@ D223F.pygtex)
 
 (_minted-guia-react/318F9FF335C6D187B6B35E000D74574B326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (8.2569pt too wide) in paragraph at lines 1055--1056
+Overfull \hbox (8.2569pt too wide) in paragraph at lines 1049--1050
 []\OT1/cmr/c/n/12 On line 3 below, note how we are importing the default export
 ed abstraction
  []
@@ -2187,7 +2194,7 @@ ed abstraction
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
- [27])
+ [24])
 \openout3 = `guia-react.pyg'.
 
 
@@ -2198,7 +2205,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/3D30C0B76B6E990BFEC6F28BA704281E22411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (18.70236pt too wide) in paragraph at lines 1101--1102
+Overfull \hbox (18.70236pt too wide) in paragraph at lines 1095--1096
 []\OT1/cmr/c/n/12 Statement on line 1 is pushed on to the \OT1/cmr/m/it/12 call
  stack \OT1/cmr/c/n/12 and executed. []
  []
@@ -2213,14 +2220,14 @@ D223F.pygtex)
 
 (_minted-guia-react/A3E23261E131174FDDA5EBA063E8350122411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (24.87737pt too wide) in paragraph at lines 1103--1104
+Overfull \hbox (24.87737pt too wide) in paragraph at lines 1097--1098
 []\OT1/cmr/c/n/12 Statement on line 7 is pushed on to the \OT1/cmr/m/it/12 call
  stack \OT1/cmr/c/n/12 and executed. []
  []
 
-LaTeX Info: Redefining \. on input line 1104.
-LaTeX Info: Redefining \% on input line 1104.
-[28]
+LaTeX Info: Redefining \. on input line 1098.
+LaTeX Info: Redefining \% on input line 1098.
+[25]
 \openout4 = `guia-react.pyg'.
 
 
@@ -2231,7 +2238,7 @@ D223F.pygtex)
 
 (_minted-guia-react/CCBDC1F7A2EA1FFCEC5F204C031F673922411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (2.17986pt too wide) in paragraph at lines 1104--1105
+Overfull \hbox (2.17986pt too wide) in paragraph at lines 1098--1099
 []\OT1/cmr/c/n/12 After the one second elapsed from the [] function, the callba
 ck
  []
@@ -2281,13 +2288,13 @@ D223F.pygtex)
 
 (_minted-guia-react/A3E23261E131174FDDA5EBA063E8350122411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (0.67577pt too wide) in paragraph at lines 1144--1144
+Overfull \hbox (0.67577pt too wide) in paragraph at lines 1138--1138
 []\OT1/cmr/bx/n/17.28 The Promise Object and the async/await
  []
 
-LaTeX Info: Redefining \. on input line 1147.
-LaTeX Info: Redefining \% on input line 1147.
-[29]
+LaTeX Info: Redefining \. on input line 1141.
+LaTeX Info: Redefining \% on input line 1141.
+[26]
 \openout3 = `guia-react.pyg'.
 
 
@@ -2323,7 +2330,7 @@ D223F.pygtex)
 
 (_minted-guia-react/98B95CA800C4926439BEBB42006EFE4E22411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1177
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1171
 
  []
 
@@ -2337,7 +2344,7 @@ D223F.pygtex)
 
 (_minted-guia-react/8BE835534885846564B539E33CBC522B22411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (4.36531pt too wide) in paragraph at lines 1178--1179
+Overfull \hbox (4.36531pt too wide) in paragraph at lines 1172--1173
 []\OT1/cmr/c/n/12 The Promise object have the [] method that receives
  []
 
@@ -2371,18 +2378,18 @@ D223F.pygtex)
 
 (_minted-guia-react/2506CBD3CA69E4A5F3AFE399707A405122411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (6.35728pt too wide) in paragraph at lines 1195--1197
+Overfull \hbox (6.35728pt too wide) in paragraph at lines 1189--1191
 \OT1/cmr/c/n/12 parameter named [] to the function passed to the [].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1197
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1191
 
  []
 
-LaTeX Info: Redefining \. on input line 1197.
-LaTeX Info: Redefining \% on input line 1197.
-[30]
+LaTeX Info: Redefining \. on input line 1191.
+LaTeX Info: Redefining \% on input line 1191.
+[27]
 \openout3 = `guia-react.pyg'.
 
 
@@ -2408,7 +2415,7 @@ D223F.pygtex)
 
 (_minted-guia-react/5B006B4CC59E9EF298059F433D17560822411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1217
+Underfull \hbox (badness 10000) in paragraph at lines 1209--1211
 
  []
 
@@ -2432,7 +2439,7 @@ D223F.pygtex)
 
 (_minted-guia-react/E2DC32C08F2B46C3ECD83E7B06E4D93B22411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1237
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1231
 
  []
 
@@ -2446,7 +2453,7 @@ D223F.pygtex)
 
 (_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (19.58688pt too wide) in paragraph at lines 1238--1239
+Overfull \hbox (19.58688pt too wide) in paragraph at lines 1232--1233
 \OT1/cmr/c/n/12 that return a promise. Functions that return promises are (usua
 lly) asynchronous: 
  []
@@ -2458,7 +2465,7 @@ lly) asynchronous:
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [31])
+ [28])
 \openout4 = `guia-react.pyg'.
 
 
@@ -2499,7 +2506,7 @@ D223F.pygtex)
 
 (_minted-guia-react/2933C0155539C455C9A3AA705E81A73322411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1272
+Underfull \hbox (badness 10000) in paragraph at lines 1264--1266
 
  []
 
@@ -2548,13 +2555,13 @@ D223F.pygtex)
 
 (_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1290--1292
+Underfull \hbox (badness 10000) in paragraph at lines 1284--1286
 
  []
 
-LaTeX Info: Redefining \. on input line 1293.
-LaTeX Info: Redefining \% on input line 1293.
-[32]
+LaTeX Info: Redefining \. on input line 1287.
+LaTeX Info: Redefining \% on input line 1287.
+[29]
 \openout4 = `guia-react.pyg'.
 
 
@@ -2565,18 +2572,18 @@ D223F.pygtex)
 
 (_minted-guia-react/F2341CC9525CBB4C1A810025E1BAC29A22411A3E68D43EF9CA14E692750
 D223F.pygtex)
-LaTeX Info: Redefining \. on input line 1295.
-LaTeX Info: Redefining \% on input line 1295.
- [33] [34
+LaTeX Info: Redefining \. on input line 1289.
+LaTeX Info: Redefining \% on input line 1289.
+ [30] [31
 
 ]
 Cap\'{\i }tulo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1308
+Underfull \hbox (badness 10000) in paragraph at lines 1300--1302
 
  []
 
-[35
+[32
 
 ]
 \openout3 = `guia-react.pyg'.
@@ -2604,93 +2611,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 1306--1308
 
 (_minted-guia-react/623803FB88DDA8686CABD6057795C81CE48ED164E11496ADF10785F3BEA
 9E35A.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1350--1352
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 [][]\OT1/cmtt/c/it/12 This folder contains packages installed by the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 \OT1/cmtt/c/it/12 Create React App tool.Any package that we install
  []
 
 
-Overfull \hbox (34.42581pt too wide) in paragraph at lines 1373--1373
+Overfull \hbox (34.42581pt too wide) in paragraph at lines 1367--1367
 []|\OT1/cmtt/c/it/12 node[]modules []| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 [][]\OT1/cmtt/c/it/12 This folder contains the index.html file (among others)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 \OT1/cmtt/c/it/12 which creates the main skeleton layout of your web
  []
 
 
-Overfull \hbox (56.01031pt too wide) in paragraph at lines 1373--1373
+Overfull \hbox (56.01031pt too wide) in paragraph at lines 1367--1367
 []|\OT1/cmtt/c/it/12 public []| 
  []
 
 
-Overfull \hbox (94.39082pt too wide) in paragraph at lines 1373--1373
+Overfull \hbox (94.39082pt too wide) in paragraph at lines 1367--1367
 []|\OT1/cmtt/c/it/12 src []| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 [][]\OT1/cmtt/c/it/12 Here you will find the exact version of each
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 \OT1/cmtt/c/it/12 of the packages (and the dependencies of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 \OT1/cmtt/c/it/12 packages) that your project depends on.This file
  []
 
 
-Overfull \hbox (67.02983pt too wide) in paragraph at lines 1373--1373
+Overfull \hbox (67.02983pt too wide) in paragraph at lines 1367--1367
 []|\OT1/cmtt/c/it/12 package-lock.json []| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 [][]\OT1/cmtt/c/it/12 Here you will find the packages that your project
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 \OT1/cmtt/c/it/12 depends on.This file should be changed only by
  []
 
 
-Overfull \hbox (36.15482pt too wide) in paragraph at lines 1373--1373
+Overfull \hbox (36.15482pt too wide) in paragraph at lines 1367--1367
 []|\OT1/cmtt/c/it/12 package.json []| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1367
 [][]\OT1/cmtt/c/it/12 This is a Markdown file that contains documentation
  []
 
 
-Overfull \hbox (46.08257pt too wide) in paragraph at lines 1373--1373
+Overfull \hbox (46.08257pt too wide) in paragraph at lines 1367--1367
 []|\OT1/cmtt/c/it/12 README.md []| 
  []
 
-LaTeX Info: Redefining \. on input line 1376.
-LaTeX Info: Redefining \% on input line 1376.
-[36]
+LaTeX Info: Redefining \. on input line 1370.
+LaTeX Info: Redefining \% on input line 1370.
+[33]
 \openout4 = `guia-react.pyg'.
 
 
@@ -2701,7 +2708,7 @@ D223F.pygtex)
 
 (_minted-guia-react/4ADB5FAE002B16C059ABEA038130944D22411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Overfull \hbox (12.1453pt too wide) in paragraph at lines 1379--1380
+Overfull \hbox (12.1453pt too wide) in paragraph at lines 1373--1374
 []\OT1/cmr/c/n/12 React applications are built by creating components. Componen
 t is probably
  []
@@ -2778,8 +2785,8 @@ D223F.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
- [37])
-Underfull \hbox (badness 10000) in paragraph at lines 1417--1419
+ [34])
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
 
  []
 
@@ -2798,12 +2805,12 @@ E2ADA.pygtex)
 
 (_minted-guia-react/E267F396BD8807E6915DC4D33E0AB07DE48ED164E11496ADF10785F3BEA
 9E35A.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1439--1441
+Underfull \hbox (badness 10000) in paragraph at lines 1433--1435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1442--1444
+Underfull \hbox (badness 10000) in paragraph at lines 1436--1438
 
  []
 
@@ -2814,13 +2821,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1442--1444
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [38])
+ [35])
 \openout4 = `guia-react.pyg'.
 
 
 (_minted-guia-react/5C9EAABA523441E3F5D21E8D46C336A222411A3E68D43EF9CA14E692750
 D223F.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1472
+Underfull \hbox (badness 10000) in paragraph at lines 1464--1466
 
  []
 
@@ -2902,9 +2909,9 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 
 (_minted-guia-react/781ACAFADA8C6EC046317418AE9E2260E48ED164E11496ADF10785F3BEA
 9E35A.pygtex)
-LaTeX Info: Redefining \. on input line 1498.
-LaTeX Info: Redefining \% on input line 1498.
- [39]
+LaTeX Info: Redefining \. on input line 1492.
+LaTeX Info: Redefining \% on input line 1492.
+ [36]
 \openout4 = `guia-react.pyg'.
 
 
@@ -2940,7 +2947,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/11E29535346DD36AEE8070DE59AD11E4326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (59.12149pt too wide) in paragraph at lines 1514--1515
+Overfull \hbox (59.12149pt too wide) in paragraph at lines 1508--1509
 []\OT1/cmr/c/n/12 In the [], the [] component is wrapped by []
  []
 
@@ -2949,9 +2956,9 @@ Overfull \hbox (59.12149pt too wide) in paragraph at lines 1514--1515
 
 (_minted-guia-react/BC70DE3F962BA61CCC40CB22202D23C052DA7DE3E69A3AEC74B8C16EA34
 E6423.pygtex)
-LaTeX Info: Redefining \. on input line 1547.
-LaTeX Info: Redefining \% on input line 1547.
- [40]
+LaTeX Info: Redefining \. on input line 1541.
+LaTeX Info: Redefining \% on input line 1541.
+ [37]
 \openout4 = `guia-react.pyg'.
 
 
@@ -2979,13 +2986,13 @@ E2ADA.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
- [41])
+ [38])
 \openout3 = `guia-react.pyg'.
 
 
 (_minted-guia-react/E21338E58343BFE21FFD835D1940F34D326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (4.21335pt too wide) in paragraph at lines 1616--1617
+Overfull \hbox (4.21335pt too wide) in paragraph at lines 1610--1611
 []\OT1/cmr/c/n/12 While not recommended, you can also use inline styling. The s
 tyle attribute
  []
@@ -2997,7 +3004,7 @@ tyle attribute
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- [42])
+ [39])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3008,7 +3015,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/C424FDD6C62BFDE9F39C61550A36C8E5326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (3.35564pt too wide) in paragraph at lines 1676--1677
+Overfull \hbox (3.35564pt too wide) in paragraph at lines 1670--1671
 []\OT1/cmr/c/n/12 And now the equivalent but using the function definition of t
 he component: 
  []
@@ -3020,7 +3027,7 @@ he component:
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
- [43])
+ [40])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3051,7 +3058,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/6B7A8225BFFF2A80008ECB89C4F9CCE1326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1699--1701
+Underfull \hbox (badness 10000) in paragraph at lines 1693--1695
 
  []
 
@@ -3090,7 +3097,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/A6BEFAC3FB19003163F02ED7955FB692326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (6.04308pt too wide) in paragraph at lines 1726--1727
+Overfull \hbox (6.04308pt too wide) in paragraph at lines 1720--1721
 []\OT1/cmr/m/n/10.95 If you define a [] in a class-based component, the constru
 ctor
  []
@@ -3102,7 +3109,7 @@ ctor
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
- [44])
+ [41])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3133,25 +3140,25 @@ E2ADA.pygtex)
 
 (_minted-guia-react/EE9EAD3615DBC21AD0C3E8F20D77FB0F326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (6.4341pt too wide) in paragraph at lines 1782--1784
+Overfull \hbox (6.4341pt too wide) in paragraph at lines 1776--1778
 \OT1/cmr/c/n/12 function (lines 19 and 20) every second. So, every second, the 
 CountDownLatch
  []
 
 
-Overfull \hbox (17.36853pt too wide) in paragraph at lines 1782--1784
+Overfull \hbox (17.36853pt too wide) in paragraph at lines 1776--1778
 \OT1/cmr/c/n/12 as prop decremented by one. Until it arrives to zero where the 
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1782--1784
+Underfull \hbox (badness 10000) in paragraph at lines 1776--1778
 
  []
 
-LaTeX Info: Redefining \. on input line 1786.
-LaTeX Info: Redefining \% on input line 1786.
-[45]
+LaTeX Info: Redefining \. on input line 1780.
+LaTeX Info: Redefining \% on input line 1780.
+[42]
 \openout3 = `guia-react.pyg'.
 
 
@@ -3199,7 +3206,7 @@ E2ADA.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- [46])
+ [43])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3220,7 +3227,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/B4388BB93C7CBBD01ADA5B37B1DAE9DF326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1830--1832
+Underfull \hbox (badness 10000) in paragraph at lines 1824--1826
 
  []
 
@@ -3251,7 +3258,7 @@ E2ADA.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- [47])
+ [44])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3277,13 +3284,13 @@ E2ADA.pygtex)
 
 (_minted-guia-react/5DA9E51F8B3DDD02F0ED5EF8E67A0877326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (3.40608pt too wide) in paragraph at lines 1865--1867
+Overfull \hbox (3.40608pt too wide) in paragraph at lines 1859--1861
 \OT1/cmr/m/it/12 re-render \OT1/cmr/c/n/12 of the component. So, on each second
  the []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1865--1867
+Underfull \hbox (badness 10000) in paragraph at lines 1859--1861
 
  []
 
@@ -3297,7 +3304,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (17.06737pt too wide) in paragraph at lines 1868--1869
+Overfull \hbox (17.06737pt too wide) in paragraph at lines 1862--1863
 \OT1/cmr/c/n/12 called []. This method is executed
  []
 
@@ -3308,7 +3315,7 @@ Overfull \hbox (17.06737pt too wide) in paragraph at lines 1868--1869
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
- [48])
+ [45])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3349,25 +3356,25 @@ E2ADA.pygtex)
 
 (_minted-guia-react/4903597B7111938A74037479DF4F11E3326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (21.69977pt too wide) in paragraph at lines 1906--1907
+Overfull \hbox (21.69977pt too wide) in paragraph at lines 1900--1901
 []\OT1/cmr/c/n/12 On line 19 above, we have added the lifecycle method [].
  []
 
 
-Overfull \hbox (21.13774pt too wide) in paragraph at lines 1906--1907
+Overfull \hbox (21.13774pt too wide) in paragraph at lines 1900--1901
 \OT1/cmr/c/n/12 function. Remember that the arrow function we have set up in th
 e []
  []
 
 
-Overfull \hbox (7.4304pt too wide) in paragraph at lines 1906--1907
+Overfull \hbox (7.4304pt too wide) in paragraph at lines 1900--1901
 \OT1/cmr/c/n/12 on the [] method will be executed every second, triggering
  []
 
 Package svg Info: Last page of `./svg-inkscape/lifecycle1_svg-tex.pdf' is 1 on 
-input line 1910.
+input line 1904.
 (svg-inkscape/lifecycle1_svg-tex.pdf_tex
-<./svg-inkscape/lifecycle1_svg-tex.pdf, id=387, page=1, 300.73683pt x 257.89217
+<./svg-inkscape/lifecycle1_svg-tex.pdf, id=365, page=1, 300.73683pt x 257.89217
 pt>
 File: ./svg-inkscape/lifecycle1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/lifecycle1_svg-tex.pdf, page 1>
@@ -3375,7 +3382,7 @@ Package pdftex.def Info: ./svg-inkscape/lifecycle1_svg-tex.pdf , page1 used on
 input line 74.
 (pdftex.def)             Requested size: 300.73682pt x 257.90332pt.
 )
-Underfull \hbox (badness 4217) in paragraph at lines 1911--1911
+Underfull \hbox (badness 4217) in paragraph at lines 1905--1905
 []\OT1/cmr/c/n/12 Figura 2.1: []Order of execution of lifecycle methods used in
  the
  []
@@ -3385,24 +3392,24 @@ Underfull \hbox (badness 4217) in paragraph at lines 1911--1911
 
 (_minted-guia-react/AED0DC7D564B5826B4A49177C1646C7B326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (18.51251pt too wide) in paragraph at lines 1915--1917
+Overfull \hbox (18.51251pt too wide) in paragraph at lines 1909--1911
 [] \OT1/cmr/c/n/12 which is executed before the component is unmounted
  []
 
 
-Overfull \hbox (16.44553pt too wide) in paragraph at lines 1915--1917
+Overfull \hbox (16.44553pt too wide) in paragraph at lines 1909--1911
 \OT1/cmr/c/n/12 from the DOM. This method is used for clean up or close resourc
 es: subscriptions,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1915--1917
+Underfull \hbox (badness 10000) in paragraph at lines 1909--1911
 
  []
 
-LaTeX Info: Redefining \. on input line 1917.
-LaTeX Info: Redefining \% on input line 1917.
-[49 <./svg-inkscape/lifecycle1_svg-tex.pdf>]
+LaTeX Info: Redefining \. on input line 1911.
+LaTeX Info: Redefining \% on input line 1911.
+[46 <./svg-inkscape/lifecycle1_svg-tex.pdf>]
 \openout4 = `guia-react.pyg'.
 
 
@@ -3443,13 +3450,13 @@ E2ADA.pygtex)
 
 (_minted-guia-react/4903597B7111938A74037479DF4F11E3326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Overfull \hbox (3.21666pt too wide) in paragraph at lines 1948--1949
+Overfull \hbox (3.21666pt too wide) in paragraph at lines 1942--1943
 []\OT1/cmr/c/n/12 In the [] lifecycle method
  []
 
-LaTeX Info: Redefining \. on input line 1957.
-LaTeX Info: Redefining \% on input line 1957.
-[50]
+LaTeX Info: Redefining \. on input line 1951.
+LaTeX Info: Redefining \% on input line 1951.
+[47]
 \openout3 = `guia-react.pyg'.
 
 
@@ -3472,7 +3479,7 @@ E2ADA.pygtex)
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
- [51])
+ [48])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3488,7 +3495,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/C7612291BBEDA203FAC818CF6A34BFDE326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 2006--2008
+Underfull \hbox (badness 10000) in paragraph at lines 2000--2002
 
  []
 
@@ -3499,7 +3506,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2006--2008
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [52])
+ [49])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3510,7 +3517,7 @@ E2ADA.pygtex)
 
 (_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D6326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 2051--2053
+Underfull \hbox (badness 10000) in paragraph at lines 2045--2047
 
  []
 
@@ -3521,7 +3528,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2051--2053
 E2ADA.pygtex
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- [53])
+ [50])
 \openout4 = `guia-react.pyg'.
 
 
@@ -3537,13 +3544,13 @@ E2ADA.pygtex)
 
 (_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
 E2ADA.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 2106--2108
+Underfull \hbox (badness 10000) in paragraph at lines 2100--2102
 
  []
 
-LaTeX Info: Redefining \. on input line 2112.
-LaTeX Info: Redefining \% on input line 2112.
-[54] [55
+LaTeX Info: Redefining \. on input line 2106.
+LaTeX Info: Redefining \% on input line 2106.
+[51] [52
 
 ] (guia-react.aux
 LaTeX Info: Redefining \. on input line 27.
@@ -3553,15 +3560,15 @@ LaTeX Info: Redefining \% on input line 27.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `guia-react.out' has not changed.
-(rerunfilecheck)             Checksum: 2C1B54497B099972D5DE27237B7B81F3;1541.
+(rerunfilecheck)             Checksum: B6245F9C00ABE947B5AD224E4B193E38;1438.
 runsystem(rm guia-react.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 37030 strings out of 481551
- 894512 string characters out of 2916428
- 1270710 words of memory out of 3000000
- 52376 multiletter control sequences out of 15000+200000
+ 37027 strings out of 481551
+ 894486 string characters out of 2916428
+ 1270754 words of memory out of 3000000
+ 52378 multiletter control sequences out of 15000+200000
  412720 words of font info for 60 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  97i,14n,102p,2542b,1085s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3580,9 +3587,9 @@ y6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
 tt10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb>
-Output written on guia-react.pdf (56 pages, 340812 bytes).
+Output written on guia-react.pdf (53 pages, 336947 bytes).
 PDF statistics:
- 539 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

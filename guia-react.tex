@@ -60,53 +60,47 @@ showstringspaces=false} % no special string spaces
 \maketitle
 \tableofcontents
 
-\chapter*{What is this book about?}
+\chapter*{Entorno de Desarrollo}
+\addcontentsline{toc}{chapter}{Entorno de Desarrollo}
 
-Every successful framework or library provides something unique which gives to developers a new tool for writing better software. In the case of React, that tool is called \textbf{component}. You might be thinking that you have been reading about components as the solution to your spaghetti software nightmare for the last 15 years without any success. You are not wrong. However, React developers have interpreted correctly what a component is and have provided the constructions and tools to build highly cohesive components to assemble your next application. In this book, we will study React core concepts, to end up being very practical describing how to split an application into components and to fully implement it. But before that, it is necessary to study some Javascript concepts. Understanding these concepts will make you a better React developer. If you are already a Javascript developer, then you can just ignore that initial chapter. But if your experience is mainly on server side programming languages like Java, C\#, PHP, etc, the initial chapter will give you the necessary basis.
+Para comenzar a programar en React recomendamos \href{https://code.visualstudio.com/} {Visual Studio Code} (VS Code). Y para ser más productivo, especialmente si eres nuevo en React, sugerimos que instales la extensión \href {https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets} {VS Code ES7 React / Redux / React-Native / JS snippets} que proporciona la generación rápida de estructuras sintácticas de JavaScript y React. También sugerímos instalar \href {https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode} {Prettier}, que es un formateador de código JavaScript / React.
+\newline
 
-\addcontentsline{toc}{chapter}{What is this book about?}
-\chapter*{Source Code}		
-\addcontentsline{toc}{chapter}{Source Code}
-TBD%\url{https://github.com/enriquemolinari/learning-react}
+Para instalar una extensión, en Visual Studio Code, vaya al menú Archivo, luego Preferencias y luego Extensiones. Verá un cuadro de búsqueda que le permitirá encontrar las extensiones que desea instalar.
+\newline
+
+Finalmente, realmente recomiendo configurar VS Code para formatear los fuentes al momento de guardar. Puede hacerlo yendo al menú Archivo, luego a Preferencias y luego a Configuración. En el cuadro de búsqueda, escriba "Editor: Formato al guardar" (Format On Save). Esto formateará su código inmediatamente después de guardarlo.
+
+\part{Introducción}
 		
-\chapter*{Development Environment}
-\addcontentsline{toc}{chapter}{Development Environment}
+\chapter{Conceptos Esenciales de JavaScript}
 
-There are many development environments out there, and you can choose the one you are more comfortable with. In any case if you don't have a preference, I recommend \href{https://code.visualstudio.com/}{Visual Studio Code} (VS Code). And to be more productive, specially if you are new to React, I suggest to install the extension \href{https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets}{VS Code ES7 React/Redux/React-Native/JS snippets} which provides JavaScript and React snippets. I would also suggest to install \href{https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode}{Prettier}, which is a JavaScript/React code formatter. 
-
-To install an extension, in Visual Studio Code, go to the File menu, then Preferences and then Extensions. You will see a search box that will allows you to find the extensions that you want to install. 
-
-Finally, I really recommend to configure VS Code to format your source files on save. You can do that going to File menu, then Preferences and then Settings. On the search box type Editor: Format On Save. This will format your code right after you save it.
-
-\part{Introduction}
-		
-\chapter{Essential JavaScript Concepts}
-
-You can use React just learning from React docs and you will also be able to build applications, without digging into JavaScript. However, if you want to master React and that means, understand why and how certain things works, you must learn some specific concepts from JavaScript.
-
-In this chapter we will explain those JavaScript concepts and syntactical constructions needed to make a solid leaning path to React. If you want to dig in more details on some of the topics explained here or other about JavaScript I recommend to visit the Mozilla\cite{mozilla} web site. Indeed, this section is based on leaning paths and ideas taken from there. Having said that, lets begin.
-
-From the Developer Mozilla JavaScript Documentation \cite{mozilla} JavaScript is defined as:
-
-``JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative styles.''
+Si deseamos dominar React y eso significa comprender por qué y cómo funcionan ciertas cosas, debemos aprender algunos conceptos específicos de JavaScript.
 \newline
 
-If you are a Java, C\# or C++ developer that definition might sound a bit intimidating. The thing is that you do have to learn some concepts specially those that are not naturally available in compiled languages. To start with those concepts we will first explain basic language constructions and with that in place we will explain what it means for a language to have \textbf{first-class functions} and to be \textbf{prototype-based}, \textbf{multi-paradigm}, \textbf{single-threaded} and \textbf{dynamic}.
+En este capítulo explicaremos los conceptos de JavaScript y las construcciones sintácticas necesarias para crear un camino sólido que nos permitan dominar React. Si desea profundizar en más detalles sobre algunos de los temas que se explican aquí u otros sobre JavaScript, recomendamos que visiten el sitio web Mozilla \cite{mozilla}. Esta sección se basa en conceptos explicados allí. Habiendo dicho eso, comencemos. 
+
+De la web Developer Mozilla JavaScript Documentation \cite{mozilla}, JavaScript se define como:
+
+``JavaScript (JS) es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat. JavaScript es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional).''
 \newline
 
-The JavaScript language is governed by a standard under the responsibility of ECMA\cite{ecma}. ECMAScript is the name of the language specification. The standardisation allows vendors to write interpreters and developers to be able to run their programs on any vendor interpreter. So, it is a great thing. Particularly, in 2015 there was a major release known as ES6, ECMAScript 6 or ECMAScript 2015. Most of the syntactical constructions that we will study in this section were implemented in this release. 
+Si Usted es un desarrollador Java, C\# o C++, esta definición puede sonar un poco intimidante. Es por ésto que es necesario aprender algunos conceptos, especialmente aquellos que no están disponibles de forma natural en los lenguajes compilados. Para comenzar con esos conceptos, primero explicaremos las construcciones básicas del lenguaje, luego explicaremos lo que significa que un lenguaje tenga \textbf{funciones de primera clase} y sea \textbf {basado en prototipos}, \textbf{multi-paradigma}, \textbf{de un solo subproceso} y \textbf{dinámico}.
 \newline
 
-Lets then begin learning. Any piece of code written in this section will run using the node interpreter, invoked using the console in the following way:
+El lenguaje JavaScript se rige por una especificación estándar de ECMA\cite{ecma} (European Computer Manufacturers Association). ECMAScript es el nombre de la especificación. En particular, en 2015 se liberó una versión importante conocida como ES6, ECMAScript 6 o ECMAScript 2015. La mayoría de las construcciones sintácticas que estudiaremos en esta sección se implementaron en dicha versión.
+\newline
+
+Comencemos a aprender. Toda sentencia en JavaScript escrita en esta sección se ejecutará usando el intérprete de nodejs, invocándolo usando la consola de la siguiente manera:
 \begin{minted}[fontseries=mc,
                framesep=2mm]{console}
 $ node yourjsfile.js
 \end{minted}
 
-Using Visual Studio Code, you can go to the menu "Terminal" and then "New Terminal". It will open a small terminal window where you can run your scripts. 
+Utilizando Visual Studio Code, pueden abrir una consola directamente allí, desde el menu en "Terminal" y luego "Nueva Terminal". 
 \newline
 
-Printing text on the screen must be the very first thing you learn every time you start playing with a new programming language. This book is not the exception. You can print text on the screen using the \textit{Console} object like the following example:
+Lo primero que en general aprendemos cuando nos iniciamos en un lenguaje de programación es a imprimir texto en la pantalla. Esta guía no es la excepción. Se puede imprimir texto en la pantalla usando el objeto \textit{Console} de la siguiente forma:
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -116,12 +110,12 @@ Printing text on the screen must be the very first thing you learn every time yo
 console.log("Coding in React!");
 \end{minted}
 
-Console was created mainly for debugging purposes, it should not be used in production. It gives you access to the Browser's debug console. It is also not part of the standard, but most modern browsers and nodejs supports it. 
+El objecto \textit{Console} se creó principalmente como herramienta de debug, no debe utilizarse en aplicaciones deployadas en producción. No es parte parte del estándar pero todos los browsers modernos y nodejs lo soportan.
 \newline
 
 \section{Variables}
 
-Lets move to \textbf{variables}. You can declare a variable using the \textit{let} keyword:
+Comencemos a ver como utilizamos \textbf{variables} en JavaScript. Declaramos las variables utilizando la palabra reservada \textit{let}, de la siguiente forma:
 
 \begin{minted}[fontseries=mc,
                frame=leftline,
@@ -131,7 +125,7 @@ Lets move to \textbf{variables}. You can declare a variable using the \textit{le
 let myFirstVariable;
 \end{minted}
 
-Declaring a variable without initialising it will assign the \textit{undefined} special value to it and that is what you will see if you print it. Try it!. Lets give it an initial string value:
+Cuando declaramos una variable sin inicializarla, el intérprete la inicializará con el valor especial \textit{undefined}. Esto se puede observar si intentan imprimir en la consola una variable no inicializada. Pruebenlo. El siguiente ejemplo muestra como declarar una variable y como inicializarla a la vez.
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -141,7 +135,7 @@ Declaring a variable without initialising it will assign the \textit{undefined} 
 let myFirstVariable = "Hello value!";
 \end{minted}
 
-Now if you print it you will see the string. You can also declare a variable using the \textit{const} keyword:
+Tambén es posible declarar una variable utilizando la palabra reservada \textit{const}:
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -151,10 +145,10 @@ Now if you print it you will see the string. You can also declare a variable usi
 const myFirstConst = "Hello constant value!";
 \end{minted}
 
-As you might have guessed, declaring a variable with \textit{const} will not allow you to change the value of the variable once it has been initialised. If you do it the interpreter will thrown an error. Try it!.  
+Al declarar la variable con \textit{const} no podremos modificarle su valor, si lo intentan el interprete lanzará un error. Pruebenlo.  
 \newline
 
-JavaScript is a \textbf{dynamic language}, among many other things that we will discuss later, that means that the type of a variable can be change it at runtime. Opposed to static (or compiled) languages where the type of a variable is defined at compile-time and cannot be changed during execution.
+Dijimos que JavaScript es un \textbf{lenguaje dinámico}. Ésto, entre otras cosas, significa que el tipo de una variable puede cambiar en tiempo de ejecución. A diferencia de los lenguajes estáticos donde los tipos de las variables se definen durante la compilación y no pueden cambiar durante la ejecución.
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -167,9 +161,9 @@ let changeMyType = "Hello String!";
 changeMyType = 100;
 \end{minted}
 
-\section{Functions} \label{functions}
+\section{Funciones} \label{functions}
 
-Lets move now to \textbf{functions}. In the following code snippet we are declaring a function and after that we are calling it:
+Estudiemos ahora las \textbf{functions}. A continuación declaramos una función y luego la invocamos:
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -183,7 +177,7 @@ function saySomething(string) {
 saySomething("Hello Function!");
 \end{minted}
 
-If you just need to have a function that gets called as soon as it is declared, you can use the syntax below. This is called IIFE (Immediately-invoked Function Expression).
+En JavaScript podemos definir funciones que se invocan inmediatamente después de declararlas. Se denominan IIFE (Immediately-invoked Function Expression).
 
 \begin{minted}[fontseries=mc,
                framesep=5mm,
@@ -195,7 +189,7 @@ If you just need to have a function that gets called as soon as it is declared, 
 })("Hello Function!");
 \end{minted}
 
-In JavaScript functions always return something. If you don't explicity return something from the function using the \textit{return} keyword it will return \textit{undefined}.
+Las funciones siempre retornan un valor. Si se omite el uso de \textit{return} para retornar algo explícito, entonces una función retornará el valor \textit{undefined}.
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -206,7 +200,7 @@ let x = saySomething("Hello Function!");
 //x is undefined
 \end{minted}
 
-In addition, functions are \textbf{first-class} objects. The most well known first class object of programming languages are \textit{variables}. Variables are denominated first class objects because it can be assigned, it can be passed as argument to a function or method, it can be returned from a function, etc. So, having functions as first-class objects means that all those things that you can do with variables are possible with functions too. See at the example below where on line 6 we are assigning the function to the variable \colorbox{verylight}{\lstinline{say}}. And then on line 10 we are using it to invoke the function.
+También hemos mencionado que las funciones son objetos de \textbf{primera clase}. Ésto significa que al igual que las variables, éstas pueden asignarse, pasarse por parámetro o retornarse de otra función. El ejemplo a continuación, en la línea 6, nos encontramos con una función que se asigna a la variable \colorbox{verylight}{\lstinline{say}}. Y luego en la línea utilizamos ésta variable para invocar la función.
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
