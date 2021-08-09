@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{n+nx}{React}\PYG{p}{,} \PYG{p}{\PYGZob{}} \PYG{n+nx}{Component} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kr}{class} \PYG{n+nx}{CoundDown} \PYG{k+kr}{extends} \PYG{n+nx}{Component} \PYG{p}{\PYGZob{}}
+  \PYG{n+nd}{constructor}\PYG{p}{(}\PYG{n+ni}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{super}\PYG{p}{(}\PYG{n+ni}{props}\PYG{p}{);}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+ni}{state} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{startNumber}\PYG{o}{:} \PYG{k}{this}\PYG{p}{.}\PYG{n+ni}{props}\PYG{p}{.}\PYG{n+nx}{startFrom}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{};}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+nd}{componentDidMount}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{intervalId} \PYG{o}{=} \PYG{n+nx}{setInterval}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+      \PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{setState}\PYG{p}{((}\PYG{n+ni}{state}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(\PYGZob{}}
+        \PYG{n+nx}{startNumber}\PYG{o}{:} \PYG{n+ni}{state}\PYG{p}{.}\PYG{n+nx}{startNumber} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{,}
+      \PYG{p}{\PYGZcb{}));}
+    \PYG{p}{\PYGZcb{},} \PYG{l+m+mi}{1000}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+nd}{componentDidUpdate}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{k}{this}\PYG{p}{.}\PYG{n+ni}{state}\PYG{p}{.}\PYG{n+nx}{startNumber} \PYG{o}{===} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{clearInterval}\PYG{p}{(}\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{intervalId}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+nd}{render}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{h1}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{k}{this}\PYG{p}{.}\PYG{n+ni}{state}\PYG{p}{.}\PYG{n+nx}{startNumber}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{h1}\PYG{p}{\PYGZgt{};}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

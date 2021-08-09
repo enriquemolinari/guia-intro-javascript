@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{App}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{n+nx}{MENU\PYGZus{}ITEMS} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{WELCOME}\PYG{o}{:} \PYG{l+m+mi}{0}\PYG{p}{,}
+    \PYG{n+nx}{USERSLIST}\PYG{o}{:} \PYG{l+m+mi}{1}\PYG{p}{,}
+    \PYG{n+nx}{USERFORM}\PYG{o}{:} \PYG{l+m+mi}{2}\PYG{p}{,}
+  \PYG{p}{\PYGZcb{};}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{itemClicked}\PYG{p}{,} \PYG{n+nx}{setItemClicked}\PYG{p}{]} \PYG{o}{=} \PYG{n+nx}{React}\PYG{p}{.}\PYG{n+ni}{useState}\PYG{p}{(}\PYG{n+nx}{MENU\PYGZus{}ITEMS}\PYG{p}{.}\PYG{n+nx}{WELCOME}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{n+nx}{apiUrl} \PYG{o}{=} \PYG{n+nx}{process}\PYG{p}{.}\PYG{n+nx}{env}\PYG{p}{.}\PYG{n+nx}{REACT\PYGZus{}APP\PYGZus{}API\PYGZus{}URL}\PYG{p}{;}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleClick}\PYG{p}{(}\PYG{n+nx}{item}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{setItemClicked}\PYG{p}{(}\PYG{n+nx}{item}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Layout}
+      \PYG{n+na}{left}\PYG{o}{=}\PYG{p}{\PYGZob{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{LeftMenu}
+          \PYG{n+na}{items}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{MENU\PYGZus{}ITEMS}\PYG{p}{\PYGZcb{}}
+          \PYG{n+na}{handleMenu}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleClick}\PYG{p}{\PYGZcb{}}
+          \PYG{n+na}{valueItem}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{itemClicked}\PYG{p}{\PYGZcb{}}
+        \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZob{}}\PYG{n+nx}{itemClicked} \PYG{o}{===} \PYG{n+nx}{MENU\PYGZus{}ITEMS}\PYG{p}{.}\PYG{n+nx}{WELCOME} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Welcome} \PYG{p}{/\PYGZgt{}\PYGZcb{}}
+      \PYG{p}{\PYGZob{}}\PYG{n+nx}{itemClicked} \PYG{o}{===} \PYG{n+nx}{MENU\PYGZus{}ITEMS}\PYG{p}{.}\PYG{n+nx}{USERSLIST} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{UsersList} \PYG{n+na}{apiUrl}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{apiUrl}\PYG{p}{\PYGZcb{}} \PYG{p}{/\PYGZgt{}\PYGZcb{}}
+      \PYG{p}{\PYGZob{}}\PYG{n+nx}{itemClicked} \PYG{o}{===} \PYG{n+nx}{MENU\PYGZus{}ITEMS}\PYG{p}{.}\PYG{n+nx}{USERFORM} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{UsersForm} \PYG{n+na}{apiUrl}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{apiUrl}\PYG{p}{\PYGZcb{}} \PYG{p}{/\PYGZgt{}\PYGZcb{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Layout}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

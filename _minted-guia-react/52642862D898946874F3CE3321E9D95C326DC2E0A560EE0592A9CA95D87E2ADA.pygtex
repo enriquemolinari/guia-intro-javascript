@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{n+nx}{React}\PYG{p}{,} \PYG{p}{\PYGZob{}} \PYG{n+nx}{Component} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kr}{class} \PYG{n+nx}{StyleInLine} \PYG{k+kr}{extends} \PYG{n+nx}{Component} \PYG{p}{\PYGZob{}}
+  \PYG{n+ni}{constructor}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{super}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+ni}{render}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{const} \PYG{n+nx}{colorBoxStyle} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}50px\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{height}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}50px\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{border}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}1px solid rgba(0, 0, 0, 0.05)\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{backgroundColor}\PYG{o}{:} \PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{color}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{};}
+
+    \PYG{k}{return} \PYG{p}{(}
+      \PYG{p}{\PYGZlt{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{style}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{colorBoxStyle}\PYG{p}{\PYGZcb{}\PYGZgt{}}\PYG{n+nx}{Hola} \PYG{n+nx}{Mundo}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+    \PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

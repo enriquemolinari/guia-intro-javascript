@@ -1,0 +1,65 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UsersForm}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{inputsValue}\PYG{p}{,} \PYG{n+nx}{setInputsValue}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(\PYGZob{}}
+    \PYG{n+nx}{name}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+    \PYG{n+nx}{username}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+    \PYG{n+nx}{email}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+  \PYG{p}{\PYGZcb{});}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleSubmit}\PYG{p}{(}\PYG{n+nx}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{preventDefault}\PYG{p}{();}
+
+    \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{e}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleChange}\PYG{p}{(}\PYG{n+nx}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{const} \PYG{n+nx}{name} \PYG{o}{=} \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{target}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{;}
+    \PYG{k+kr}{const} \PYG{n+nx}{value} \PYG{o}{=} \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{target}\PYG{p}{.}\PYG{n+nx}{value}\PYG{p}{;}
+    \PYG{n+nx}{setInputsValue}\PYG{p}{((}\PYG{n+nx}{inputsValue}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+      \PYG{k}{return} \PYG{p}{\PYGZob{}} \PYG{p}{...}\PYG{n+nx}{inputsValue}\PYG{p}{,} \PYG{p}{[}\PYG{n+nx}{name}\PYG{p}{]}\PYG{o}{:} \PYG{n+nx}{value} \PYG{p}{\PYGZcb{};}
+    \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{form} \PYG{n+na}{noValidate} \PYG{n+na}{autoComplete}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}off\PYGZdq{}} \PYG{n+na}{onSubmit}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleSubmit}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{className}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}form\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{TextField}
+            \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}name\PYGZdq{}}
+            \PYG{n+na}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}name\PYGZdq{}}
+            \PYG{n+na}{label}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Name\PYGZdq{}}
+            \PYG{n+na}{fullWidth}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{value}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{onChange}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleChange}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{className}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}form\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{TextField}
+            \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}username\PYGZdq{}}
+            \PYG{n+na}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}username\PYGZdq{}}
+            \PYG{n+na}{label}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}User Name\PYGZdq{}}
+            \PYG{n+na}{fullWidth}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{value}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{username}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{onChange}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleChange}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{className}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}form\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{TextField}
+            \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}email\PYGZdq{}}
+            \PYG{n+na}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}email\PYGZdq{}}
+            \PYG{n+na}{label}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}EMail\PYGZdq{}}
+            \PYG{n+na}{fullWidth}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{value}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{email}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{onChange}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleChange}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Button} \PYG{n+na}{type}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}submit\PYGZdq{}} \PYG{n+na}{variant}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}contained\PYGZdq{}} \PYG{n+na}{color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}primary\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+            \PYG{n+nx}{Submit}
+          \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Button}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{form}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

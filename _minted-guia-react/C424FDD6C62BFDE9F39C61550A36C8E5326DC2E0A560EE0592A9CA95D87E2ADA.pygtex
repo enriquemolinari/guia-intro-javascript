@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kr}{class} \PYG{n+nx}{Person} \PYG{k+kr}{extends} \PYG{n+nx}{Component} \PYG{p}{\PYGZob{}}
+  \PYG{n+ni}{render}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{(}
+      \PYG{p}{\PYGZlt{}\PYGZgt{}}
+        \PYG{n+nx}{My} \PYG{n+nx}{name} \PYG{n+nx}{is}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{strong}\PYG{p}{\PYGZgt{}}
+         \PYG{p}{\PYGZob{}}\PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{} \PYGZdq{}} \PYG{o}{+} \PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{surname}\PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{strong}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+    \PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

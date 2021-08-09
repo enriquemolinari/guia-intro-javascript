@@ -1,0 +1,58 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UsersList}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{users}\PYG{p}{,} \PYG{n+nx}{setUsers}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{result}\PYG{o}{:} \PYG{p}{\PYGZob{}} \PYG{n+nx}{data}\PYG{o}{:} \PYG{p}{[]} \PYG{p}{\PYGZcb{}} \PYG{p}{\PYGZcb{});}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{page}\PYG{p}{,} \PYG{n+nx}{setPage}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{pageSize}\PYG{p}{,} \PYG{n+nx}{setPageSize}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{);}
+
+  \PYG{n+ni}{useEffect}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{fetchUsers}\PYG{p}{();}
+  \PYG{p}{\PYGZcb{},} \PYG{p}{[}\PYG{n+nx}{page}\PYG{p}{,} \PYG{n+nx}{pageSize}\PYG{p}{]);}
+
+  \PYG{n+ni}{async} \PYG{k+kd}{function} \PYG{n+nx}{fetchUsers}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{let} \PYG{n+nx}{response} \PYG{o}{=} \PYG{n+ni}{await} \PYG{n+nx}{fetch}\PYG{p}{(}
+      \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{apiUrl} \PYG{o}{+}
+        \PYG{l+s+s2}{\PYGZdq{}?\PYGZus{}page=\PYGZdq{}} \PYG{o}{+}
+        \PYG{c+c1}{//first page is 1 for the json server API}
+        \PYG{c+c1}{//Material DataGrid first page is 0}
+        \PYG{p}{(}\PYG{n+nx}{page} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{+}
+        \PYG{l+s+s2}{\PYGZdq{}\PYGZam{}\PYGZus{}limit=\PYGZdq{}} \PYG{o}{+}
+        \PYG{n+nx}{pageSize}
+    \PYG{p}{);}
+    \PYG{k+kd}{let} \PYG{n+nx}{json} \PYG{o}{=} \PYG{n+ni}{await} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{();}
+    \PYG{n+nx}{response} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{total}\PYG{o}{:} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{headers}\PYG{p}{.}\PYG{n+nx}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}x\PYGZhy{}total\PYGZhy{}Count\PYGZdq{}}\PYG{p}{),}
+      \PYG{n+nx}{data}\PYG{o}{:} \PYG{n+nx}{json}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{};}
+    \PYG{n+nx}{setUsers}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{result}\PYG{o}{:} \PYG{p}{\PYGZob{}} \PYG{n+nx}{total}\PYG{o}{:} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{total}\PYG{p}{,} \PYG{n+nx}{data}\PYG{o}{:} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{data} \PYG{p}{\PYGZcb{}} \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k+kr}{const} \PYG{n+nx}{columns} \PYG{o}{=} \PYG{p}{[}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}id\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}ID\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{60} \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Name\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{180}\PYG{p}{,} \PYG{n+nx}{editable}\PYG{o}{:} \PYG{k+kc}{true} \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}username\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}UserName\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{200}\PYG{p}{,} \PYG{n+nx}{editable}\PYG{o}{:} \PYG{k+kc}{true} \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}email\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Email\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{250}\PYG{p}{,} \PYG{n+nx}{editable}\PYG{o}{:} \PYG{k+kc}{true} \PYG{p}{\PYGZcb{},}
+  \PYG{p}{];}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{style}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}} \PYG{n+nx}{height}\PYG{o}{:} \PYG{l+m+mi}{420}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}100\PYGZpc{}\PYGZdq{}} \PYG{p}{\PYGZcb{}\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{DataGrid}
+          \PYG{n+na}{rows}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{users}\PYG{p}{.}\PYG{n+nx}{result}\PYG{p}{.}\PYG{n+nx}{data}\PYG{p}{\PYGZcb{}}
+          \PYG{n+na}{columns}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{columns}\PYG{p}{\PYGZcb{}}
+          \PYG{n+na}{pageSize}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{pageSize}\PYG{p}{\PYGZcb{}}
+          \PYG{n+na}{paginationMode}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}server\PYGZdq{}}
+          \PYG{n+na}{page}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{page}\PYG{p}{\PYGZcb{}}
+          \PYG{n+na}{onPageChange}\PYG{o}{=}\PYG{p}{\PYGZob{}(}\PYG{n+nx}{params}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+            \PYG{n+nx}{setPage}\PYG{p}{(}\PYG{n+nx}{params}\PYG{p}{.}\PYG{n+nx}{page}\PYG{p}{);}
+          \PYG{p}{\PYGZcb{}\PYGZcb{}}
+          \PYG{n+na}{onPageSizeChange}\PYG{o}{=}\PYG{p}{\PYGZob{}(}\PYG{n+nx}{params}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+            \PYG{n+nx}{setPageSize}\PYG{p}{(}\PYG{n+nx}{params}\PYG{p}{.}\PYG{n+nx}{pageSize}\PYG{p}{);}
+          \PYG{p}{\PYGZcb{}\PYGZcb{}}
+          \PYG{n+na}{rowsPerPageOptions}\PYG{o}{=}\PYG{p}{\PYGZob{}[}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{]\PYGZcb{}}
+          \PYG{n+na}{rowCount}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nb}{parseInt}\PYG{p}{(}\PYG{n+nx}{users}\PYG{p}{.}\PYG{n+nx}{result}\PYG{p}{.}\PYG{n+nx}{total}\PYG{p}{)\PYGZcb{}}
+        \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

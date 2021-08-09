@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{n+nx}{React} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+\PYG{k+kr}{import} \PYG{n+nx}{Layout} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}./Layout.js\PYGZdq{}}\PYG{p}{;}
+\PYG{k+kr}{import} \PYG{n+nx}{LeftMenu} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}./LeftMenu.js\PYGZdq{}}\PYG{p}{;}
+\PYG{k+kr}{import} \PYG{n+nx}{Welcome} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}./Welcome.js\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{App}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Layout} \PYG{n+na}{left}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZlt{}}\PYG{n+nt}{LeftMenu} \PYG{p}{/\PYGZgt{}\PYGZcb{}\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Welcome} \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{UsersList} \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{UsersForm} \PYG{p}{/\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Layout}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

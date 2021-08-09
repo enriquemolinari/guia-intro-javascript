@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{n+nx}{React}\PYG{p}{,} \PYG{p}{\PYGZob{}} \PYG{n+ni}{useState}\PYG{p}{,} \PYG{n+ni}{useEffect}\PYG{p}{,} \PYG{n+ni}{useRef} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{CountDownLatch}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{startNumber}\PYG{p}{,} \PYG{n+nx}{setStartNumber}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{startFrom}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{n+nx}{intervalId} \PYG{o}{=} \PYG{n+ni}{useRef}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}
+
+  \PYG{n+ni}{useEffect}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n+nx}{startNumber} \PYG{o}{===} \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{startFrom}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{intervalId}\PYG{p}{.}\PYG{n+nx}{current} \PYG{o}{=} \PYG{n+nx}{setInterval}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+        \PYG{n+nx}{setStartNumber}\PYG{p}{((}\PYG{n+nx}{startNumber}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{startNumber} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{);}
+      \PYG{p}{\PYGZcb{},} \PYG{l+m+mi}{1000}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{p}{()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+      \PYG{k}{if} \PYG{p}{(}\PYG{n+nx}{startNumber} \PYG{o}{===} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n+nx}{clearInterval}\PYG{p}{(}\PYG{n+nx}{intervalId}\PYG{p}{.}\PYG{n+nx}{current}\PYG{p}{);}
+      \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{};}
+  \PYG{p}{\PYGZcb{},} \PYG{p}{[}\PYG{n+nx}{startNumber}\PYG{p}{,} \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{startFrom}\PYG{p}{]);}
+
+  \PYG{k}{return} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{h1}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{startNumber}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{h1}\PYG{p}{\PYGZgt{};}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

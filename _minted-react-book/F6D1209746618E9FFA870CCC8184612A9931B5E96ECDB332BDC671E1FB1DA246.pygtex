@@ -1,0 +1,44 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{p}{\PYGZob{}} \PYG{n+ni}{useEffect}\PYG{p}{,} \PYG{n+ni}{useState} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UseEffectExample2}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nd}{state}\PYG{p}{,} \PYG{n+ni}{setState}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{passengers}\PYG{o}{:} \PYG{p}{\PYGZob{}} \PYG{n+nx}{data}\PYG{o}{:} \PYG{p}{[]} \PYG{p}{\PYGZcb{}\PYGZcb{});}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{page}\PYG{p}{,} \PYG{n+nx}{setPage}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}
+
+  \PYG{n+ni}{useEffect}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{fetch}\PYG{p}{(}
+      \PYG{l+s+s2}{\PYGZdq{}https://api.instantwebtools.net/v1/passenger?page=\PYGZdq{}} \PYG{o}{+} \PYG{n+nx}{page} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{}\PYGZam{}size=10\PYGZdq{}}
+    \PYG{p}{)}
+      \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{response}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{())}
+      \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{pasData}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+        \PYG{n+ni}{setState}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{passengers}\PYG{o}{:} \PYG{n+nx}{pasData} \PYG{p}{\PYGZcb{});}
+      \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{},} \PYG{p}{[}\PYG{n+nx}{page}\PYG{p}{]);}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleClick}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{setPage}\PYG{p}{((}\PYG{n+nx}{currentPage}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{currentPage} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{table}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{thead}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{name}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{trips}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{thead}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tbody}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZob{}}\PYG{n+nd}{state}\PYG{p}{.}\PYG{n+nx}{passengers}\PYG{p}{.}\PYG{n+nx}{data}\PYG{p}{.}\PYG{n+nx}{map}\PYG{p}{((}\PYG{n+nx}{element}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr} \PYG{n+na}{key}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{element}\PYG{p}{.}\PYG{n+nx}{\PYGZus{}id}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+              \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{element}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+              \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{element}\PYG{p}{.}\PYG{n+nx}{trips}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{))\PYGZcb{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tbody}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{table}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{button} \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleClick}\PYG{p}{\PYGZcb{}\PYGZgt{}}\PYG{n+nx}{Next} \PYG{n+nx}{Page} \PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{button}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

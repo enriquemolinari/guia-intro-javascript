@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{p}{\PYGZob{}} \PYG{n+ni}{useState} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{ColorSelect}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{c+c1}{//declaring the color state variable}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{color}\PYG{p}{,} \PYG{n+nx}{setColor}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}white\PYGZdq{}}\PYG{p}{);}
+  \PYG{p}{.}
+  \PYG{p}{.}
+  \PYG{p}{.}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

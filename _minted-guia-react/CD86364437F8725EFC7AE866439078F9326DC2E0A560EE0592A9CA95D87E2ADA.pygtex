@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{family} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Jóse\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Nicolas\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Lucia\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{];}
+\PYG{k}{for} \PYG{p}{(}\PYG{k+kd}{let} \PYG{n+nx}{element} \PYG{k}{of} \PYG{n+nx}{family}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}regular for: \PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{element}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

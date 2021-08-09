@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{Person}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k}{return} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{This} \PYG{n+nx}{is} \PYG{n+nx}{a} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{strong}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Person}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{strong}\PYG{p}{\PYGZgt{}} \PYG{n+nx}{Component}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{};}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

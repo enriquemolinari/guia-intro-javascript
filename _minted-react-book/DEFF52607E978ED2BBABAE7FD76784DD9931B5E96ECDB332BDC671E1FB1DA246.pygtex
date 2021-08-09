@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n+ni}{useEffect}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{//effects here}
+
+    \PYG{k}{return} \PYG{p}{()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+      \PYG{c+c1}{//clean resources here}
+    \PYG{p}{\PYGZcb{};}
+  \PYG{p}{\PYGZcb{},} \PYG{n+nx}{dependencies}\PYG{p}{);}
+\end{Verbatim}

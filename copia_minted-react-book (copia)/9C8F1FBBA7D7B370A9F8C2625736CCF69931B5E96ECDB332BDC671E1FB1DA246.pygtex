@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{myFirstVariable} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Hello value!\PYGZdq{}}\PYG{p}{;}
+\end{Verbatim}

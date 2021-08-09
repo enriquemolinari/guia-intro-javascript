@@ -1,0 +1,36 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{p}{\PYGZob{}} \PYG{n+ni}{useEffect}\PYG{p}{,} \PYG{n+ni}{useState} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UseEffectExample2}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{pass}\PYG{p}{,} \PYG{n+nx}{setPass}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{passengers}\PYG{o}{:} \PYG{p}{\PYGZob{}} \PYG{n+nx}{data}\PYG{o}{:} \PYG{p}{[]} \PYG{p}{\PYGZcb{}\PYGZcb{});}
+
+  \PYG{n+ni}{useEffect}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+   \PYG{n+nx}{fetch}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}https://api.instantwebtools.net/v1/passenger\PYGZdq{}}\PYG{p}{)}
+   \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{response}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{())}
+   \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{pasData}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+     \PYG{n+nx}{setPass}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{passengers}\PYG{o}{:} \PYG{n+nx}{pasData} \PYG{p}{\PYGZcb{});}
+   \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{});}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{table}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{thead}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{name}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{trips}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{th}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{thead}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tbody}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZob{}}\PYG{n+nx}{pass}\PYG{p}{.}\PYG{n+nx}{passengers}\PYG{p}{.}\PYG{n+nx}{data}\PYG{p}{.}\PYG{n+nx}{map}\PYG{p}{((}\PYG{n+nx}{element}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr} \PYG{n+na}{key}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{element}\PYG{p}{.}\PYG{n+nx}{\PYGZus{}id}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+              \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{element}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+              \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{element}\PYG{p}{.}\PYG{n+nx}{trips}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{))\PYGZcb{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tbody}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{table}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,3588 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.12)  9 AUG 2021 16:31
+entering extended mode
+**./guia-react.tex
+(guia-react.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(/home/enrique/.miktex/texmfs/install/tex/latex/base/book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+(/home/enrique/.miktex/texmfs/install/tex/latex/base/bk12.clo
+File: bk12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2020/12/16 3.52 The Babel package
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/babel/babel.def
+File: babel.def 2020/12/16 3.52 Babel common definitions
+\babel@savecnt=\count186
+\U@D=\dimen139
+\l@babelnohyphens=\language1
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count187
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/enrique/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `Spanish' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 51.
+
+\es@quottoks=\toks15
+\es@quotdepth=\count188
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+)) (/home/enrique/.miktex/texmfs/install/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen140
+\captionmargin@=\dimen141
+\captionwidth=\dimen142
+\caption@tempdima=\dimen143
+\caption@indent=\dimen144
+\caption@parindent=\dimen145
+\caption@hangindent=\dimen146
+Package caption Info: Standard document class detected.
+)
+\c@float@type=\count189
+\float@exts=\toks17
+\float@box=\box47
+\@floatcapt=\box48
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks18
+\flrow@foot=\insert199
+\FB@wd=\dimen147
+\FBo@wd=\dimen148
+\FBc@wd=\dimen149
+\FBo@ht=\skip49
+\FBc@ht=\skip50
+\FBf@ht=\skip51
+\FBo@max=\skip52
+\FBc@max=\skip53
+\FBf@max=\skip54
+\c@FBl@b=\count190
+\floatbox@depth=\count191
+\c@FRobj=\count192
+\c@FRsobj=\count193
+\Xhsize=\skip55
+\sXhsize=\skip56
+\Zhsize=\skip57
+\sZhsize=\skip58
+\flrow@rowbox=\box49
+\FR@Zunitlength=\dimen150
+\c@FBcnt=\count194
+\FPOScnt=\count195
+\LTleft=\skip59
+\LTright=\skip60
+\LTleft=\skip61
+\LTright=\skip62
+\flrow@types=\toks19
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/listings/listings.sty
+\lst@mode=\count196
+\lst@gtempboxa=\box50
+\lst@token=\toks20
+\lst@length=\count197
+\lst@currlwidth=\dimen151
+\lst@column=\count198
+\lst@pos=\count266
+\lst@lostspace=\dimen152
+\lst@width=\dimen153
+\lst@newlines=\count267
+\lst@lineno=\count268
+\lst@maxwidth=\dimen154
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count269
+\lst@skipnumbers=\count270
+\lst@framebox=\box51
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/home/enrique/.miktex/texmfs/install/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count272
+\FV@InFile=\read3
+\FV@TabBox=\box52
+\c@FancyVerbLine=\count273
+\FV@StepNumber=\count274
+\FV@OutFile=\write3
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count275
+\output=\toks21
+\linenoprevgraf=\count276
+\linenumbersep=\dimen155
+\linenumberwidth=\dimen156
+\c@linenumber=\count277
+\c@pagewiselinenumber=\count278
+\c@LN@truepage=\count279
+\c@internallinenumber=\count280
+\c@internallinenumbers=\count281
+\quotelinenumbersep=\dimen157
+\bframerule=\dimen158
+\bframesep=\dimen159
+\bframebox=\box53
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count282
+\c@FV@TrueTabCounter=\count283
+\FV@TabBox@Group=\box54
+\FV@TmpLength=\skip63
+\c@FV@HighlightLinesStart=\count284
+\c@FV@HighlightLinesStop=\count285
+\FV@LoopCount=\count286
+\FV@NCharsBox=\box55
+\FV@BreakIndent=\dimen160
+\FV@BreakIndentNChars=\count287
+\FV@BreakSymbolSepLeft=\dimen161
+\FV@BreakSymbolSepLeftNChars=\count288
+\FV@BreakSymbolSepRight=\dimen162
+\FV@BreakSymbolSepRightNChars=\count289
+\FV@BreakSymbolIndentLeft=\dimen163
+\FV@BreakSymbolIndentLeftNChars=\count290
+\FV@BreakSymbolIndentRight=\dimen164
+\FV@BreakSymbolIndentRightNChars=\count291
+\c@FancyVerbLineBreakLast=\count292
+\FV@LineBox=\box56
+\FV@LineIndentBox=\box57
+\FV@LineWidth=\dimen165
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/latex-tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count293
+\calc@Bcount=\count294
+\calc@Adimen=\dimen166
+\calc@Bdimen=\dimen167
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count295
+\calc@Cskip=\skip66
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/latex-tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "guia-react.w18")...executed.
+
+
+(guia-react.w18)
+runsystem(rm -- "guia-react.w18")...executed.
+
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/xstring/xstring.sty
+(/home/enrique/.miktex/texmfs/install/tex/generic/xstring/xstring.tex
+\integerpart=\count296
+\decimalpart=\count297
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip67
+\fb@frw=\dimen168
+\fb@frh=\dimen169
+\FrameRule=\dimen170
+\FrameSep=\dimen171
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box58
+\minted@code=\write4
+\c@minted@FancyVerbLineTemp=\count298
+\c@minted@pygmentizecounter=\count299
+\c@listing=\count300
+)
+runsystem(mkdir -p _minted-guia-react)...executed.
+
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip68
+
+For additional information on amsmath, use the `?' option.
+(/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen172
+))
+(/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen173
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count301
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count302
+\leftroot@=\count303
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count304
+\DOTSCASE@=\count305
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+\big@size=\dimen174
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count306
+\c@MaxMatrixCols=\count307
+\dotsspace@=\muskip16
+\c@parentequation=\count308
+\dspbrk@lvl=\count309
+\tag@help=\toks23
+\row@=\count310
+\column@=\count311
+\maxfields@=\count312
+\andhelp@=\toks24
+\eqnshift@=\dimen175
+\alignsep@=\dimen176
+\tagshift@=\dimen177
+\tagwidth@=\dimen178
+\totwidth@=\dimen179
+\lineht@=\dimen180
+\@envbody=\toks25
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/dirtree/dirtree.sty
+Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/dirtree/dirtree.tex
+`dirtree' v0.32, 2012/12/11 (jcc)
+\DT@offset=\dimen181
+\DT@width=\dimen182
+\DT@sep=\dimen183
+\DT@all=\dimen184
+\DT@rulewidth=\dimen185
+\DT@dotwidth=\dimen186
+\DTbaselineskip=\dimen187
+\DT@counti=\count313
+\DT@countii=\count314
+\DT@countiii=\count315
+\DT@countiv=\count316
+\DT@indent=\dimen188
+\DT@parskip=\dimen189
+\DT@baselineskip=\dimen190
+)
+File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen191
+\Gin@req@width=\dimen192
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/home/enrique/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen193
+\Hy@linkcounter=\count317
+\Hy@pagecounter=\count318
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count319
+Package hyperref Info: Option `colorlinks' set `true' on input line 4338.
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count320
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen194
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count321
+\Field@Width=\dimen195
+\Fld@charsize=\dimen196
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring ON on input line 6365.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count322
+\c@Item=\count323
+\c@Hfootnote=\count324
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count325
+\c@bookmark@seq@number=\count326
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.s
+ty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.s
+ty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip71
+) (/home/enrique/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+\csq@reset=\count327
+\csq@gtype=\count328
+\csq@glevel=\count329
+\csq@qlevel=\count330
+\csq@maxlvl=\count331
+\csq@tshold=\count332
+\csq@ltx@everypar=\toks27
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/home/enrique/.miktex/texmfs/install/tex/latex/svg/svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/09/21 v3.32 KOMA-Script package (file load hooks)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2020/09/21 v3.32 KOMA-Script package (using LaTeX hooks)
+
+
+LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
+
+
+LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
+
+
+LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
+
+
+LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
+(LaTeX3)     93.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
+(LaTeX3)     173.
+
+
+LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
+(LaTeX3)     191.
+
+
+LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
+
+
+LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
+
+
+LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
+
+
+LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
+
+
+LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
+
+
+LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
+
+
+LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
+
+
+LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
+(LaTeX3)     line 234.
+
+
+LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
+(LaTeX3)     line 242.
+
+
+LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
+(LaTeX3)     line 247.
+
+
+LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
+(LaTeX3)     line 261.
+
+
+LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
+(LaTeX3)     274.
+
+
+LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
+
+
+LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
+(LaTeX3)     line 298.
+
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
+))))
+(/home/enrique/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\c@svg@param@lastpage=\count333
+\svg@box=\box61
+\c@svg@param@currpage=\count334
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/transparent/transparent.sty
+Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
+
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.
+tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen197
+\pgfutil@tempdimb=\dimen198
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-
+lists.tex))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.d
+ef
+\pgfutil@abb=\box62
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.t
+ex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.te
+x
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen256
+\pgf@y=\dimen257
+\pgf@xa=\dimen258
+\pgf@ya=\dimen259
+\pgf@xb=\dimen260
+\pgf@yb=\dimen261
+\pgf@xc=\dimen262
+\pgf@yc=\dimen263
+\pgf@xd=\dimen264
+\pgf@yd=\dimen265
+\w@pgf@writea=\write5
+\r@pgf@reada=\read5
+\c@pgf@counta=\count335
+\c@pgf@countb=\count336
+\c@pgf@countc=\count337
+\c@pgf@countd=\count338
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count339
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex
+.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common
+-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpat
+h.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count340
+\pgfsyssoftpath@bigbuffer@items=\count341
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotoco
+l.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/home/enrique/.miktex/texmfs/install/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/forest/forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.t
+ex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+ (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.t
+ex
+\pgfmath@dimen=\dimen266
+\pgfmath@count=\count342
+\pgfmath@box=\box63
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.cod
+e.tex
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.bas
+ic.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.tri
+gonometric.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.ran
+dom.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.com
+parison.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.bas
+e.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rou
+nd.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.mis
+c.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.int
+egerarithmetics.code.tex)))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.te
+x
+\c@pgfmathroundto@lastzeros=\count343
+)) (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.
+code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen267
+\pgf@picmaxx=\dimen268
+\pgf@picminy=\dimen269
+\pgf@picmaxy=\dimen270
+\pgf@pathminx=\dimen271
+\pgf@pathmaxx=\dimen272
+\pgf@pathminy=\dimen273
+\pgf@pathmaxy=\dimen274
+\pgf@xx=\dimen275
+\pgf@xy=\dimen276
+\pgf@yx=\dimen277
+\pgf@yy=\dimen278
+\pgf@zx=\dimen279
+\pgf@zy=\dimen280
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathcon
+struct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen281
+\pgf@path@lasty=\dimen282
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusa
+ge.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen283
+\pgf@shorten@start@additional=\dimen284
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.
+code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box64
+\pgf@hbox=\box65
+\pgf@layerbox@main=\box66
+\pgf@picture@serial@count=\count344
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphic
+state.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen285
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransfo
+rmations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen286
+\pgf@pt@y=\dimen287
+\pgf@pt@temp=\dimen288
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.c
+ode.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects
+.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathpro
+cessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.
+code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen289
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.c
+ode.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen290
+\pgf@sys@shading@range@num=\count345
+\pgf@shadingcount=\count346
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.c
+ode.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexterna
+l.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box67
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.
+code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspa
+rency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepattern
+s.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.cod
+e.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.c
+ode.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box68
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.cod
+e.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versi
+on-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen291
+\pgf@nodesepend=\dimen292
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versi
+on-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/enrique/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.te
+x)) (/home/enrique/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen293
+\pgffor@skip=\dimen294
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.c
+ode.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryploth
+andlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count347
+\pgfplotmarksize=\dimen295
+)
+\tikz@lastx=\dimen296
+\tikz@lasty=\dimen297
+\tikz@lastxsaved=\dimen298
+\tikz@lastysaved=\dimen299
+\tikz@lastmovetox=\dimen300
+\tikz@lastmovetoy=\dimen301
+\tikzleveldistance=\dimen302
+\tikzsiblingdistance=\dimen303
+\tikz@figbox=\box69
+\tikz@figbox@bg=\box70
+\tikz@tempbox=\box71
+\tikz@tempbox@bg=\box72
+\tikztreelevel=\count348
+\tikznumberofchildren=\count349
+\tikznumberofcurrentchild=\count350
+\tikz@fig@count=\count351
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.c
+ode.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count352
+\pgfmatrixcurrentcolumn=\count353
+\pgf@matrix@numberofcolumns=\count354
+)
+\tikz@expandcount=\count355
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibra
+ryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibra
+ryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibra
+ryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibra
+ryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryshapes.callouts.code.tex
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibra
+ryshapes.callouts.code.tex))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibra
+ryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodepartlowerbox=\box73
+\pgfnodeparttwobox=\box74
+\pgfnodepartthreebox=\box75
+\pgfnodepartfourbox=\box76
+\pgfnodeparttwentybox=\box77
+\pgfnodepartnineteenbox=\box78
+\pgfnodeparteighteenbox=\box79
+\pgfnodepartseventeenbox=\box80
+\pgfnodepartsixteenbox=\box81
+\pgfnodepartfifteenbox=\box82
+\pgfnodepartfourteenbox=\box83
+\pgfnodepartthirteenbox=\box84
+\pgfnodeparttwelvebox=\box85
+\pgfnodepartelevenbox=\box86
+\pgfnodeparttenbox=\box87
+\pgfnodepartninebox=\box88
+\pgfnodeparteightbox=\box89
+\pgfnodepartsevenbox=\box90
+\pgfnodepartsixbox=\box91
+\pgfnodepartfivebox=\box92
+)))
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
+ies/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryinter
+sections.code.tex
+(/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.c
+ode.tex)
+\pgf@intersect@solutions=\count356
+) (/home/enrique/.miktex/texmfs/install/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks40
+\pgfopts@list@add@b@toks=\toks41
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/elocalloc/elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+(/home/enrique/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-01-09 L3 programming layer (loader) 
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count357
+\l__pdf_internal_box=\box93
+))
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse-generi
+c.tex)) (/home/enrique/.miktex/texmfs/install/tex/latex/inlinedef/inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks42
+\ID@count=\count358
+)
+\ID@usercommands=\toks43
+\safeloop@depth=\count359
+\safeRKloop@depth=\count360
+\forest@temp@dimen=\dimen304
+\forest@temp@count=\count361
+\forest@n=\count362
+\forest@temp@global@count=\count363
+\forest@temp@toks=\toks44
+\forest@temparray@M=\count364
+\forest@temparray@N=\count365
+\forest@global@temparray@M=\count366
+\forest@global@temparray@N=\count367
+\forest@isnum@count=\count368
+\forest@isdim@nonintpart=\count369
+\forest@isdim@dimen=\dimen305
+\forest@sort@m=\count370
+\forest@sort@k=\count371
+\forest@sort@p=\count372
+\bracket@content=\toks45
+\bracket@afterthought=\toks46
+\forest@node@maxid=\count373
+\forest@process@left@M=\count374
+\forest@process@left@N=\count375
+\forest@process@right@M=\count376
+\forest@process@right@N=\count377
+\forest@process@saved@M=\count378
+\forest@process@saved@N=\count379
+\forest@process@result@M=\count380
+\forest@process@result@N=\count381
+\forest@process@n=\count382
+\forest@nodewalk@branch@toks=\toks47
+\forest@nodewalk@shortsteps@resolution=\toks48
+\forest@do@dynamics=\toks49
+\forest@box=\box94
+\forest@xg=\dimen306
+\forest@yg=\dimen307
+\forest@xs=\dimen308
+\forest@ys=\dimen309
+\forest@pi@toks=\toks50
+\forest@segment@toks=\toks51
+\forest@PIi@toks=\toks52
+\forest@PIii@toks=\toks53
+\forest@copy@in=\read6
+\forest@copy@out=\write6
+\forest@externalize@max@outer@n=\count383
+\forest@externalize@inner@n=\count384
+) (/home/enrique/.miktex/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/home/enrique/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
+(/home/enrique/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks54
+\XKV@tempa@toks=\toks55
+)
+\XKV@depth=\count385
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/home/enrique/.miktex/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box95
+)
+\tc@llx=\dimen310
+\tc@lly=\dimen311
+\tc@urx=\dimen312
+\tc@ury=\dimen313
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen314
+\adjbox@Height=\dimen315
+\adjbox@Depth=\dimen316
+\adjbox@Totalheight=\dimen317
+\adjbox@pwidth=\dimen318
+\adjbox@pheight=\dimen319
+\adjbox@pdepth=\dimen320
+\adjbox@ptotalheight=\dimen321
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count386
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box96
+\sift@deathcycles=\count387
+\@vwid@loff=\dimen322
+\@vwid@roff=\dimen323
+))
+runsystem(which pygmentize && touch guia-react.aex)...executed.
+
+runsystem(rm guia-react.aex)...executed.
+
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'spanish'.
+
+(guia-react.aux
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+)
+\openout1 = `guia-react.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+\c@lstlisting=\count388
+
+(/home/enrique/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count389
+\scratchdimen=\dimen324
+\scratchbox=\box97
+\nofMPsegments=\count390
+\nofMParguments=\count391
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count392
+\MPscratchDim=\dimen325
+\MPnumerator=\count393
+\makeMPintoPDFobject=\count394
+\everyMPtoPDFconversion=\toks57
+)
+(/home/enrique/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+Package hyperref Info: Link coloring ON on input line 58.
+(/home/enrique/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/home/enrique/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring
+.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count395
+)
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
+ (guia-react.out) (guia-react.out)
+\@outlinefile=\write7
+\openout7 = `guia-react.out'.
+
+
+
+LaTeX Warning: No \author given.
+
+[1
+
+
+{/home/enrique/.miktex/texmfs/data/pdftex/config/pdftex.map}] (guia-react.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write8
+\openout8 = `guia-react.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.63 \chapter
+             *{What is this book about?} [1
+
+]
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+ [2] [3
+
+] [4
+
+]
+Overfull \hbox (18.48071pt too wide) in paragraph at lines 75--76
+[][]\OT1/cmr/m/n/12 VS Code ES7 React/Redux/React-Native/JS snippets[][] which 
+provides JavaScript
+ []
+
+[5
+
+] [6
+
+]
+Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+
+ []
+
+
+Overfull \hbox (3.39037pt too wide) in paragraph at lines 97--99
+[]\OT1/cmr/m/n/12 The JavaScript language is governed by a standard under the r
+esponsibility
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
+
+ []
+
+[7
+
+]
+\openout3 = `guia-react.pyg'.
+
+ (_minted-guia-react/default-pyg-prefix.pygstyle)
+(_minted-guia-react/enrique.pygstyle)
+(_minted-guia-react/7674C16B8AF11E0A67190DB89849E8F1E48ED164E11496ADF10785F3BEA
+9E35A.pygtex
+
+LaTeX Font Warning: Font shape `OT1/cmtt/c/n' undefined
+(Font)              using `OT1/cmtt/m/n' instead on input line 1.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
+
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9D1512544DD4E8FD3C31A47B3DCE5B2A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+
+LaTeX Font Warning: Font shape `OT1/cmr/c/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E66A4AA6886217B24BDF97C73CCB2DC6326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9C8F1FBBA7D7B370A9F8C2625736CCF6326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/BA4ED0212D98BA4293653FD9FFBA273F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+LaTeX Info: Redefining \. on input line 156.
+LaTeX Info: Redefining \% on input line 156.
+[8]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2EF04F201BF46992EBC5C3B5BA3F49A9326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+
+LaTeX Font Warning: Font shape `OT1/cmtt/c/it' undefined
+(Font)              using `OT1/cmtt/c/n' instead on input line 2.
+
+)
+Overfull \hbox (4.089pt too wide) in paragraph at lines 172--173
+[]\OT1/cmr/c/n/12 Lets move now to \OT1/cmr/bx/n/12 functions\OT1/cmr/c/n/12 . 
+In the following code snippet we are declaring
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AA7E708979BB05ED007B7278F7B2FF03326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5625ADB602386051A90A77524F361DA0326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D37CB922148C3532D6CEEC16972E0D87326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (8.61707pt too wide) in paragraph at lines 209--210
+\OT1/cmr/c/n/12 class object of programming languages are \OT1/cmr/m/it/12 vari
+ables\OT1/cmr/c/n/12 . Variables are denominated
+ []
+
+LaTeX Info: Redefining \. on input line 210.
+LaTeX Info: Redefining \% on input line 210.
+[9]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AD66060AECE2E2C289F4454778282258326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/18E403D795BAD9F89467AC685D04211622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/70F57B572FA2167EE38856725070A5EA22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/70F57B572FA2167EE38856725070A5EA22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3157C2D649E9FB3982A5A0230A8AB191326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D015A072AC469816939A7C335782A4BD326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [10])
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D0CCCE3790C7245A4A1AE8FBB7AA7238326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/B445AFF555C4DC232FA194FD6769A24E326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/ECC5ABA9C6B1627510DD7878CFE5AAE0326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+ [11])
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/335D330E70F408B30A1717DAD5AC0FE7326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D35734416BB6B2DE17C7EF54A7E35C23326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FC9630217117D0511891E17F612EDD91326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/91E454EBA04C1ACA45D1EF5D17C6528522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/CD86364437F8725EFC7AE866439078F9326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5E26D3003703BB4AC8ABF78D45BDF41A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/59F243FA5572C5C6663E040C62D2ED58326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+ [12])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5E26D3003703BB4AC8ABF78D45BDF41A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/756C412732C9E787F483D35D939B8EF222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/CAF7E7BF96A799F0547469CB698BFB6822411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A7CF24F7419FD981D559528C30EB815F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D13BFF8966032598061491DB4704BA0A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/77974B1FF8A71EA73B99D31C03755C6322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A188592DB687034386218AEFC26A03B9326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/77974B1FF8A71EA73B99D31C03755C6322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5AC0B0278E11C2000DC3DE3703B44C1322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A55DCEF0C030A481A740D1C12F357E3C22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A55DCEF0C030A481A740D1C12F357E3C22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3F44E4163416077A3502E9E89C7D290F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [13])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/77974B1FF8A71EA73B99D31C03755C6322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A55DCEF0C030A481A740D1C12F357E3C22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/B0A7D09858B397D935C21D5B045851C1326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/84CCDC28DC85BB9E4C719B916B3AFE5C326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+LaTeX Info: Redefining \. on input line 500.
+LaTeX Info: Redefining \% on input line 500.
+ [14]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/05CE2C582A868F43C228EE70CE8B0683326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (8.67293pt too wide) in paragraph at lines 523--524
+\OT1/cmr/c/n/12 property-value pairs but also for arrays, other objects like \O
+T1/cmr/m/it/12 address \OT1/cmr/c/n/12 and functions
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/65FE173E67B3137650CCD3C42F156EFD326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9EDC8BF98D1E4C92D3B1308EE8C44930326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [15])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/401B30E3B8B5D629635A5C613CDB791922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/009520053B00386D1173F3988C55D19222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/139C6C212D9F961775D5C64C1AA7721922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/251F480E338B66B749743187C0DF1D85326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F9364821365DB7C03A05628ED4F2A742326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4B2E95529EC20A6621C640060F5DAE57326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+LaTeX Info: Redefining \. on input line 608.
+LaTeX Info: Redefining \% on input line 608.
+ [16]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A81A9FD4F3E324BE251CC80636F6393F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (4.21335pt too wide) in paragraph at lines 636--638
+\OT1/cmr/c/n/12 classes, just objects. We don't have that difference between cl
+asses and objects.
+ []
+
+
+Overfull \hbox (0.6315pt too wide) in paragraph at lines 636--638
+\OT1/cmr/c/n/12 inheritance relationship (which cannot be changed at runtime) v
+s the \OT1/cmr/m/it/12 dynamic
+ []
+
+LaTeX Info: Redefining \. on input line 638.
+LaTeX Info: Redefining \% on input line 638.
+[17]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/ED72A8DBA679BF3E417287CAEA38F715326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 664--666
+
+ []
+
+LaTeX Info: Redefining \. on input line 666.
+LaTeX Info: Redefining \% on input line 666.
+[18]
+Overfull \hbox (13.11928pt too wide) in paragraph at lines 667--669
+[]\OT1/cmr/c/n/12 Each object in JavaScript can have a \OT1/cmr/bx/n/12 prototy
+pe \OT1/cmr/c/n/12 object, to \OT1/cmr/m/it/12 inherit \OT1/cmr/c/n/12 properti
+es
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--669
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/853AEF7D8AF058B2B4BADB1A0244C29D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/10444E987658D34D73086F5F1652FAF222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/45664C4F5C8867B152F8459AAC900D8722411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (10.57085pt too wide) in paragraph at lines 670--671
+[]\OT1/cmr/c/n/12 Each constructor function have access to a special property c
+alled prototype,
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/8EF3843C25C3794E38398906066AF8EC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+ [19])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AF45E546ACAEA22183A5F4026D2D15C022411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2200FB439BFEEFB743D67CCE085F731A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5FFC71C36EBCEE69533BA1AB4F7626F8326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AF45E546ACAEA22183A5F4026D2D15C022411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (3.11241pt too wide) in paragraph at lines 717--718
+[]\OT1/cmr/c/n/12 JavaScript will first find the [] method in the [] instance.
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2BBC1933FE5431742E5DE9161772DC9122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E0093B3BCBDBCFB3B35B8D11A96F33BC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/0B3A1B8FE3798D882D832ADDED49B77B22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AF45E546ACAEA22183A5F4026D2D15C022411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2BBC1933FE5431742E5DE9161772DC9122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (5.03177pt too wide) in paragraph at lines 730--731
+[]\OT1/cmr/c/n/12 JavaScript will try to find the method [] in the [] instance.
+
+ []
+
+
+Overfull \hbox (2.31537pt too wide) in paragraph at lines 730--731
+\OT1/cmr/c/n/12 Then on their prototype and finally on the prototype object of 
+their prototype,
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/31F9A06F8AB92CB50A9EE2432AA1141E326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/353A3C1DF73C9E1C2CAA2642C21B68E022411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/21E44279CFB20A9393CA649CB0AD4C3B22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FF7EE3207CD5073B7E6F7BB1E8E8DEAF22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F1B3EF0E912B1EF67F58DE15DC454FB522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/853AEF7D8AF058B2B4BADB1A0244C29D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/853AEF7D8AF058B2B4BADB1A0244C29D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FF7EE3207CD5073B7E6F7BB1E8E8DEAF22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+LaTeX Info: Redefining \. on input line 757.
+LaTeX Info: Redefining \% on input line 757.
+ [20]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/B51CE6D3FFAB48E5FCF4BCBA55BC751B326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FE3C9F61606068A7C81A7096CD28E86122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (11.34366pt too wide) in paragraph at lines 777--778
+[]\OT1/cmr/c/n/12 We will implement our [] and [] constructor functions with pr
+ototype
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D8C7F1F6876031F8C70BEF02FBD4CB17326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+ [21])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F70C2F87ED2BFDEDDDE86A8888C6DA2122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/464358A17D55C90CA819C51818E8E869326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6E85FB3980535785B218C7BE81014F522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/853AEF7D8AF058B2B4BADB1A0244C29D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AEF2B7F0B456E7CAE98D52A12BCE5CF622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9CD599A3523898E6A12E13EC787DA50A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (1.15327pt too wide) in paragraph at lines 831--832
+\OT1/cmr/c/n/12 instances using the [] keyword, [] is bind to the object being 
+instantiated.
+ []
+
+LaTeX Info: Redefining \. on input line 832.
+LaTeX Info: Redefining \% on input line 832.
+[22]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/73D2368149ACD810A73C60CD8C419A07326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3FD4F636AB3ABC4FE54982D8260D8C5B22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/26AB0DB90D72E28AD0BA1E22EE51051022411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4356CC644F477FD54F66396CD1E8AE4A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1B2E321569174C630F828667DBC90F5022411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4BEB16B0537F7901008BA52F3A97CDA322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/ECD66C9C5EB77304834F3673B0FDAD1522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4BEB16B0537F7901008BA52F3A97CDA322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D4D42F603325135898A2A1BF14C5B42122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/43266E9D824FFEB4D55994E72F341D1122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/ECD66C9C5EB77304834F3673B0FDAD1522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/7670E5A21C08366F8D789EAC7C7AF6BF22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/002BCAA7BE0E2AA3D666479C6A58CC9122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4BEB16B0537F7901008BA52F3A97CDA322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/18697449D7C48CF32CDD4F14857E68EE22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/002BCAA7BE0E2AA3D666479C6A58CC9122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+LaTeX Info: Redefining \. on input line 874.
+LaTeX Info: Redefining \% on input line 874.
+ [23]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/91E618B2AD1249C45B92F3E863CC626D326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E3DB57F19124C1ABCA18C1237E3C094A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E3DB57F19124C1ABCA18C1237E3C094A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/7670E5A21C08366F8D789EAC7C7AF6BF22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/898D5585A624DA671F2E1B616417C0CF326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+LaTeX Info: Redefining \. on input line 927.
+LaTeX Info: Redefining \% on input line 927.
+ [24]
+Overfull \hbox (1.5704pt too wide) in paragraph at lines 930--931
+\OT1/cmr/c/n/12 the possibility of defining modules. Before this release there 
+were other options
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4F4934ADF16E9024197E6F3EE2646FF622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/451C6F6F942EBA07F20DE1721BE7400222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (3.68959pt too wide) in paragraph at lines 932--933
+[]\OT1/cmr/c/n/12 Its use is pretty simple. You can define functions, classes, 
+objects, constants
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/441F0852F1BD5A9EE8A97FBE156B4C50326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6402F4C7825FCA5046A6DDEAB686ADF4326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [25])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/B96A10C8EE1CB4E3C92567F88CCFA0B722411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/451C6F6F942EBA07F20DE1721BE7400222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FADC9205592E451D7D190B2A08FD84E8326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+LaTeX Info: Redefining \. on input line 1020.
+LaTeX Info: Redefining \% on input line 1020.
+ [26]
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/BA02B6F75C3F197C6CE844F24183C5F322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/318F9FF335C6D187B6B35E000D74574B326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (8.2569pt too wide) in paragraph at lines 1055--1056
+[]\OT1/cmr/c/n/12 On line 3 below, note how we are importing the default export
+ed abstraction
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9F24DD376BCBFCDD8E9B4386AF953F9E326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+ [27])
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3568211D6B5C3C6BF06C791C9687A1FE326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3D30C0B76B6E990BFEC6F28BA704281E22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (18.70236pt too wide) in paragraph at lines 1101--1102
+[]\OT1/cmr/c/n/12 Statement on line 1 is pushed on to the \OT1/cmr/m/it/12 call
+ stack \OT1/cmr/c/n/12 and executed. []
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A02D4CD0B2B03FC6967E49138E507BE922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A3E23261E131174FDDA5EBA063E8350122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (24.87737pt too wide) in paragraph at lines 1103--1104
+[]\OT1/cmr/c/n/12 Statement on line 7 is pushed on to the \OT1/cmr/m/it/12 call
+ stack \OT1/cmr/c/n/12 and executed. []
+ []
+
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+[28]
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A02D4CD0B2B03FC6967E49138E507BE922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/CCBDC1F7A2EA1FFCEC5F204C031F673922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (2.17986pt too wide) in paragraph at lines 1104--1105
+[]\OT1/cmr/c/n/12 After the one second elapsed from the [] function, the callba
+ck
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AD1D479A23E42E54CE1894EA05D6ADAA326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/897316929176464EBC9AD085F31E728422411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A02D4CD0B2B03FC6967E49138E507BE922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3D30C0B76B6E990BFEC6F28BA704281E22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A3E23261E131174FDDA5EBA063E8350122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/CCBDC1F7A2EA1FFCEC5F204C031F673922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/8424CFC65D5A25231B866E4845618A55326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/58BAB5BFC8D55EF7DED3923F5EF0735F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A3E23261E131174FDDA5EBA063E8350122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (0.67577pt too wide) in paragraph at lines 1144--1144
+[]\OT1/cmr/bx/n/17.28 The Promise Object and the async/await
+ []
+
+LaTeX Info: Redefining \. on input line 1147.
+LaTeX Info: Redefining \% on input line 1147.
+[29]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/08B8CB2C39C03FD166E904018331D226326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/C2666ADFECF3E858CA5F11E7E71A22C522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/0F127573A402C25760986AA03CB2843722411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A8CD81DEA0C11D66696908BE76DD17CF326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A02D4CD0B2B03FC6967E49138E507BE922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/8BE835534885846564B539E33CBC522B22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/98B95CA800C4926439BEBB42006EFE4E22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1175--1177
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/26331F5CDDC0411D6757F7BA7B2C737A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/8BE835534885846564B539E33CBC522B22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (4.36531pt too wide) in paragraph at lines 1178--1179
+[]\OT1/cmr/c/n/12 The Promise object have the [] method that receives
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FA5DABAC9A0BAA18E965F15438D617B8326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/98B95CA800C4926439BEBB42006EFE4E22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/756C412732C9E787F483D35D939B8EF222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/26331F5CDDC0411D6757F7BA7B2C737A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A9F50A41A16DC5B4F7079FCB76D6711922411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2506CBD3CA69E4A5F3AFE399707A405122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (6.35728pt too wide) in paragraph at lines 1195--1197
+\OT1/cmr/c/n/12 parameter named [] to the function passed to the [].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1195--1197
+
+ []
+
+LaTeX Info: Redefining \. on input line 1197.
+LaTeX Info: Redefining \% on input line 1197.
+[30]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/179C11B0E9A4566EC959737CC9B804D6326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/0F127573A402C25760986AA03CB2843722411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/DBA2FEDA26DA30806B8AC672ED63A29C22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/8ADCF86750C21D15BB385D2F2FE648C322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5B006B4CC59E9EF298059F433D17560822411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1215--1217
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/58BAB5BFC8D55EF7DED3923F5EF0735F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3167ED2A8B842F509A89381898FDACBD326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/58BAB5BFC8D55EF7DED3923F5EF0735F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E2DC32C08F2B46C3ECD83E7B06E4D93B22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1237
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F2341CC9525CBB4C1A810025E1BAC29A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (19.58688pt too wide) in paragraph at lines 1238--1239
+\OT1/cmr/c/n/12 that return a promise. Functions that return promises are (usua
+lly) asynchronous: 
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/C64F96911762B586A500CC02A6EE9A6B326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [31])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1D0413D4DA6866DAE63F90216578661422411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FF879509D73125853577FB69F08D87B522411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F2341CC9525CBB4C1A810025E1BAC29A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4253203A7580AB65272BA5A6A4EB39AD326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F2341CC9525CBB4C1A810025E1BAC29A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2933C0155539C455C9A3AA705E81A73322411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1270--1272
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/DA941717A1942E4E883430527777A87A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/7574010981151E54D6539A231CA8CCDE326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F2341CC9525CBB4C1A810025E1BAC29A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/58BAB5BFC8D55EF7DED3923F5EF0735F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/58BAB5BFC8D55EF7DED3923F5EF0735F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/CA9AD8CB3C80B84C2A3634E8DB52E0B622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1292
+
+ []
+
+LaTeX Info: Redefining \. on input line 1293.
+LaTeX Info: Redefining \% on input line 1293.
+[32]
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F15838EDF195FE2D562763F2377AD23122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/F2341CC9525CBB4C1A810025E1BAC29A22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+LaTeX Info: Redefining \. on input line 1295.
+LaTeX Info: Redefining \% on input line 1295.
+ [33] [34
+
+]
+Cap\'{\i }tulo 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1306--1308
+
+ []
+
+[35
+
+]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FFF154B18B10E029D3AE8760DA0472A8E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/26333441B3EE30D78E0A880D60ABA9A0E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/212A7F58DB7F43C0683C9980B473D159E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/ECEDA7CCFD7EDA3069411654A7021A35E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/623803FB88DDA8686CABD6057795C81CE48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+[][]\OT1/cmtt/c/it/12 This folder contains packages installed by the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+\OT1/cmtt/c/it/12 Create React App tool.Any package that we install
+ []
+
+
+Overfull \hbox (34.42581pt too wide) in paragraph at lines 1373--1373
+[]|\OT1/cmtt/c/it/12 node[]modules []| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+[][]\OT1/cmtt/c/it/12 This folder contains the index.html file (among others)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+\OT1/cmtt/c/it/12 which creates the main skeleton layout of your web
+ []
+
+
+Overfull \hbox (56.01031pt too wide) in paragraph at lines 1373--1373
+[]|\OT1/cmtt/c/it/12 public []| 
+ []
+
+
+Overfull \hbox (94.39082pt too wide) in paragraph at lines 1373--1373
+[]|\OT1/cmtt/c/it/12 src []| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+[][]\OT1/cmtt/c/it/12 Here you will find the exact version of each
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+\OT1/cmtt/c/it/12 of the packages (and the dependencies of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+\OT1/cmtt/c/it/12 packages) that your project depends on.This file
+ []
+
+
+Overfull \hbox (67.02983pt too wide) in paragraph at lines 1373--1373
+[]|\OT1/cmtt/c/it/12 package-lock.json []| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+[][]\OT1/cmtt/c/it/12 Here you will find the packages that your project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+\OT1/cmtt/c/it/12 depends on.This file should be changed only by
+ []
+
+
+Overfull \hbox (36.15482pt too wide) in paragraph at lines 1373--1373
+[]|\OT1/cmtt/c/it/12 package.json []| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+[][]\OT1/cmtt/c/it/12 This is a Markdown file that contains documentation
+ []
+
+
+Overfull \hbox (46.08257pt too wide) in paragraph at lines 1373--1373
+[]|\OT1/cmtt/c/it/12 README.md []| 
+ []
+
+LaTeX Info: Redefining \. on input line 1376.
+LaTeX Info: Redefining \% on input line 1376.
+[36]
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/20A882C5C27D7D7200ED5F431204314F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4ADB5FAE002B16C059ABEA038130944D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Overfull \hbox (12.1453pt too wide) in paragraph at lines 1379--1380
+[]\OT1/cmr/c/n/12 React applications are built by creating components. Componen
+t is probably
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/20A882C5C27D7D7200ED5F431204314F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4ADB5FAE002B16C059ABEA038130944D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/20A882C5C27D7D7200ED5F431204314F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1D48C4CBCEDB308E0C4DEFC8B9C849CC22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4ADB5FAE002B16C059ABEA038130944D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/20A882C5C27D7D7200ED5F431204314F22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2B7B166698861555B4DDDD908B176642326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/451C6F6F942EBA07F20DE1721BE7400222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/66EBC15E23071192ED21A827F2FA064122411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5E22989F2C7CAF1C175A0CAFF0DA5F5722411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1D48C4CBCEDB308E0C4DEFC8B9C849CC22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/64672A10DE469FBE6988486F9582D37C22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4ADB5FAE002B16C059ABEA038130944D22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/FF2788890654ACE12F338EFFFA6D3A89326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [37])
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1419
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/18697449D7C48CF32CDD4F14857E68EE22411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4559DE47261DEEEE34292CB34CCCA2D1326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E267F396BD8807E6915DC4D33E0AB07DE48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1442--1444
+
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/B10DB7481995C554973682846C4FCFAA326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [38])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5C9EAABA523441E3F5D21E8D46C336A222411A3E68D43EF9CA14E692750
+D223F.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1470--1472
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/0D93D91C8D860466C23C1416FEFE1BA2E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1B2E321569174C630F828667DBC90F5022411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/22575212BC0F78C5495D2BD0420F81F2E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/12C762CD66CC0A0D9342138D686B0A75326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/22575212BC0F78C5495D2BD0420F81F2E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D3B3D7F1BFF350803B881DE00355EE7622411A3E68D43EF9CA14E692750
+D223F.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/390F426815E2BB58765E7E08BA5B99FDE48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/281904AC26D719FC8B3A4F70379701052EC3D15F8D084036DFE86A1FC7A
+54B3B.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E267F396BD8807E6915DC4D33E0AB07DE48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E267F396BD8807E6915DC4D33E0AB07DE48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/22575212BC0F78C5495D2BD0420F81F2E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/390F426815E2BB58765E7E08BA5B99FDE48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/77BF7C175DFD14B2412DDFB8FEFB37B52EC3D15F8D084036DFE86A1FC7A
+54B3B.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E743249EE1146BD633CB22CB95E5EEC4E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/781ACAFADA8C6EC046317418AE9E2260E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+LaTeX Info: Redefining \. on input line 1498.
+LaTeX Info: Redefining \% on input line 1498.
+ [39]
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/20A882C5C27D7D7200ED5F431204314F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1D48C4CBCEDB308E0C4DEFC8B9C849CC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4ADB5FAE002B16C059ABEA038130944D326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/CC5F388ADBD07561BEB792CA420A979E2EC3D15F8D084036DFE86A1FC7A
+54B3B.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/22575212BC0F78C5495D2BD0420F81F2E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/10A10F6F17B92B0A93D77D6DD69DF89A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/11E29535346DD36AEE8070DE59AD11E4326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (59.12149pt too wide) in paragraph at lines 1514--1515
+[]\OT1/cmr/c/n/12 In the [], the [] component is wrapped by []
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/BC70DE3F962BA61CCC40CB22202D23C052DA7DE3E69A3AEC74B8C16EA34
+E6423.pygtex)
+LaTeX Info: Redefining \. on input line 1547.
+LaTeX Info: Redefining \% on input line 1547.
+ [40]
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/25673044F3650FFFC9F3ABA58C08D124326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/20A882C5C27D7D7200ED5F431204314F2EC3D15F8D084036DFE86A1FC7A
+54B3B.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/61415C451008E0D741C42AE94220C76A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6F068273DE57B3F548AA20BE094CEB99326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/791EE4DCF687DF5FF813977D5786C13A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [41])
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E21338E58343BFE21FFD835D1940F34D326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (4.21335pt too wide) in paragraph at lines 1616--1617
+[]\OT1/cmr/c/n/12 While not recommended, you can also use inline styling. The s
+tyle attribute
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/52642862D898946874F3CE3321E9D95C326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+ [42])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/868C87F054FCB20D20E0A763784CE249326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/C424FDD6C62BFDE9F39C61550A36C8E5326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (3.35564pt too wide) in paragraph at lines 1676--1677
+[]\OT1/cmr/c/n/12 And now the equivalent but using the function definition of t
+he component: 
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AB104C93FDFCA18969752EDF6265AC6F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+ [43])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/CCA5177B106F6D24D1A923889B6227D3326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2573F66A5652BE319D611F703E978995326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/868C87F054FCB20D20E0A763784CE249326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/18697449D7C48CF32CDD4F14857E68EE326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/970BFF9BCA13B1F8A4983EEAEC018FE8326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6B7A8225BFFF2A80008ECB89C4F9CCE1326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1699--1701
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/18697449D7C48CF32CDD4F14857E68EE326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/970BFF9BCA13B1F8A4983EEAEC018FE8326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/47EF9E07A5BEDCEC2E95A395087F1FEA326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/868C87F054FCB20D20E0A763784CE249326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/07DD2ADDF0E8D7EA63375AE13E6600E2326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/868C87F054FCB20D20E0A763784CE249326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A6BEFAC3FB19003163F02ED7955FB692326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (6.04308pt too wide) in paragraph at lines 1726--1727
+[]\OT1/cmr/m/n/10.95 If you define a [] in a class-based component, the constru
+ctor
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/929AB6D3D0EA5B220023E820C2E3B35D326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [44])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D87A665815C5E1F0B668D5EBE4E8784D326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/79C57EB9E877C7BCF0E409C9ACD6C2242EC3D15F8D084036DFE86A1FC7A
+54B3B.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/22575212BC0F78C5495D2BD0420F81F2E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/EC60BE0A466AD55493840E03552AE010326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A7F3F99C19FC405A0ACFE381A9681FF9326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/EE9EAD3615DBC21AD0C3E8F20D77FB0F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (6.4341pt too wide) in paragraph at lines 1782--1784
+\OT1/cmr/c/n/12 function (lines 19 and 20) every second. So, every second, the 
+CountDownLatch
+ []
+
+
+Overfull \hbox (17.36853pt too wide) in paragraph at lines 1782--1784
+\OT1/cmr/c/n/12 as prop decremented by one. Until it arrives to zero where the 
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1782--1784
+
+ []
+
+LaTeX Info: Redefining \. on input line 1786.
+LaTeX Info: Redefining \% on input line 1786.
+[45]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/85FE5E398B4541C5D8FAAF26E8C817D9326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/68E1FFB44C695B14559325455C5A35C6326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/868C87F054FCB20D20E0A763784CE249326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/22575212BC0F78C5495D2BD0420F81F2E48ED164E11496ADF10785F3BEA
+9E35A.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C4B53D7749399AFD047DA91C057ED1C326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+ [46])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/31D30EEA8D0968D6458E0AD0027C9F80326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/868C87F054FCB20D20E0A763784CE249326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/B4388BB93C7CBBD01ADA5B37B1DAE9DF326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1832
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2EE30EADA4BBA5C29858CFD7D184BD2C326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/07DD2ADDF0E8D7EA63375AE13E6600E2326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1D48C4CBCEDB308E0C4DEFC8B9C849CC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A7F3F99C19FC405A0ACFE381A9681FF9326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2A28438B085953FC3D4A32969A476596326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+ [47])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2EE30EADA4BBA5C29858CFD7D184BD2C326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A7F3F99C19FC405A0ACFE381A9681FF9326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6FA730975CE954E3362C3A3ECF67560C326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D6DCA3DB17DBEFA4FF4D01FDAC03E488326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5DA9E51F8B3DDD02F0ED5EF8E67A0877326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (3.40608pt too wide) in paragraph at lines 1865--1867
+\OT1/cmr/m/it/12 re-render \OT1/cmr/c/n/12 of the component. So, on each second
+ the []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1865--1867
+
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E92CA40719109B4A50B2121656373096326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (17.06737pt too wide) in paragraph at lines 1868--1869
+\OT1/cmr/c/n/12 called []. This method is executed
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/5053D552B1C18B8955A048B8024D24E8326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+ [48])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/8F1DB59168C0B2A942A26033C32DBA8A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4903597B7111938A74037479DF4F11E3326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/1D48C4CBCEDB308E0C4DEFC8B9C849CC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/8F1DB59168C0B2A942A26033C32DBA8A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2424845B3AB77441C4778A9C03C826D8326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2F03D4A538C99A420D5652FA2B259A95326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2EE30EADA4BBA5C29858CFD7D184BD2C326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4903597B7111938A74037479DF4F11E3326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (21.69977pt too wide) in paragraph at lines 1906--1907
+[]\OT1/cmr/c/n/12 On line 19 above, we have added the lifecycle method [].
+ []
+
+
+Overfull \hbox (21.13774pt too wide) in paragraph at lines 1906--1907
+\OT1/cmr/c/n/12 function. Remember that the arrow function we have set up in th
+e []
+ []
+
+
+Overfull \hbox (7.4304pt too wide) in paragraph at lines 1906--1907
+\OT1/cmr/c/n/12 on the [] method will be executed every second, triggering
+ []
+
+Package svg Info: Last page of `./svg-inkscape/lifecycle1_svg-tex.pdf' is 1 on 
+input line 1910.
+(svg-inkscape/lifecycle1_svg-tex.pdf_tex
+<./svg-inkscape/lifecycle1_svg-tex.pdf, id=387, page=1, 300.73683pt x 257.89217
+pt>
+File: ./svg-inkscape/lifecycle1_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/lifecycle1_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/lifecycle1_svg-tex.pdf , page1 used on 
+input line 74.
+(pdftex.def)             Requested size: 300.73682pt x 257.90332pt.
+)
+Underfull \hbox (badness 4217) in paragraph at lines 1911--1911
+[]\OT1/cmr/c/n/12 Figura 2.1: []Order of execution of lifecycle methods used in
+ the
+ []
+
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/AED0DC7D564B5826B4A49177C1646C7B326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (18.51251pt too wide) in paragraph at lines 1915--1917
+[] \OT1/cmr/c/n/12 which is executed before the component is unmounted
+ []
+
+
+Overfull \hbox (16.44553pt too wide) in paragraph at lines 1915--1917
+\OT1/cmr/c/n/12 from the DOM. This method is used for clean up or close resourc
+es: subscriptions,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1915--1917
+
+ []
+
+LaTeX Info: Redefining \. on input line 1917.
+LaTeX Info: Redefining \% on input line 1917.
+[49 <./svg-inkscape/lifecycle1_svg-tex.pdf>]
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4903597B7111938A74037479DF4F11E3326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/185C7B3CC38490BB9DEC1FFDCC0B03D2326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4903597B7111938A74037479DF4F11E3326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6B7A8225BFFF2A80008ECB89C4F9CCE1326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/2A5BAC0E6B6498C25425C4D9963E7851326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/28717174B882CE8DD2E6D9C5BD23FC23326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/E92CA40719109B4A50B2121656373096326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/4903597B7111938A74037479DF4F11E3326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Overfull \hbox (3.21666pt too wide) in paragraph at lines 1948--1949
+[]\OT1/cmr/c/n/12 In the [] lifecycle method
+ []
+
+LaTeX Info: Redefining \. on input line 1957.
+LaTeX Info: Redefining \% on input line 1957.
+[50]
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/A9C9455EFD5D88CC1F169C9561C7D29A326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D5E3AC3F0464DDD4B8CBB87D999C8A0F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3109DFFC9A264CE53B24633C495EBC09326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/80910B8AB332B30560FE757966BE2CC6326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ [51])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/D5E3AC3F0464DDD4B8CBB87D999C8A0F326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/7E79D87A26708733038397538DC02471326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/C7612291BBEDA203FAC818CF6A34BFDE326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 2006--2008
+
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/0B716B45158AF8BCE85AA5BECFD0F16D326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+ [52])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D6326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/9E7B964750CF0BB08EE960FCE356B6D6326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 2051--2053
+
+ []
+
+\openout3 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6A167591E62F45179B923214F782A317326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+ [53])
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/3A3948AF662D6D1DFCA77F2B450A0B7D326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/DB8D168CC8A24C74BE3621BC5670B7ED326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+\openout4 = `guia-react.pyg'.
+
+
+(_minted-guia-react/6C2C4FB96E7C5805B4CDB0590292EDFC326DC2E0A560EE0592A9CA95D87
+E2ADA.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2108
+
+ []
+
+LaTeX Info: Redefining \. on input line 2112.
+LaTeX Info: Redefining \% on input line 2112.
+[54] [55
+
+] (guia-react.aux
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `guia-react.out' has not changed.
+(rerunfilecheck)             Checksum: 2C1B54497B099972D5DE27237B7B81F3;1541.
+runsystem(rm guia-react.pyg)...executed.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 37030 strings out of 481551
+ 894512 string characters out of 2916428
+ 1270710 words of memory out of 3000000
+ 52376 multiletter control sequences out of 15000+200000
+ 412720 words of font info for 60 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 97i,14n,102p,2542b,1085s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti1
+0.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcs
+c10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl
+12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cms
+y6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmt
+i12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
+mtt12.pfb>
+Output written on guia-react.pdf (56 pages, 340812 bytes).
+PDF statistics:
+ 539 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+

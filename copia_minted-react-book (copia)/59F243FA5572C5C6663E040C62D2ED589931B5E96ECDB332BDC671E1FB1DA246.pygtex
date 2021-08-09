@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{family} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Jóse\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Nicolas\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Lucia\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{];}
+
+\PYG{n+nx}{family}\PYG{p}{.}\PYG{n+nx}{forEach}\PYG{p}{(}\PYG{k+kd}{function} \PYG{p}{(}\PYG{n+nx}{value}\PYG{p}{,} \PYG{n+nx}{index}\PYG{p}{,} \PYG{n+nx}{array}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{c+c1}{//value is the element being processed}
+  \PYG{c+c1}{//index is the index of the current value}
+  \PYG{c+c1}{//array is the entire array}
+  \PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{value}\PYG{p}{,} \PYG{n+nx}{index}\PYG{p}{,} \PYG{n+nx}{array}\PYG{p}{);}
+\PYG{p}{\PYGZcb{});}
+\end{Verbatim}

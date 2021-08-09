@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZdl{}} \PYG{n+nb}{cd} react\PYGZus{}simple\PYGZus{}crud
+\PYG{g+gp}{\PYGZdl{}} npm install @material\PYGZhy{}ui/core
+\PYG{g+gp}{\PYGZdl{}} npm install @material\PYGZhy{}ui/icons
+\PYG{g+gp}{\PYGZdl{}} npm install @material\PYGZhy{}ui/data\PYGZhy{}grid
+\end{Verbatim}

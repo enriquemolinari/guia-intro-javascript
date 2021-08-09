@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{function} \PYG{n+nx}{Constr}\PYG{p}{(}\PYG{n+nx}{param}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{param} \PYG{o}{=} \PYG{n+nx}{param}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nx}{Constr}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{);} \PYG{c+c1}{//this is global object window}
+\PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nb}{window}\PYG{p}{.}\PYG{n+nx}{param}\PYG{p}{);} \PYG{c+c1}{//prints 2}
+\end{Verbatim}

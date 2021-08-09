@@ -1,0 +1,39 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{LeftMenu}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kd}{function} \PYG{n+nx}{handleListItemClick}\PYG{p}{(}\PYG{n+nx}{item}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{handleMenu}\PYG{p}{(}\PYG{n+nx}{item}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{List}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItem}
+        \PYG{n+na}{selected}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{valueItem} \PYG{o}{===} \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{items}\PYG{p}{.}\PYG{n+nx}{WELCOME}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{button}
+        \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}()} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{handleListItemClick}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{items}\PYG{p}{.}\PYG{n+nx}{WELCOME}\PYG{p}{)\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItemIcon}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Home} \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{ListItemIcon}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItemText} \PYG{n+na}{primary}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Welcome\PYGZdq{}} \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{ListItem}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItem}
+        \PYG{n+na}{selected}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{valueItem} \PYG{o}{===} \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{items}\PYG{p}{.}\PYG{n+nx}{USERSLIST}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{button}
+        \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}()} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{handleListItemClick}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{items}\PYG{p}{.}\PYG{n+nx}{USERSLIST}\PYG{p}{)\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItemIcon}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{PeopleIcon} \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{ListItemIcon}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItemText} \PYG{n+na}{primary}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}User Lists\PYGZdq{}} \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{ListItem}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItem}
+        \PYG{n+na}{selected}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{valueItem} \PYG{o}{===} \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{items}\PYG{p}{.}\PYG{n+nx}{USERFORM}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{button}
+        \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}()} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{handleListItemClick}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{items}\PYG{p}{.}\PYG{n+nx}{USERFORM}\PYG{p}{)\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItemIcon}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{AddBox} \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{ListItemIcon}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ListItemText} \PYG{n+na}{primary}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Add User\PYGZdq{}} \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{ListItem}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{List}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

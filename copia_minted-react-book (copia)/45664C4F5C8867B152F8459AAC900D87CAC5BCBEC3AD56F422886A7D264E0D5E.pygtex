@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{Object}\PYG{p}{.}\PYG{n+nx}{getPrototypeOf}\PYG{p}{(}\PYG{n+nx}{thisBook}\PYG{p}{)}
+\end{Verbatim}

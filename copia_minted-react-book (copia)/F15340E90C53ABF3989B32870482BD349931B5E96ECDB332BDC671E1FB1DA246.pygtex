@@ -1,0 +1,36 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{n+nx}{React}\PYG{p}{,} \PYG{p}{\PYGZob{}} \PYG{n+nx}{Component} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kr}{class} \PYG{n+nx}{ClickCounter} \PYG{k+kr}{extends} \PYG{n+nx}{Component} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{constructor}\PYG{p}{(}\PYG{n+nx}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{super}\PYG{p}{(}\PYG{n+nx}{props}\PYG{p}{);}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{state} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{value}\PYG{o}{:} \PYG{l+m+mi}{0}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{};}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{addClick} \PYG{o}{=} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{addClick}\PYG{p}{.}\PYG{n+nx}{bind}\PYG{p}{(}\PYG{k}{this}\PYG{p}{);}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{reset} \PYG{o}{=} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{reset}\PYG{p}{.}\PYG{n+nx}{bind}\PYG{p}{(}\PYG{k}{this}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+nx}{reset}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{setState}\PYG{p}{(\PYGZob{}}
+      \PYG{n+nx}{value}\PYG{o}{:} \PYG{l+m+mi}{0}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+nx}{addClick}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{setState}\PYG{p}{((}\PYG{n+nx}{state}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(\PYGZob{}}
+      \PYG{n+nx}{value}\PYG{o}{:} \PYG{n+nx}{state}\PYG{p}{.}\PYG{n+nx}{value} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{}));}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+nx}{render}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{(}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{button} \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{addClick}\PYG{p}{\PYGZcb{}\PYGZgt{}}\PYG{n+nx}{Click} \PYG{n+nx}{to} \PYG{n+nx}{add}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{button}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{button} \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{reset}\PYG{p}{\PYGZcb{}\PYGZgt{}}\PYG{n+nx}{Reset}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{button}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Clicked} \PYG{p}{\PYGZob{}}\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{state}\PYG{p}{.}\PYG{n+nx}{value}\PYG{p}{\PYGZcb{}} \PYG{n+nx}{times}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

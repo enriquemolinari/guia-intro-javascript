@@ -1,0 +1,70 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{const} \PYG{n+nx}{StyledBox} \PYG{o}{=} \PYG{n+nx}{styled}\PYG{p}{(}\PYG{n+nx}{Box}\PYG{p}{)(\PYGZob{}}
+  \PYG{n+nx}{height}\PYG{o}{:} \PYG{l+m+mi}{40}\PYG{p}{,}
+  \PYG{n+nx}{display}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}flex\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nx}{justifyContent}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}flex\PYGZhy{}end\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nx}{marginTop}\PYG{o}{:} \PYG{l+m+mi}{10}\PYG{p}{,}
+\PYG{p}{\PYGZcb{});}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UsersList}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{loading}\PYG{p}{,} \PYG{n+nx}{setLoading}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{showAlert}\PYG{p}{,} \PYG{n+nx}{setShowAlert}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{alertMsg}\PYG{p}{,} \PYG{n+nx}{setAlertMsg}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+
+  \PYG{k+kd}{let} \PYG{n+nx}{userIdSelected} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+
+  \PYG{n+ni}{async} \PYG{k+kd}{function} \PYG{n+nx}{handleDelete}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n+nx}{userIdSelected} \PYG{o}{===} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{setAlertMsg}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Please, select a row of the grid first\PYGZdq{}}\PYG{p}{);}
+      \PYG{n+nx}{setShowAlert}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+      \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{n+nx}{setLoading}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+
+    \PYG{n+ni}{await} \PYG{n+nx}{fetch}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{apiUrl} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}} \PYG{o}{+} \PYG{n+nx}{userIdSelected}\PYG{p}{,} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{method}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}DELETE\PYGZdq{}}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{});}
+
+    \PYG{n+nx}{setLoading}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+    \PYG{n+nx}{setAlertMsg}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}User Deleted Successfully\PYGZdq{}}\PYG{p}{);}
+    \PYG{n+nx}{setShowAlert}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+    \PYG{c+c1}{//refresh the grid data after delete}
+    \PYG{n+nx}{fetchUsers}\PYG{p}{();}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleCloseAlert}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{setShowAlert}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{style}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}} \PYG{n+nx}{height}\PYG{o}{:} \PYG{l+m+mi}{420}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}100\PYGZpc{}\PYGZdq{}} \PYG{p}{\PYGZcb{}\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{DataGrid}
+	  \PYG{n+na}{...}	
+          \PYG{n+na}{onRowSelected}\PYG{o}{=}\PYG{p}{\PYGZob{}(}\PYG{n+nx}{e}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(}\PYG{n+nx}{userIdSelected} \PYG{o}{=} \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{data}\PYG{p}{.}\PYG{n+nx}{id}\PYG{p}{)\PYGZcb{}}
+        \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{StyledBox} \PYG{n+na}{component}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}div\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Button} \PYG{n+na}{variant}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}contained\PYGZdq{}} \PYG{n+na}{color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}primary\PYGZdq{}} \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleDelete}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+            \PYG{p}{\PYGZob{}}\PYG{n+nx}{loading} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{CircularProgress} \PYG{n+na}{color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}inherit\PYGZdq{}} \PYG{n+na}{size}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{24}\PYG{p}{\PYGZcb{}} \PYG{p}{/\PYGZgt{}\PYGZcb{}}
+            \PYG{p}{\PYGZob{}}\PYG{o}{!}\PYG{n+nx}{loading} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{l+s+s2}{\PYGZdq{}Delete Selected User\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Button}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{StyledBox}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Snackbar}
+        \PYG{n+na}{anchorOrigin}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}}
+          \PYG{n+nx}{vertical}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}top\PYGZdq{}}\PYG{p}{,}
+          \PYG{n+nx}{horizontal}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}center\PYGZdq{}}\PYG{p}{,}
+        \PYG{p}{\PYGZcb{}\PYGZcb{}}
+        \PYG{n+na}{open}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{showAlert}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{autoHideDuration}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{3000}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{onClose}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleCloseAlert}\PYG{p}{\PYGZcb{}}
+      \PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Alert} \PYG{n+na}{severity}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}success\PYGZdq{}}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{alertMsg}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{Alert}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Snackbar}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

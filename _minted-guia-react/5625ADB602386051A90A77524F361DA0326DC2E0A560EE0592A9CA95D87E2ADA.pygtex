@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{(}\PYG{k+kd}{function} \PYG{n+nx}{saySomething}\PYG{p}{(}\PYG{n+nx}{string}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{string}\PYG{p}{);}
+\PYG{p}{\PYGZcb{})(}\PYG{l+s+s2}{\PYGZdq{}Hello Function!\PYGZdq{}}\PYG{p}{);}
+\end{Verbatim}

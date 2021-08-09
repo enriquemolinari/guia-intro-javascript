@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{n+nx}{React}\PYG{p}{,} \PYG{p}{\PYGZob{}} \PYG{n+nx}{Component} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kr}{class} \PYG{n+nx}{ColorSelect} \PYG{k+kr}{extends} \PYG{n+nx}{Component} \PYG{p}{\PYGZob{}}
+  \PYG{n+ni}{constructor}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{super}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{);}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{state} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{value}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}white\PYGZdq{}}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{};}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{colorChanged} \PYG{o}{=} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{colorChanged}\PYG{p}{.}\PYG{n+nx}{bind}\PYG{p}{(}\PYG{k}{this}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+nx}{colorChanged}\PYG{p}{(}\PYG{n+nx}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+ni}{setState}\PYG{p}{(\PYGZob{}}
+      \PYG{n+nx}{value}\PYG{o}{:} \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{target}\PYG{p}{.}\PYG{n+nx}{value}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{n+ni}{render}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{const} \PYG{n+nx}{colorBoxStyle} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}30px\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{height}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}30px\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{border}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}1px solid rgba(0, 0, 0, 0.05)\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{backgroundColor}\PYG{o}{:} \PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{state}\PYG{p}{.}\PYG{n+nx}{value}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{};}
+
+    \PYG{k}{return} \PYG{p}{(}
+      \PYG{p}{\PYGZlt{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{label} \PYG{n+na}{for}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}colors\PYGZdq{}}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Choose} \PYG{n+nx}{your} \PYG{n+nx}{favourite} \PYG{n+nx}{color}\PYG{o}{:} \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{label}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{select} \PYG{n+na}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}colors\PYGZdq{}} \PYG{n+na}{onChange}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{colorChanged}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{option}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Options}\PYG{p}{...\PYGZlt{}/}\PYG{n+nt}{option}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{option} \PYG{n+na}{value}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}blue\PYGZdq{}}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Blue}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{option}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{option} \PYG{n+na}{value}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}red\PYGZdq{}}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Red}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{option}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{option} \PYG{n+na}{value}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}green\PYGZdq{}}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Green}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{option}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{option} \PYG{n+na}{value}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}yellow\PYGZdq{}}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Yellow}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{option}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{select}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{style}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{colorBoxStyle}\PYG{p}{\PYGZcb{}\PYGZgt{}\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+    \PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

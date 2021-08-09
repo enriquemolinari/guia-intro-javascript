@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{obj1} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{a}\PYG{o}{:} \PYG{l+m+mi}{1}\PYG{p}{,}
+  \PYG{n+nx}{b}\PYG{o}{:} \PYG{l+m+mi}{2}\PYG{p}{,}
+\PYG{p}{\PYGZcb{};}
+\PYG{k+kd}{let} \PYG{n+nx}{obj2} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{c}\PYG{o}{:} \PYG{l+m+mi}{3}\PYG{p}{,}
+  \PYG{n+nx}{d}\PYG{o}{:} \PYG{l+m+mi}{4}\PYG{p}{,}
+\PYG{p}{\PYGZcb{};}
+\PYG{k+kd}{let} \PYG{n+nx}{obj3} \PYG{o}{=} \PYG{p}{\PYGZob{}} \PYG{p}{...}\PYG{n+nx}{obj1}\PYG{p}{,} \PYG{p}{...}\PYG{n+nx}{obj2} \PYG{p}{\PYGZcb{};}
+\PYG{c+c1}{//obj3 = \PYGZob{} a: 1, b: 2, c: 3, d: 4 \PYGZcb{}}
+\end{Verbatim}

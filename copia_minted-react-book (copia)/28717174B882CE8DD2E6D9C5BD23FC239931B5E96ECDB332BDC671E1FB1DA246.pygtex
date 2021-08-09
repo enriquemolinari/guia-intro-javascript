@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//Don\PYGZsq{}t do this}
+\PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{setState}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{(\PYGZob{}}
+  \PYG{n+nx}{startNumber}\PYG{o}{:} \PYG{k}{this}\PYG{p}{.}\PYG{n+ni}{state}\PYG{p}{.}\PYG{n+nx}{startNumber} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{,}
+\PYG{p}{\PYGZcb{}));}
+
+\PYG{c+c1}{//Do this}
+\PYG{k}{this}\PYG{p}{.}\PYG{n+nd}{setState}\PYG{p}{((}\PYG{n+ni}{state}\PYG{p}{,} \PYG{n+ni}{props}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(\PYGZob{}}
+  \PYG{n+nx}{startNumber}\PYG{o}{:} \PYG{n+ni}{state}\PYG{p}{.}\PYG{n+nx}{startNumber} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{,}
+\PYG{p}{\PYGZcb{}));}
+\end{Verbatim}

@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{import} \PYG{n+nx}{React} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}\PYG{p}{;}
+\PYG{k+kr}{import} \PYG{n+nx}{ReactDOM} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZhy{}dom\PYGZdq{}}\PYG{p}{;}
+\PYG{k+kr}{import} \PYG{n+nx}{CountDownLatch} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}./CountDownLatch\PYGZdq{}}\PYG{p}{;}
+
+\PYG{k+kd}{function} \PYG{n+nx}{countDown}\PYG{p}{(}\PYG{n+nx}{number}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{ReactDOM}\PYG{p}{.}\PYG{n+nd}{render}\PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{React}\PYG{p}{.}\PYG{n+na}{StrictMode}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{CountDownLatch} \PYG{n+na}{startFrom}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{number}\PYG{p}{\PYGZcb{}} \PYG{p}{/\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{React}\PYG{p}{.}\PYG{n+na}{StrictMode}\PYG{p}{\PYGZgt{},}
+    \PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{getElementById}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}root\PYGZdq{}}\PYG{p}{)}
+  \PYG{p}{);}
+  \PYG{k}{if} \PYG{p}{(}\PYG{n+nx}{number} \PYG{o}{===} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{clearInterval}\PYG{p}{(}\PYG{n+nx}{intervalId}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{let} \PYG{n+nx}{startFrom} \PYG{o}{=} \PYG{l+m+mi}{10}\PYG{p}{;}
+\PYG{k+kd}{let} \PYG{n+nx}{intervalId} \PYG{o}{=} \PYG{n+nx}{setInterval}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{countDown}\PYG{p}{(}\PYG{n+nx}{startFrom}\PYG{p}{);}
+  \PYG{n+nx}{startFrom} \PYG{o}{=} \PYG{n+nx}{startFrom} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{},} \PYG{l+m+mi}{1000}\PYG{p}{);}
+\end{Verbatim}

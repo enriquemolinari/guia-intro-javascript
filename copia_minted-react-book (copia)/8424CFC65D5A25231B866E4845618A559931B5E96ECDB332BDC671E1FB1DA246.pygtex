@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}starting\PYGZdq{}}\PYG{p}{);}
+\PYG{n+nd}{fetch}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}https://jsonplaceholder.typicode.com/posts/1\PYGZdq{}}\PYG{p}{)}
+  \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{response}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{())}
+  \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{json}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{json}\PYG{p}{));}
+\PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}finishing\PYGZdq{}}\PYG{p}{);}
+\end{Verbatim}

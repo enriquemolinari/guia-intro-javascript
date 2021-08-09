@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{myParents} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}EnriqueR\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Susana\PYGZdq{}}\PYG{p}{];}
+\PYG{k+kd}{let} \PYG{n+nx}{JoseParents} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Eduardo\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Graciela\PYGZdq{}}\PYG{p}{];}
+\PYG{k+kd}{let} \PYG{n+nx}{family} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Jóse\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Nicolas\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Lucia\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{];}
+\PYG{k+kd}{let} \PYG{n+nx}{all} \PYG{o}{=} \PYG{p}{[...}\PYG{n+nx}{myParents}\PYG{p}{,} \PYG{p}{...}\PYG{n+nx}{JoseParents}\PYG{p}{,} \PYG{p}{...}\PYG{n+nx}{family}\PYG{p}{];}
+\PYG{c+c1}{//[}
+\PYG{c+c1}{//  \PYGZsq{}EnriqueR\PYGZsq{}, \PYGZsq{}Susana\PYGZsq{}, \PYGZsq{}Eduardo\PYGZsq{}, \PYGZsq{}Graciela\PYGZsq{},}
+\PYG{c+c1}{//  \PYGZsq{}Jóse\PYGZsq{}, \PYGZsq{}Nicolas\PYGZsq{}, \PYGZsq{}Lucia\PYGZsq{}, \PYGZsq{}Enrique\PYGZsq{}}
+\PYG{c+c1}{// ]}
+\end{Verbatim}

@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//an object literal}
+\PYG{k+kd}{let} \PYG{n+nx}{mi} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{name}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nx}{surname}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Molinari\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nx}{sports}\PYG{o}{:} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}football\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}tennis\PYGZdq{}}\PYG{p}{],}
+  \PYG{n+nx}{address}\PYG{o}{:} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{street}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}San Martin\PYGZdq{}}\PYG{p}{,}
+    \PYG{n+nx}{number}\PYG{o}{:} \PYG{l+m+mi}{125}\PYG{p}{,}
+  \PYG{p}{\PYGZcb{},}
+  \PYG{n+nx}{allSports}\PYG{o}{:} \PYG{k+kd}{function} \PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{sports}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{},}
+\PYG{p}{\PYGZcb{};}
+\PYG{c+c1}{//this is an empty object}
+\PYG{k+kd}{let} \PYG{n+nx}{obj} \PYG{o}{=} \PYG{p}{\PYGZob{}\PYGZcb{};}
+\end{Verbatim}

@@ -1,0 +1,62 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UsersList}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{userId}\PYG{p}{,} \PYG{n+nx}{setUserId}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{showDetail}\PYG{p}{,} \PYG{n+nx}{setShowDetail}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+
+  \PYG{k+kr}{const} \PYG{n+nx}{columns} \PYG{o}{=} \PYG{p}{[}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}id\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}ID\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{60} \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Name\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{180}\PYG{p}{,} \PYG{n+nx}{editable}\PYG{o}{:} \PYG{k+kc}{true} \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}username\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}UserName\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{200}\PYG{p}{,} \PYG{n+nx}{editable}\PYG{o}{:} \PYG{k+kc}{true} \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZob{}} \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}email\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Email\PYGZdq{}}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{250}\PYG{p}{,} \PYG{n+nx}{editable}\PYG{o}{:} \PYG{k+kc}{true} \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{field}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}action\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{headerName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Action\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+m+mi}{250}\PYG{p}{,}
+      \PYG{n+nx}{renderCell}\PYG{o}{:} \PYG{p}{(}\PYG{n+nx}{params}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Button}
+          \PYG{n+na}{variant}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}contained\PYGZdq{}}
+          \PYG{n+na}{color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}primary\PYGZdq{}}
+          \PYG{n+na}{size}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}small\PYGZdq{}}
+          \PYG{n+na}{style}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}} \PYG{n+nx}{marginLeft}\PYG{o}{:} \PYG{l+m+mi}{16} \PYG{p}{\PYGZcb{}\PYGZcb{}}
+          \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}()} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{openDetails}\PYG{p}{(}\PYG{n+nx}{params}\PYG{p}{.}\PYG{n+nx}{row}\PYG{p}{.}\PYG{n+nx}{id}\PYG{p}{)\PYGZcb{}}
+        \PYG{p}{\PYGZgt{}}
+          \PYG{n+nx}{More}\PYG{p}{...}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Button}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{),}
+    \PYG{p}{\PYGZcb{},}
+  \PYG{p}{];}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{openDetails}\PYG{p}{(}\PYG{n+nx}{rowId}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{setUserId}\PYG{p}{(}\PYG{n+nx}{rowId}\PYG{p}{);}
+    \PYG{n+nx}{setShowDetail}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{closeDetails}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{setShowDetail}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{style}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}} \PYG{n+nx}{height}\PYG{o}{:} \PYG{l+m+mi}{420}\PYG{p}{,} \PYG{n+nx}{width}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}100\PYGZpc{}\PYGZdq{}} \PYG{p}{\PYGZcb{}\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{DataGrid}
+         \PYG{n+na}{...}
+        \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{StyledBox} \PYG{n+na}{component}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}div\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{...}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{StyledBox}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{UserDetails}
+        \PYG{n+na}{apiUrl}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{apiUrl}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{userId}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{userId}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{show}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{showDetail}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{handleClose}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{closeDetails}\PYG{p}{\PYGZcb{}}
+      \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Snackbar}\PYG{p}{\PYGZgt{}}
+	\PYG{p}{...}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Snackbar}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

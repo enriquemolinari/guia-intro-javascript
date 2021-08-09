@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{Layout}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{p}{...}
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{CssBaseline} \PYG{p}{/\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{AppBar} \PYG{n+na}{position}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}absolute\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Toolbar}\PYG{p}{\PYGZgt{}}
+	  \PYG{p}{...}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Toolbar}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{AppBar}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Drawer} \PYG{n+na}{variant}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}permanent\PYGZdq{}} \PYG{n+na}{open}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{open}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{IconButton} \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleDrawerClose}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{ChevronLeftIcon} \PYG{p}{/\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{IconButton}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Divider} \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{left}\PYG{p}{\PYGZcb{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Drawer}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{main}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Container} \PYG{n+na}{maxWidth}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}lg\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Grid} \PYG{n+na}{item} \PYG{n+na}{xs}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{12}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Paper}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{children}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{Paper}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Grid}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Container}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{main}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

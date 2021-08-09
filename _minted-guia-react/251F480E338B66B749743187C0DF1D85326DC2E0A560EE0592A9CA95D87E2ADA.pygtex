@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{obj} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{n+nx}{a}\PYG{o}{:} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nx}{b}\PYG{o}{:} \PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{};}
+\PYG{c+c1}{//add properties to the obj object}
+\PYG{n+nx}{obj}\PYG{p}{.}\PYG{n+nx}{x} \PYG{o}{=} \PYG{l+m+mi}{3}\PYG{p}{;}
+\PYG{n+nx}{obj}\PYG{p}{.}\PYG{n+nx}{y} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{;}
+\end{Verbatim}

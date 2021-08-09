@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{ebook} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{EBook}\PYG{p}{(}\PYG{l+m+mi}{2048}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Coding in React\PYGZdq{}}\PYG{p}{,} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Enrique, Molinari\PYGZdq{}}\PYG{p}{],} \PYG{l+m+mi}{2021}\PYG{p}{);}
+\PYG{c+c1}{//Book.prototype is the prototype of the ebook instance}
+\PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{Book}\PYG{p}{.}\PYG{n+nx}{prototype}\PYG{p}{.}\PYG{n+nx}{isPrototypeOf}\PYG{p}{(}\PYG{n+nx}{ebook}\PYG{p}{));} \PYG{c+c1}{//true}
+\PYG{c+c1}{//fullName method is found on the prototype}
+\PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{ebook}\PYG{p}{.}\PYG{n+nx}{fullName}\PYG{p}{());} \PYG{c+c1}{//Coding in React by Enrique, Molinari. 2021}
+\PYG{c+c1}{//EBook is a function not a class}
+\PYG{n+nd}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{k}{typeof} \PYG{n+nx}{EBook}\PYG{p}{);} \PYG{c+c1}{//function}
+\end{Verbatim}

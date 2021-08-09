@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//only do this inside constructor}
+\PYG{k}{this}\PYG{p}{.}\PYG{n+ni}{state}\PYG{p}{.}\PYG{n+nx}{startNumber} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{;}
+\end{Verbatim}

@@ -1,0 +1,63 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UserDetails}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{userData}\PYG{p}{,} \PYG{n+nx}{setUserData}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{result}\PYG{o}{:} \PYG{p}{\PYGZob{}\PYGZcb{}} \PYG{p}{\PYGZcb{});}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{loading}\PYG{p}{,} \PYG{n+nx}{setLoading}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+
+  \PYG{n+ni}{useEffect}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{userId} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{return}\PYG{p}{;}
+
+    \PYG{k+kr}{const} \PYG{n+nx}{fetchUser} \PYG{o}{=} \PYG{n+ni}{async} \PYG{p}{()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+      \PYG{k+kd}{let} \PYG{n+nx}{response} \PYG{o}{=} \PYG{n+ni}{await} \PYG{n+nx}{fetch}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{apiUrl} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}} \PYG{o}{+} \PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{userId}\PYG{p}{);}
+      \PYG{n+nx}{response} \PYG{o}{=} \PYG{n+ni}{await} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{();}
+      \PYG{n+nx}{setUserData}\PYG{p}{(\PYGZob{}} \PYG{n+nx}{result}\PYG{o}{:} \PYG{p}{\PYGZob{}} \PYG{n+nx}{response} \PYG{p}{\PYGZcb{}} \PYG{p}{\PYGZcb{});}
+      \PYG{n+nx}{setLoading}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{};}
+    \PYG{n+nx}{fetchUser}\PYG{p}{();}
+
+    \PYG{k}{return} \PYG{n+nx}{setLoading}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{},} \PYG{p}{[}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{userId}\PYG{p}{]);}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Dialog} \PYG{n+na}{open}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{show}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{DialogTitle} \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}alert\PYGZhy{}dialog\PYGZhy{}title\PYGZdq{}}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{User} \PYG{n+nx}{Details}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{DialogTitle}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{DialogContent}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{DialogContentText} \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}alert\PYGZhy{}dialog\PYGZhy{}description\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZob{}}\PYG{n+nx}{loading} \PYG{o}{?} \PYG{p}{(}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{CircularProgress} \PYG{p}{/\PYGZgt{}}
+          \PYG{p}{)} \PYG{o}{:} \PYG{p}{(}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{table}\PYG{p}{\PYGZgt{}}
+              \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tbody}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Name}\PYG{o}{:} \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{userData}\PYG{p}{.}\PYG{n+nx}{result}\PYG{p}{.}\PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{User} \PYG{n+nx}{Name}\PYG{o}{:} \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{userData}\PYG{p}{.}\PYG{n+nx}{result}\PYG{p}{.}\PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{username}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Website}\PYG{o}{:} \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{userData}\PYG{p}{.}\PYG{n+nx}{result}\PYG{p}{.}\PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{website}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{Address}\PYG{o}{:} \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                    \PYG{p}{\PYGZob{}}\PYG{n+nx}{userData}\PYG{p}{.}\PYG{n+nx}{result}\PYG{p}{.}\PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{address}\PYG{p}{.}\PYG{n+nx}{street} \PYG{o}{+}
+                      \PYG{l+s+s2}{\PYGZdq{} \PYGZhy{} \PYGZdq{}} \PYG{o}{+}
+                      \PYG{n+nx}{userData}\PYG{p}{.}\PYG{n+nx}{result}\PYG{p}{.}\PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{address}\PYG{p}{.}\PYG{n+nx}{city}\PYG{p}{\PYGZcb{}}
+                  \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{td}\PYG{p}{\PYGZgt{}}
+                \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tr}\PYG{p}{\PYGZgt{}}
+              \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{tbody}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{table}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{)\PYGZcb{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{DialogContentText}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{DialogContent}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{DialogActions}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Button} \PYG{n+na}{onClick}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{handleClose}\PYG{p}{\PYGZcb{}} \PYG{n+na}{color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}primary\PYGZdq{}} \PYG{n+na}{autoFocus}\PYG{p}{\PYGZgt{}}
+          \PYG{n+nx}{Close}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Button}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{DialogActions}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Dialog}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

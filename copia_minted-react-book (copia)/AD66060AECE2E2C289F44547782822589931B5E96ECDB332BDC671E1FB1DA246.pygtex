@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{function} \PYG{n+nx}{returnSomething}\PYG{p}{(}\PYG{n+nx}{string}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}This is it: \PYGZdq{}} \PYG{o}{+} \PYG{n+nx}{string}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{//assigning a function to a variable}
+\PYG{k+kd}{let} \PYG{n+nx}{say} \PYG{o}{=} \PYG{n+nx}{returnSomething}\PYG{p}{;}
+
+\PYG{c+c1}{//calling the function}
+\PYG{n+nx}{returnSomething}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Hello js!\PYGZdq{}}\PYG{p}{);}
+\PYG{n+nx}{say}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Hello again!\PYGZdq{}}\PYG{p}{);}
+\end{Verbatim}

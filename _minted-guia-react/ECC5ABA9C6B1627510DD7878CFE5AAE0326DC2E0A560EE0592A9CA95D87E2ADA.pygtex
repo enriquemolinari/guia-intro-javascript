@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//an array}
+\PYG{k+kd}{let} \PYG{n+nx}{family} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Jóse\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Nicolas\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Lucia\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{];}
+\PYG{n+nx}{family}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];} \PYG{c+c1}{//Jóse}
+\PYG{n+nx}{family}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{];} \PYG{c+c1}{//Nicolas}
+\PYG{n+nx}{family}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{];} \PYG{c+c1}{//Lucia}
+\PYG{n+nx}{family}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{];} \PYG{c+c1}{//Enrique}
+\end{Verbatim}

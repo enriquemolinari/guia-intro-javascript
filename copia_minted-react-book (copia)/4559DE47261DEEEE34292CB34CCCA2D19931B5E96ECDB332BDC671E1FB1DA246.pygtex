@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{Animal}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k+kd}{let} \PYG{n+nx}{name} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Eze the Dog\PYGZdq{}}\PYG{p}{;}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}
+      \PYG{n+nx}{This} \PYG{n+nx}{is} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{strong}\PYG{p}{\PYGZgt{}\PYGZob{}}\PYG{n+nx}{name}\PYG{p}{\PYGZcb{}\PYGZlt{}/}\PYG{n+nt}{strong}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

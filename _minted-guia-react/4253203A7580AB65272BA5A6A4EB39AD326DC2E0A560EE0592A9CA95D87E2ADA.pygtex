@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+ni}{async} \PYG{k+kd}{function} \PYG{n+nx}{testingKeywords}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}before\PYGZdq{}}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{n+nx}{data} \PYG{o}{=} \PYG{n+ni}{await} \PYG{n+nx}{thePromise}\PYG{p}{();}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}after\PYGZdq{}}\PYG{p}{);}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{data}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

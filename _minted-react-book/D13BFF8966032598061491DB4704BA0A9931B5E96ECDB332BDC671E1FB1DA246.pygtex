@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{family} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Jóse\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Nicolas\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Lucia\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{];}
+
+\PYG{n+nx}{family}\PYG{p}{.}\PYG{n+nx}{forEach}\PYG{p}{((}\PYG{n+nx}{value}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+  \PYG{c+c1}{//do something with the value here	}
+\PYG{p}{\PYGZcb{});}
+\end{Verbatim}

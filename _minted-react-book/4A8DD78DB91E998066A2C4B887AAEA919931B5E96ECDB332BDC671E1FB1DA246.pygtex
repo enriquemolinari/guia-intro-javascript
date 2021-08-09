@@ -1,0 +1,134 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{k+kd}{function} \PYG{n+nx}{UsersForm}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{inputsValue}\PYG{p}{,} \PYG{n+nx}{setInputsValue}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(\PYGZob{}}
+    \PYG{n+nx}{name}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+    \PYG{n+nx}{username}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+    \PYG{n+nx}{email}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+  \PYG{p}{\PYGZcb{});}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{loading}\PYG{p}{,} \PYG{n+nx}{setLoading}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{errorInputs}\PYG{p}{,} \PYG{n+nx}{setErrorInputs}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(\PYGZob{}\PYGZcb{});}
+  \PYG{k+kr}{const} \PYG{p}{[}\PYG{n+nx}{showSuccess}\PYG{p}{,} \PYG{n+nx}{setShowSuccess}\PYG{p}{]} \PYG{o}{=} \PYG{n+ni}{useState}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleSubmit}\PYG{p}{(}\PYG{n+nx}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{preventDefault}\PYG{p}{();}
+    \PYG{n+nx}{setLoading}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+    \PYG{n+nx}{setErrorInputs}\PYG{p}{(\PYGZob{}\PYGZcb{});}
+    \PYG{n+nx}{fetch}\PYG{p}{(}\PYG{n+nd}{props}\PYG{p}{.}\PYG{n+nx}{apiUrl}\PYG{p}{,} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{method}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}POST\PYGZdq{}}\PYG{p}{,}
+      \PYG{n+nx}{body}\PYG{o}{:} \PYG{n+nx}{JSON}\PYG{p}{.}\PYG{n+nx}{stringify}\PYG{p}{(\PYGZob{}}
+        \PYG{n+nx}{name}\PYG{o}{:} \PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{,}
+        \PYG{n+nx}{userName}\PYG{o}{:} \PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{username}\PYG{p}{,}
+        \PYG{n+nx}{email}\PYG{o}{:} \PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{email}\PYG{p}{,}
+      \PYG{p}{\PYGZcb{}),}
+      \PYG{n+nx}{headers}\PYG{o}{:} \PYG{p}{\PYGZob{}}
+        \PYG{l+s+s2}{\PYGZdq{}Content\PYGZhy{}type\PYGZdq{}}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}application/json; charset=UTF\PYGZhy{}8\PYGZdq{}}\PYG{p}{,}
+      \PYG{p}{\PYGZcb{},}
+    \PYG{p}{\PYGZcb{})}
+      \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{response}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{())}
+      \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{json}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+        \PYG{n+nx}{setLoading}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+        \PYG{n+nx}{checkResponse}\PYG{p}{(}\PYG{n+nx}{json}\PYG{p}{);}
+      \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleClose}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{setShowSuccess}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{);}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{handleChange}\PYG{p}{(}\PYG{n+nx}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{const} \PYG{n+nx}{name} \PYG{o}{=} \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{target}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{;}
+    \PYG{k+kr}{const} \PYG{n+nx}{value} \PYG{o}{=} \PYG{n+nx}{e}\PYG{p}{.}\PYG{n+nx}{target}\PYG{p}{.}\PYG{n+nx}{value}\PYG{p}{;}
+    \PYG{n+nx}{setInputsValue}\PYG{p}{((}\PYG{n+nx}{inputsValue}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+      \PYG{k}{return} \PYG{p}{\PYGZob{}} \PYG{p}{...}\PYG{n+nx}{inputsValue}\PYG{p}{,} \PYG{p}{[}\PYG{n+nx}{name}\PYG{p}{]}\PYG{o}{:} \PYG{n+nx}{value} \PYG{p}{\PYGZcb{};}
+    \PYG{p}{\PYGZcb{});}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k+kd}{function} \PYG{n+nx}{checkResponse}\PYG{p}{(}\PYG{n+nx}{json}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n+nx}{json}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n+nx}{json}\PYG{p}{.}\PYG{n+nx}{userName} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n+nx}{json}\PYG{p}{.}\PYG{n+nx}{email}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{setShowSuccess}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{);}
+      \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{n+nx}{json}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{setErrorInputs}\PYG{p}{((}\PYG{n+nx}{errorInputs}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(\PYGZob{}}
+        \PYG{p}{...}\PYG{n+nx}{errorInputs}\PYG{p}{,}
+        \PYG{n+nx}{name}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}This field is required\PYGZdq{}}\PYG{p}{,}
+      \PYG{p}{\PYGZcb{}));}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{n+nx}{json}\PYG{p}{.}\PYG{n+nx}{userName}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{setErrorInputs}\PYG{p}{((}\PYG{n+nx}{errorInputs}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(\PYGZob{}}
+        \PYG{p}{...}\PYG{n+nx}{errorInputs}\PYG{p}{,}
+        \PYG{n+nx}{username}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}This field is required\PYGZdq{}}\PYG{p}{,}
+      \PYG{p}{\PYGZcb{}));}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{n+nx}{json}\PYG{p}{.}\PYG{n+nx}{email}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n+nx}{setErrorInputs}\PYG{p}{((}\PYG{n+nx}{errorInputs}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{(\PYGZob{}}
+        \PYG{p}{...}\PYG{n+nx}{errorInputs}\PYG{p}{,}
+        \PYG{n+nx}{email}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}This field is required\PYGZdq{}}\PYG{p}{,}
+      \PYG{p}{\PYGZcb{}));}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{form} \PYG{n+na}{noValidate} \PYG{n+na}{autoComplete}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}off\PYGZdq{}} \PYG{n+na}{onSubmit}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleSubmit}\PYG{p}{\PYGZcb{}\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{className}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}form\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{TextField}
+            \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}name\PYGZdq{}}
+            \PYG{n+na}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}name\PYGZdq{}}
+            \PYG{n+na}{label}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Name\PYGZdq{}}
+            \PYG{n+na}{error}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k}{typeof} \PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{!==} \PYG{l+s+s2}{\PYGZdq{}undefined\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{helperText}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{?} \PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{required}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{fullWidth}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{value}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{onChange}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleChange}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{className}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}form\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{TextField}
+            \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}username\PYGZdq{}}
+            \PYG{n+na}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}username\PYGZdq{}}
+            \PYG{n+na}{label}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}User Name\PYGZdq{}}
+            \PYG{n+na}{error}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k}{typeof} \PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{username} \PYG{o}{!==} \PYG{l+s+s2}{\PYGZdq{}undefined\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{helperText}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{username} \PYG{o}{?} \PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{username} \PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{required}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{fullWidth}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{value}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{username}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{onChange}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleChange}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div} \PYG{n+na}{className}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}form\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{TextField}
+            \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}email\PYGZdq{}}
+            \PYG{n+na}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}email\PYGZdq{}}
+            \PYG{n+na}{label}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}EMail\PYGZdq{}}
+            \PYG{n+na}{error}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k}{typeof} \PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{email} \PYG{o}{!==} \PYG{l+s+s2}{\PYGZdq{}undefined\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{helperText}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{email} \PYG{o}{?} \PYG{n+nx}{errorInputs}\PYG{p}{.}\PYG{n+nx}{email} \PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{required}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{fullWidth}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{k+kc}{true}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{value}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{inputsValue}\PYG{p}{.}\PYG{n+nx}{email}\PYG{p}{\PYGZcb{}}
+            \PYG{n+na}{onChange}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleChange}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+          \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Button} \PYG{n+na}{type}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}submit\PYGZdq{}} \PYG{n+na}{variant}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}contained\PYGZdq{}} \PYG{n+na}{color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}primary\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZob{}}\PYG{n+nx}{loading} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{CircularProgress} \PYG{n+na}{color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}inherit\PYGZdq{}} \PYG{n+na}{size}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{24}\PYG{p}{\PYGZcb{}} \PYG{p}{/\PYGZgt{}\PYGZcb{}}
+            \PYG{p}{\PYGZob{}}\PYG{o}{!}\PYG{n+nx}{loading} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{l+s+s2}{\PYGZdq{}Submit\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+          \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Button}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{div}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{form}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Snackbar}
+        \PYG{n+na}{anchorOrigin}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}}
+          \PYG{n+nx}{vertical}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}top\PYGZdq{}}\PYG{p}{,}
+          \PYG{n+nx}{horizontal}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}center\PYGZdq{}}\PYG{p}{,}
+        \PYG{p}{\PYGZcb{}\PYGZcb{}}
+        \PYG{n+na}{open}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{showSuccess}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{autoHideDuration}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{3000}\PYG{p}{\PYGZcb{}}
+        \PYG{n+na}{onClose}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{handleClose}\PYG{p}{\PYGZcb{}}
+      \PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{Alert} \PYG{n+na}{severity}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}success\PYGZdq{}}\PYG{p}{\PYGZgt{}}\PYG{n+nx}{User} \PYG{n+nx}{Created} \PYG{n+nx}{Successfully} \PYG{o}{!}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Alert}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{Snackbar}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/\PYGZgt{}}
+  \PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

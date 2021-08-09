@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//this is my main\PYGZhy{}module.js module}
+
+\PYG{k+kr}{import} \PYG{p}{\PYGZob{}} \PYG{n+nx}{complexThing}\PYG{p}{,} \PYG{n+nx}{obj}\PYG{p}{,} \PYG{n+nx}{ASimpleClass} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}./module/complex\PYGZhy{}module.mjs\PYGZdq{}}\PYG{p}{;}
+
+\PYG{c+c1}{//calling the imported function}
+\PYG{n+nx}{complexThing}\PYG{p}{();}
+
+\PYG{c+c1}{//printing the imported object}
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{obj}\PYG{p}{);}
+
+\PYG{c+c1}{//instantiating the imported class}
+\PYG{k+kd}{let} \PYG{n+nx}{o} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{ASimpleClass}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{);}
+\PYG{n+nx}{o}\PYG{p}{.}\PYG{n+nx}{print}\PYG{p}{();}
+\end{Verbatim}
