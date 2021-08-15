@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{function} \PYG{n+nx}{Book}\PYG{p}{(}\PYG{n+nx}{name}\PYG{p}{,} \PYG{n+nx}{authors}\PYG{p}{,} \PYG{n+nx}{publishedYear}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{=} \PYG{n+nx}{name}\PYG{p}{;}
+  \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{authors} \PYG{o}{=} \PYG{n+nx}{authors}\PYG{p}{;}
+  \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{publishedYear} \PYG{o}{=} \PYG{n+nx}{publishedYear}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{n+nx}{Book}\PYG{p}{.}\PYG{n+nx}{prototype}\PYG{p}{.}\PYG{n+nx}{fullName} \PYG{o}{=} \PYG{k+kd}{function} \PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k}{return} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{} by \PYGZdq{}} \PYG{o}{+} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{authors} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{}. \PYGZdq{}} \PYG{o}{+} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{publishedYear}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+
+\PYG{n+nx}{thisBook} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{Book}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Coding in React\PYGZdq{}}\PYG{p}{,}
+			\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Enrique Molinari\PYGZdq{}}\PYG{p}{],} \PYG{l+m+mi}{2021}\PYG{p}{);}
+\PYG{n+nx}{archBook} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{Book}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Coding an Architecture Style\PYGZdq{}}\PYG{p}{,}
+			\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Enrique Molinari\PYGZdq{}}\PYG{p}{],} \PYG{l+m+mi}{2020}\PYG{p}{);}
+\PYG{c+c1}{//printing thisBook}
+\PYG{c+c1}{//Book \PYGZob{}}
+\PYG{c+c1}{//  name: \PYGZsq{}Coding in React\PYGZsq{},}
+\PYG{c+c1}{//  authors: [ \PYGZsq{}Enrique Molinari\PYGZsq{} ],}
+\PYG{c+c1}{//  publishedYear: 2021}
+\PYG{c+c1}{//\PYGZcb{}}
+\PYG{c+c1}{//printing archBook}
+\PYG{c+c1}{//Book \PYGZob{}}
+\PYG{c+c1}{//  name: \PYGZsq{}Coding an Architecture Style\PYGZsq{},}
+\PYG{c+c1}{//  authors: [ \PYGZsq{}Enrique Molinari\PYGZsq{} ],}
+\PYG{c+c1}{//  publishedYear: 2020}
+\PYG{c+c1}{//\PYGZcb{}}
+\end{Verbatim}

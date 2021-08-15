@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}starting\PYGZdq{}}\PYG{p}{);}
+
+\PYG{n+nx}{setTimeout}\PYG{p}{(()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}callback\PYGZdq{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{},} \PYG{l+m+mi}{1000}\PYG{p}{);}
+
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}finishing\PYGZdq{}}\PYG{p}{);}
+\end{Verbatim}

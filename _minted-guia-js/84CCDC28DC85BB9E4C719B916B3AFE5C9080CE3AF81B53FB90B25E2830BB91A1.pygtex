@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{p}{[}\PYG{n+nx}{one}\PYG{p}{,} \PYG{n+nx}{two}\PYG{p}{,} \PYG{n+nx}{three}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{];}
+\PYG{c+c1}{//one = 1}
+\PYG{c+c1}{//two = 2}
+\PYG{c+c1}{//three = 3}
+
+\PYG{c+c1}{//same as the previous}
+\PYG{k+kd}{let} \PYG{n+nx}{fewNumbers} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{];}
+\PYG{p}{[}\PYG{n+nx}{one}\PYG{p}{,} \PYG{n+nx}{two}\PYG{p}{,} \PYG{n+nx}{three}\PYG{p}{]} \PYG{o}{=} \PYG{n+nx}{fewNumbers}\PYG{p}{;}
+
+\PYG{c+c1}{//and here using spread syntax}
+\PYG{k+kd}{let} \PYG{p}{[}\PYG{n+nx}{a}\PYG{p}{,} \PYG{n+nx}{b}\PYG{p}{,} \PYG{p}{...}\PYG{n+nx}{rest}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{];}
+\PYG{c+c1}{//a = 1}
+\PYG{c+c1}{//b = 2}
+\PYG{c+c1}{//rest = [3, 4, 5]}
+\end{Verbatim}

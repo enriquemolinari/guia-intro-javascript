@@ -1,0 +1,1293 @@
+\documentclass[a4paper, oneside, titlepage, 12pt]{book}
+\usepackage[spanish]{babel}
+\usepackage{floatrow}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{calc}
+\usepackage{dirtree}
+\usepackage{graphicx}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{csquotes}
+\usepackage{svg}
+%esto es para que las imagenes no se vayan fuera de la seccion donde estan
+\usepackage[section]{placeins} 
+\usepackage{forest}
+\usepackage{adjustbox}
+\graphicspath{ {./yed/} }
+\svgpath{{svg/}{./yed/}}
+\apptocmd{\dirtree}{\bigskip}{}{}
+\pretocmd{\dirtree}{\bigskip}{}{}
+
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}} 
+\newcommand{\explain}[2]{\underbrace{#1}_{\parbox{\widthof{#1}}{\footnotesize\raggedright #2}}}
+
+\floatsetup[listing]{style=Plaintop}   
+%\usemintedstyle{react}
+\usemintedstyle{enrique}
+%\usemintedstyle{tango}
+\definecolor{bg}{HTML}{282b35}
+\definecolor{verylight}{RGB}{237, 236, 236}
+
+\lstset{
+basicstyle=\small, % print whole listing small
+keywordstyle=\color{black}\bfseries\underbar,
+identifierstyle=, % nothing happens
+commentstyle=\color{white}, % white comments
+stringstyle=\ttfamily, % typewriter type for strings
+showstringspaces=false} % no special string spaces
+
+ 
+%Esto es para que no le ponga un recuadro
+%rojo a los links de la TOC
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+
+\title{%
+	Guía sobre \textsc{JavaScript}\\
+	\large Bases sólidas para comenzar a programar en React}
+%\author{\textit{Author}\\Enrique Pablo Molinari}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+		
+\chapter{Conceptos Esenciales de JavaScript}
+
+Si deseamos dominar React y eso significa comprender por qué y cómo funcionan ciertas cosas, debemos aprender algunos conceptos específicos de JavaScript.
+\newline
+
+En esta guía rápida explicaremos los conceptos de JavaScript y las construcciones sintácticas necesarias para crear un camino sólido que nos permitan dominar React. Si desea profundizar en más detalles sobre algunos de los temas que se explican aquí u otros sobre JavaScript, recomendamos que visiten el sitio web Mozilla \cite{mozilla}. Esta sección se basa en conceptos explicados allí.
+
+\section{Entorno de Desarrollo}
+%\addcontentsline{toc}{chapter}{Entorno de Desarrollo}
+
+Para comenzar a programar en JavaScript y React recomendamos \href{https://code.visualstudio.com/} {Visual Studio Code} (VS Code). Y para ser más productivo, especialmente si eres nuevo en React, sugerimos que instales la extensión \href {https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets} {VS Code ES7 React / Redux / React-Native / JS snippets} que proporciona la generación rápida de estructuras sintácticas de JavaScript y React. También sugerímos instalar \href {https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode} {Prettier}, que es un formateador de código JavaScript / React.
+\newline
+
+Para instalar una extensión, en Visual Studio Code, vaya al menú Archivo, luego Preferencias y luego Extensiones. Verá un cuadro de búsqueda que le permitirá encontrar las extensiones que desea instalar.
+\newline
+
+Finalmente, realmente recomiendo configurar VS Code para formatear los fuentes al momento de guardar. Puede hacerlo yendo al menú Archivo, luego a Preferencias y luego a Configuración. En el cuadro de búsqueda, escriba "Editor: Formato al guardar" (Format On Save). Esto formateará su código inmediatamente después de guardarlo.
+
+\section{Introducción}
+
+De la web Developer Mozilla JavaScript Documentation \cite{mozilla}, JavaScript se define como:
+
+``JavaScript (JS) es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat. JavaScript es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional).''
+\newline
+
+Si Usted es un desarrollador Java, C\# o C++, esta definición puede sonar un poco intimidante. Es por ésto que es necesario aprender algunos conceptos, especialmente aquellos que no están disponibles de forma natural en los lenguajes compilados. Para comenzar con esos conceptos, primero explicaremos las construcciones básicas del lenguaje, luego explicaremos lo que significa que un lenguaje tenga \textbf{funciones de primera clase} y sea \textbf {basado en prototipos}, \textbf{multi-paradigma}, \textbf{de un solo subproceso} y \textbf{dinámico}.
+\newline
+
+El lenguaje JavaScript se rige por una especificación estándar de ECMA\cite{ecma} (European Computer Manufacturers Association). ECMAScript es el nombre de la especificación. En particular, en 2015 se liberó una versión importante conocida como ES6, ECMAScript 6 o ECMAScript 2015. La mayoría de las construcciones sintácticas que estudiaremos en esta sección se implementaron en dicha versión.
+\newline
+
+Comencemos a aprender. Toda sentencia en JavaScript escrita en esta sección se ejecutará usando el intérprete de nodejs, invocándolo usando la consola de la siguiente manera:
+\begin{minted}[fontseries=mc,
+               framesep=2mm]{console}
+$ node yourjsfile.js
+\end{minted}
+
+Utilizando Visual Studio Code, pueden abrir una consola directamente allí, desde el menu en "Terminal" y luego "Nueva Terminal". 
+\newline
+
+Lo primero que en general aprendemos cuando nos iniciamos en un lenguaje de programación es a imprimir texto en la pantalla. Esta guía no es la excepción. Se puede imprimir texto en la pantalla usando el objeto \textit{Console} de la siguiente forma:
+
+\begin{minted}[fontseries=mc,
+               framesep=2mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+console.log("Coding in React!");
+\end{minted}
+
+El objeto \textit{Console} se creó principalmente como herramienta de debug, no debe utilizarse en aplicaciones deployadas en producción. No es parte parte del estándar pero todos los browsers modernos y nodejs lo soportan.
+\newline
+
+\section{Variables}
+
+Comencemos a ver como utilizamos \textbf{variables} en JavaScript. Declaramos las variables utilizando la palabra reservada \textit{let}, de la siguiente forma:
+
+\begin{minted}[fontseries=mc,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt,
+               framesep=2mm]{jsx}
+let myFirstVariable;
+\end{minted}
+
+Cuando declaramos una variable sin inicializarla, el intérprete la inicializará con el valor especial \textit{undefined}. Esto se puede observar si intentan imprimir en la consola una variable no inicializada. Pruebenlo. El siguiente ejemplo muestra como declarar una variable y como inicializarla a la vez.
+
+\begin{minted}[fontseries=mc,
+               framesep=2mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+let myFirstVariable = "Hello value!";
+\end{minted}
+
+Tambén es posible declarar una variable utilizando la palabra reservada \textit{const}:
+
+\begin{minted}[fontseries=mc,
+               framesep=2mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+const myFirstConst = "Hello constant value!";
+\end{minted}
+
+Al declarar la variable con \textit{const} no podremos modificarle su valor, si lo intentan el interprete lanzará un error. Pruebenlo.  
+\newline
+
+Dijimos que JavaScript es un \textbf{lenguaje dinámico}. Ésto, entre otras cosas, significa que el tipo de una variable puede cambiar en tiempo de ejecución. A diferencia de los lenguajes estáticos donde los tipos de las variables se definen durante la compilación y no pueden cambiar durante la ejecución.
+
+\begin{minted}[fontseries=mc,
+               framesep=2mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+//my type is string
+let changeMyType = "Hello String!";
+//now it is number
+changeMyType = 100;
+\end{minted}
+
+\section{Funciones} \label{functions}
+
+Estudiemos ahora las \textbf{functions}. A continuación declaramos una función y luego la invocamos:
+
+\begin{minted}[fontseries=mc,
+               framesep=2mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+function saySomething(string) {
+  console.log(string);
+}
+
+saySomething("Hello Function!");
+\end{minted}
+
+En JavaScript podemos definir funciones que se invocan inmediatamente después de declararlas. Se denominan IIFE (Immediately-invoked Function Expression).
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+(function saySomething(string) {
+  console.log(string);
+})("Hello Function!");
+\end{minted}
+
+Las funciones siempre retornan un valor. Si se omite el uso de \textit{return} para retornar algo explícito, entonces una función retornará el valor \textit{undefined}.
+
+\begin{minted}[fontseries=mc,
+               framesep=2mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+let x = saySomething("Hello Function!");
+//x is undefined
+\end{minted}
+
+También hemos mencionado que las funciones son objetos de \textbf{primera clase}. Ésto significa que al igual que las variables, éstas pueden asignarse, pasarse por parámetro o retornarse de otra función. El ejemplo a continuación, en la línea 6, nos encontramos con una función que se asigna a la variable \colorbox{verylight}{\lstinline{say}}. Y luego en la línea 10 utilizamos ésta variable para invocar la función.
+
+\begin{minted}[fontseries=mc,
+               framesep=2mm,
+               frame=leftline,
+               linenos,
+               framerule=0.1pt]{jsx}
+function returnSomething(string) {
+  return "This is it: " + string;
+}
+
+//assigning a function to a variable
+let say = returnSomething;
+
+//calling the function
+returnSomething("Hello js!");
+say("Hello again!");
+\end{minted}
+
+En el siguiente ejemplo, en la línea 12, estamos invocando una función pasando como parámetro a la función \mintinline{js}{returnSomething}. Y en la línea 8, utilizando el argumento recibido, realizamos la invocación a la función.
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+function returnSomething(string) {
+  return "This is it: " + string;
+}
+
+//receives a function as parameter
+//invokes it and return the value
+function saySomethingMore(fn) {
+  return fn("Hey !");
+}
+
+//passing a function as argument
+saySomethingMore(returnSomething); //"This is it: Hey !"
+\end{minted}
+
+También podemos asignar una función a una variable directamente en su declaración, tal como se muestra a continuación:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+//assigning the function
+const returnSomething = function (string) {
+  return "This is it: " + string;
+};
+
+returnSomething("Hey !"); //"This is it: Hey !"
+\end{minted}
+
+Otra forma de declarar funciones en JavaScript, de una forma algo menos verbosa, se denomina \textbf{arrow functions}. Veamos el siguiente ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+               
+//arrow function with no parameters
+const arrowf1 = () => {
+  return "arrowf1 was invoked!";
+};
+
+//arrow function with one parameter
+//parenthesis is not necesary here
+const arrowf2 = param => {
+  return "this is the argument: " + param;
+};
+
+//arrow functions with one statement 
+//in the body won't need return 
+const arrowf3 = (a, b) => a + b;
+\end{minted}
+
+\section{Arreglos} \label{arrays}
+
+Vamos a utilizar \textbf{arreglos} de forma frecuente en React en general y a lo largo de esta guía. Así es como declaramos un arreglo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+//an empty array
+let empty = [];
+
+//an array
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+\end{minted}
+
+Los elementos de un arreglo se acceden a través de su índice, donde 0 es el primer elemento.
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+//an array
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+family[0]; //Jóse
+family[1]; //Nicolas
+family[2]; //Lucia
+family[3]; //Enrique
+\end{minted}
+
+Dado que los arreglos en JavaScript son objetos, tenemos varios métodos útiles que podremos utilizar, como el que se muestra a continuación para agregar elementos al final:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+
+//adding an element at the end of an array
+family.push("Pablo");
+\end{minted}
+
+Si quisiéramos incorporar todos los elementos de un arreglo en otro arreglo, tenemos la opción de utilizar la construcción sintáctica denominada \textit{spread syntax}. Veamos como se utiliza:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+
+let myParents = ["EnriqueR", "Susana"];
+let JoseParents = ["Eduardo", "Graciela"];
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+let all = [...myParents, ...JoseParents, ...family];
+//[
+//  'EnriqueR', 'Susana', 'Eduardo', 'Graciela', 
+//  'Jóse', 'Nicolas', 'Lucia', 'Enrique'
+// ]
+\end{minted}
+
+También es posible utilizar \textit{spread syntax} en los parámetros de las funciones para indicar un número indefinido de argumentos:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+function restParams(param1, param2, ...params) {
+ //params is [3, 4, 5]	
+}
+restParams(1, 2, 3, 4, 5);
+\end{minted}
+
+La forma clásica de iterar sobre un arreglo es utilizando la construcción sintáctica \mintinline{js}{for}, como se muestra a continuación: 
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+for (let element of family) {
+  console.log("regular for: ", element);
+}
+\end{minted}
+               
+Sin embargo, los arreglos proveen de un conjunto de métodos muy convenientes y que utilizaremos con frecuencia. El más simple es \mintinline{js}{.forEach}:              
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+
+family.forEach(function (value, index, array) {
+  //value is the element being processed
+  //index is the index of the current value
+  //array is the entire array
+  console.log(value, index, array);
+});
+\end{minted}
+
+\mintinline{js}{.forEach} acepta tres argumentos. \mintinline{js}{value} que es el elemento a procesar, \mintinline{js}{index} que es el índice que corresponde al valor que estamos procesando y \mintinline{js}{array} que es el arreglo que estamos iterando. Si solo nos interesa trabajar con \mintinline{js}{value}, podemos simplemente escribirlo así:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+
+family.forEach((value) => {
+  //do something with the value here	
+});
+\end{minted}
+
+Un método más interesante aún es \mintinline{js}{.filter}, el cual se utiliza para procesar el arreglo y devolver otro con igual o menos elementos. Recibe una función con los mismos parámetros que \mintinline{js}{.forEach} y devuelve un arreglo para aquellos elementos donde la función evalúa a true. Veamos como se utiliza a continuación:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
+
+const members = family.filter((member) => {
+  return member.length > 5;
+});
+
+//members = ['Nicolas', 'Enrique']
+\end{minted}
+
+\mintinline{js}{.filter} recibe una función que evalúa por cada elemento del arreglo si es mayour a 5. Aquellos elementos que sean mayores a 5 serán parte del nuevo arreglo que se retorna. El arreglo donde se aplica el filtro no es modificado.
+
+Otro de los métodos interesantes, y principalmente útil para React como veremos más adelante, es \mintinline{js}{.map}. Éste método, al igual que el anterior, recibe una función como parámetro y retorna otro arreglo con el resultado de aplicar la función recibida sobre cada elemento. Veamos el siguiente ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+const doubles = numbers.map((element) => {
+  return element * 2;
+});
+//doubles = [2,  4,  6, 8, 10, 12, 14]
+\end{minted}
+
+Éstos métodos se pueden combinar. Veamos el siguiente ejemplo. Primero aplicamos \mintinline{js}{.filter} sobre un arreglo de enteros, para quedarnos solo con aquellos que son impares y luego multiplicamos por dos cada uno de los elementos para transformarlos en pares. 
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+const chain = numbers
+  .filter((element) => {
+    return element % 2 !== 0;
+  }) //[1, 3, 5, 7]
+  .map((element) => {
+    return element * 2;
+  });
+//chain = [2, 6, 10, 14]
+\end{minted}
+
+Existe una forma de asignar cada uno de los elementos de un arreglo a variables que se denomina \textbf{destructuring}. Veamos a continuación el siguiente ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let [one, two, three] = [1, 2, 3];
+//one = 1
+//two = 2
+//three = 3
+
+//same as the previous
+let fewNumbers = [1, 2, 3];
+[one, two, three] = fewNumbers;
+
+//and here using spread syntax
+let [a, b, ...rest] = [1, 2, 3, 4, 5];
+//a = 1
+//b = 2
+//rest = [3, 4, 5]
+\end{minted}
+
+\section{Objetos}\label{jsobjects}
+
+Existen varias formas de crear objetos en JavaScript. Aquí estudiaremos aquellas formas que utilizaremos con frecuencia programando en React. Comencemos estudiando como crear objetos con notación literal: \textbf{Object Literal}. Un objeto literal se crea encerrando entre llaves una colección de pares \textit{propiedad}:\textit{valor}, separadas por coma. Veamos el siguiente ejemplo: 
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+//an object literal
+let mi = {
+  name: "Enrique",
+  surname: "Molinari",
+  sports: ["football", "tennis"],
+  address: {
+    street: "San Martin",
+    number: 125,
+  },
+  allSports: function () {
+    console.log(this.sports);
+  },
+};
+//this is an empty object
+let obj = {};
+\end{minted}
+
+Como se puede ver del ejemplo anterior, en un objeto literal, los valores pueden ser arreglos, funciones o incluso otros objetos. Por otro lado, desde ES6, es posible crear objetos literales utilizando variables como nombre de propiedad. Veamos a continuación como se utiliza en la linea 6: 
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               highlightlines={6},
+               linenos]{jsx}
+let aproperty = "phone";               
+//an object literal with a computed property name 
+let mi = {
+  name: "Enrique",
+  surname: "Molinari",
+  [aproperty]: "+54 2920 259031"
+};
+
+\end{minted}
+
+Cada vez que el intérprete de JavaScript evalúa un objeto literal se crea la instancia. Las propiedad de los objetos se acceden utilizando la \textbf{notación de punto}. Veamos un ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+console.log(mi.name); //Enrique
+console.log(mi.sports[0]);//football
+console.log(mi.address.street);//San Martin
+console.log(mi.phone);//+54 2920 259031
+mi.allSports(); //invoke the function and prints the sports array               
+\end{minted}
+
+En JavaScript es posible agregar propiedades nuevas en tiempo de ejecución a los objetos. Éste concepto es sumamente importante para entender algunas cuestiones más adelante. Observen el siguiente ejemplo. En las línes 3 y 4, se agregan las propiedades \mintinline{js}{x} e \mintinline{js}{y} (inicializadas) al objeto \mintinline{js}{obj}.
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let obj = {a: 1, b: 2};
+//add properties to the obj object
+obj.x = 3;
+obj.y = 4;
+\end{minted}
+
+Podemos utilizar la expresión denominada spread syntax con objetos también:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let obj1 = {
+  a: 1,
+  b: 2,
+};
+let obj2 = {
+  c: 3,
+  d: 4,
+};
+let obj3 = { ...obj1, ...obj2 };
+//obj3 = { a: 1, b: 2, c: 3, d: 4 }
+\end{minted}
+
+Podemos crear objetos a partir de variables inicializadas, de la siguiente forma:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+let a = 1,
+  b = 2;
+let obj4 = {
+  a,
+  b,
+};
+//obj4 = { a: 1, b: 2 }	
+\end{minted}
+
+Hasta el momento hemos visto como crear objetos utilizando la notación literal. Pero para aquellos que venimos estudiando lenguajes estáticos y compilados como Java, nos estaremos preguntando que pasa si necesitamos una cantidad de instancias desconocidas, y con igual estructura, o sea, creadas a partir de una clase. Para esto, en JavaScript tenemos lo que denominamos \textbf{constructor functions}. También tenemos clases como veremos más adelante, pero las clases vienen mucho después, es importante primero entender como funciona una función constructora.
+\newline
+
+Por convención el nombre de una función constructora comienza con mayúscula. Veamos algunos ejemplos a continuación:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+function Book(name, authors, publishedYear) {
+  this.name = name;
+  this.authors = authors;
+  this.publishedYear = publishedYear;
+  this.fullName = function () {
+    return this.name + " by " + this.authors + ". " + publishedYear;
+  };
+}
+
+thisBook = new Book("Coding in React", 
+			["Enrique Molinari"], 2021);
+thisBook.fullName(); //Coding in React by Enrique Molinari. 2021
+
+archBook = new Book("Coding an Architecture Style", 
+			["Enrique Molinari"], 2020);
+archBook.fullName(); //Coding an Architecture Style by Enrique Molinari. 2020 
+\end{minted}
+
+Como podemos observar del ejemplo anterior, la función \mintinline{js}{Book} se parece mucho a un constructor de los que solemos tener cuando escribimos clases en lenguajes como Java. En las líneas 2, 3 y 4 definimos propiedades y las inicializamos con los parámetros recibidos. En la línea 5 definimos el método \mintinline{js}{fullName()}. Luego, en las líneas 10 y 14 creamos dos instancias de \mintinline{js}{Book} e invocamos al métodos \mintinline{js}{fullName()}. 
+
+\subsection{Un Lenguaje basado en Prototipos}
+
+Ahora que sabemos como crear objetos con notación literal, como crear instancias a partir de funciones constructoras, podemos continuar explicando qué significa que JavaScript sea un lenguaje \textbf{basado en prototipos}. Los lenguajes basados en prototipos son un estilo de lenguajes orientados a objetos en los cuales los objetos son creados sin crear previamente una \textit{clase}. Por este motivo, éstos lenguajes también son conocidos como lenguajes \textit{classless} (sin clases). Por otro lado, lenguajes como Smalltalk, Java, C++ y C\#, para nombrar algunos, son conocidos como lenguajes \textit{class-based} (basados en clases).
+\newline
+
+En los lenguajes basados en prototipos, \textbf{no hay clases}, solo objetos. No existe esa diferencia entre clase y objeto. En lenguajes basados en clases, definimos una estructura estática con la posibilidad de definir entre ellas una relación de herencia, la cual no es posible modificar en tiempo de ejecución. En lenguajes basados en prototipos sólo tenemos instancias. No tenes clases, se hace evidente a medida vamos entendiendo como funciona JavaScript. Veamos algunos ejemplos.
+\newline
+
+Tal cual implementamos la función constructora \mintinline{js}{Book} en el ejemplo anterior, no es la forma ideal. Observemos por qué con el siguiente ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+thisBook = new Book("Coding in React", 
+			["Enrique Molinari"], 2021);
+archBook = new Book("Coding an Architecture Style", 
+			["Enrique Molinari"], 2020);
+//printing thisBook
+//Book {
+//  name: 'Coding in React',
+//  authors: [ 'Enrique Molinari' ],
+//  publishedYear: 2021,
+//  fullName: [Function (anonymous)]
+//}
+//printing archBook
+//Book {
+//  name: 'Coding an Architecture Style',
+//  authors: [ 'Enrique Molinari' ],
+//  publishedYear: 2020,
+//  fullName: [Function (anonymous)]
+//}
+\end{minted}
+
+En el ejemplo anterior, creamos dos instancias: \mintinline{js}{thisBook} y \mintinline{js}{archBook}, y luego las imprimimos. Como podemos observar, cada una de las instancias no solo cuenta con sus propiedades y valores, sino que también tiene la propiedad \mintinline{js}{fullName}, con su código. Los fuentes de ese método no es almacenado en una clase y compartido por las instancias de dicha clase como en los lenguajes basados en clases. Si no que esta incluido en cada instancia. Éste es un detalle de implementación que tenemos que es importante entender, pero ademas devela una de las diferencias que podemos encontrar en lenguajes basados en prototipos.
+\newline
+
+¿Pero qué sucede con la \textit{herencia}? Al no tener clases, ¿tenemos herencia? La respuesta es Sí. La diferencia es que la relación de herencia en lenguajes basados en prototipos es dinámica, es decir que se puede establecer y cambiar en ejecución. Para entender como funciona la herencia en lenguajes sin clases, vamos a presentar el concepto de \textbf{prototype}. 
+\newline
+
+Cada objeto en JavaScript (y en general en cualquier lenguaje basado en prototipos) puede estar asociado a lo que se denomina un \textbf{objeto prototipo}, del cual hereda todas sus propiedades y métodos. Si sobre una instancia queremos acceder a una propiedad y ésta no esta definida allí, se \textbf{delega} su búsqueda en el objeto prototipo asociado. Como los prototipos pueden tener también un prototipo, se delegará en ellos hasta que se encuentre la propiedad o termina la ejecución con error al no encontrarla. Ésto se lo conoce como \textbf{prototype chain}.
+\newline
+
+Las funciones constructoras tienen acceso a una propiedad especial denominada \mintinline{js}{prototype} y la podemos acceder de la siguiente forma: \mintinline{js}{Book.prototype}. Con una instancia de un objeto es posible acceder a esta propiedad de la siguiente forma: \mintinline{js}{thisBook.__proto__} o lo que es lo mismo: \mintinline{js}{Object.getPrototypeOf(thisBook)}. Sabiendo esto, entonces si queremos mejorar la función constructora \mintinline{js}{Book} de modo de que cada instancia no cuente con los métodos que se definen, la creamos de la siguiente forma:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+function Book(name, authors, publishedYear) {
+  this.name = name;
+  this.authors = authors;
+  this.publishedYear = publishedYear;
+}
+Book.prototype.fullName = function () {
+  return this.name + " by " + this.authors + ". " + this.publishedYear;
+};               
+               
+thisBook = new Book("Coding in React", 
+			["Enrique Molinari"], 2021);
+archBook = new Book("Coding an Architecture Style", 
+			["Enrique Molinari"], 2020);
+//printing thisBook
+//Book {
+//  name: 'Coding in React',
+//  authors: [ 'Enrique Molinari' ],
+//  publishedYear: 2021
+//}
+//printing archBook
+//Book {
+//  name: 'Coding an Architecture Style',
+//  authors: [ 'Enrique Molinari' ],
+//  publishedYear: 2020
+//}
+\end{minted}
+
+En el ejemplo anterior, definimos el método \mintinline{js}{fullName()} en el prototipo, en la línea 6. Luego creamos dos instancias y las imprimimos. Ahora podemos ver que el método \mintinline{js}{fullName()} no esta en éstas instancias. Sin embargo, si lo invocamos así:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+
+thisBook.fullName();
+\end{minted}
+
+JavaScript buscará primero el método en la instancia \mintinline{js}{thisBook}. Al no encontrarlo, irá por su prototipo y lo ejecutará.
+\newline
+
+Toda cadena de prototipos finaliza en \mintinline{js}{Object.prototype}, dado que todo objeto en JavaScript es descendiente de \href{https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object}{Object}. Con lo cual, si ejecutamos la siguiente invocación:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+
+thisBook.valueOf();
+\end{minted}
+
+JavaScript recorrerá la cadena de prototipos hasta encontrar el método \mintinline{js}{valueOf()} en \mintinline{js}{Object.prototype}. Creemos ahora un ejemplo utilizando herencia. Crearemos el objeto \mintinline{js}{EBook} que hereda de \mintinline{js}{Book}, como se muestra a continuación.
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+
+function EBook(filesize, name, authors, publishedYear) {
+  Book.call(this, name, authors, publishedYear);
+  this.filesize = filesize;
+}
+let eBook = new EBook(2048, "Coding in React", ["Enrique Molinari"], 2021);
+
+//printing eBook:
+//eBook:  EBook {
+//  name: 'Coding in React',
+//  authors: [ 'Enrique Molinari' ],
+//  publishedYear: 2021,
+//  filesize: 2048
+//}
+\end{minted}
+
+En el ejemplo anterior creamos la función constructora \mintinline{js}{EBook}. En la línea 2, invocamos a la función constructora \mintinline{js}{Book} y para ello utilizamos el método \mintinline{js}{call} (\href{https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/call}{Function.prototype.call}) que permite invocar una función pasándole como parámetro el valor que utilizará para \mintinline{js}{this}. En éste caso observen que le pasamos aquella instancia de \mintinline{js}{EBook} que se sea creada vía el operador \mintinline{js}{new}, como en la línea 5. Éste que estamos haciendo es similar a utilizar \mintinline{js}{super(...)} dentro de un constructor de una clase, para instanciar e inicializar la superclase. 
+\newline
+
+En la línea 5, como mencionamos, creamos una instancia de \mintinline{js}{EBook} e imprimimos la instancia. Vemos como resultado de la impresión que contamos con las propiedades de \mintinline{js}{Book} también. Sin embargo, no tenemos el método \mintinline{js}{fullName()} definido en \mintinline{js}{Book.prototype}. Para heredarlo necesitamos setear como prototipo a \mintinline{js}{Book.prototype}. Lo hacemos de la siguiente manera:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               linenos]{jsx}
+
+Object.setPrototypeOf(eBook, Book.prototype);
+
+//Another way of doing the same as above is this:
+//thisEBook.__proto__ = Book.prototype;
+//However __proto__ is deprecated
+\end{minted}
+
+\mintinline{js}{Object.setPrototypeOf} recibe dos parámetros, el primero es la instancia al la cual le asigno un prototipo y el segundo parámetro es el prototipo a asignar.
+
+\section{Clases}
+
+Sí! JavaScript tiene clases y su sintaxis es muy similar a la que conocemos de lenguajes basados en clases como Java. Las clases en JavaScript fueron incorporadas al lenguaje en 2015 como parte de EcmaScript 6 (ES6). Lo que es importante entender, es que ésto no transforma a JavaScript en un lenguaje basado en clases. Las clases son solo una \textbf{mejora sintáctica} (syntactic sugar) para poder utilizar herencia sin lídear con lo que mostramos en la sección anterior. Por detras siempre son funciones constructoras y herencia basada en prototipos.
+\newline
+
+Implementemos entonces la jerarquía \mintinline{js}{Book} e \mintinline{js}{EBook} de la sección anterior pero ahora utilizando clases:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,               
+               linenos]{jsx}
+
+class Book {
+  constructor(name, authors, publishedYear) {
+    this.name = name;
+    this.authors = authors;
+    this.publishedYear = publishedYear;
+  }
+
+  //this method gets added to the Book.prototype
+  fullName() {
+    return this.name + " by " + this.authors + ". " + this.publishedYear;
+  }
+}
+
+class EBook extends Book {
+  constructor(filesize, name, authors, publishedYear) {
+    super(name, authors, publishedYear);
+    this.filesize = filesize;
+  }
+}
+\end{minted}
+
+En el ejemplo anterior construimos la relación de herencia entre \mintinline{js}{EBook} y \mintinline{js}{Book}, utilizando clases. Pero en ejecución termina quedando exactamente lo mismo que utilizando funciones constructoras como lo hicimos en la sección anterior. Veamos el siguiente ejemplo que lo demuestra:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,               
+               linenos]{jsx}
+
+let ebook = new EBook(2048, "Coding in React", ["Enrique, Molinari"], 2021);
+//Book.prototype is the prototype of the ebook instance
+console.log(Book.prototype.isPrototypeOf(ebook)); //true
+//fullName method is found on the prototype
+console.log(ebook.fullName()); //Coding in React by Enrique, Molinari. 2021
+//EBook is a function not a class
+console.log(typeof EBook); //function
+\end{minted}
+
+Primero hemos creado una instancia de \mintinline{js}{EBook} y luego en la línea 3 verificamos que \mintinline{js}{Book.prototype} esta seteado como el prototipo de la instancia \mintinline{js}{ebook}. De esta forma comprobamos que tenemos en ejecución la relación de herencia basada en prototipos como construimos en la sección anterior.
+
+\section{¿Cómo se comporta \textit{this} en JavaScript?} \label{meaning_of_this}
+
+En las secciones anteriores hemos estado utilizando \mintinline{js}{this} en aquellas situaciones en las que tu comportamiento es el mismo que en lenguajes basados en clases como Java o C\#. Sin embargo, hay ciertas diferencias para algunas construcciones sintácticas que necesitamos entender para poder luego entender el porque de algunas cuestiones que necesitamos hacer en React.
+\newline
+
+Si utilizamos \mintinline{js}{this} en funciones constructoras y creamos las instancias utilizando \mintinline{js}{new}, \mintinline{js}{this} apuntará a la instancia creada. Sin embargo, si la función constructora es invocada, \mintinline{js}{this} tendrá otro valor. Veamos el siguiente ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,               
+               linenos]{jsx}
+function Constr(param) {
+  this.param = param;
+}
+
+Constr(2); //this is global object window
+console.log(window.param); //prints 2
+\end{minted}
+
+Invocando a la función \mintinline{js}{Const} tal como lo hacemos en la línea 5 tiene un efecto bastante extraño. En éstos casos, \mintinline{js}{this} apunta al objeto global \mintinline{js}{window}. Con lo cual, lo que termina haciendo éste ejemplo es agregando la propiedad \mintinline{js}{param} al objeto \mintinline{js}{window} con el valor 2.
+\newline
+
+El ejemplo anterior no es algo que vayamos a utilizar con frecuencia en React, sin embargo son cuestiones a tener presentes. Otra forma donde el \mintinline{js}{this} pierde valor es cuando asignamos un método a una variable, y ésto si lo utilizaremos frecuentemente en React. Veamos el siguiente ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,               
+               linenos]{jsx}
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  saySomething() {
+    console.log(this.name + " is talking...");
+  }
+}
+let enrique = new Person("Enrique");
+enrique.saySomething(); //Enrique is talking...
+
+let o = enrique.saySomething; //assigning to a variable
+o(); //TypeError: Cannot read property 'name' of undefined
+\end{minted}
+
+En el ejemplo anterior creamos en la línea 9 una instancia de la clase \mintinline{js}{Person} para luego en la línea 10 invocamos al método \mintinline{js}{saySomething()}. Hasta acá todo perfecto, el \mintinline{js}{this} en la línea 6 funciona funciona tal como esperamos. Sin embargo, en la línea 12 asignamos el método a una variable y en la siguiente línea utilizamos dicha variable para invocar al método. En esta ocasión, \mintinline{js}{this} es \mintinline{js}{undefined}, provocando un error. Para arreglar este comportamiento, necesitamos, en forma explicita, decirle al método que valor de \mintinline{js}{this} queremos que utilice, algo similar a lo que hicimos con el método \mintinline{js}{call} en secciones anterior. Veamos como lo resolvemos con el siguiente ejemplo:
+ 
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={4},               
+               linenos]{jsx}
+
+class Person {
+  constructor(name) {
+    this.name = name;
+    this.saySomething = this.saySomething.bind(this);    
+  }
+  saySomething() {
+    console.log(this.name + " is talking...");
+  }
+}
+let enrique = new Person("Enrique");
+enrique.saySomething(); //Enrique is talking...
+
+let o = enrique.saySomething; //assigning to a variable
+o(); //Enrique is talking...
+\end{minted}
+
+El método \href{https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/bind}{bind} que utilizamos en la línea 4, devuelve la misma función pero con el valor de \mintinline{js}{this} seteado con el parámetro recibido. En este caso, le pasamos \mintinline{js}{this}, el cual apuntará a la instancia creada. De ésta forma al invocar nuevamente utilizando \mintinline{js}{o()}, funcionará de la forma esperada.
+\newline
+
+Otra forma de solucionar este mismo inconveniente es declarando el método dentro de la clase utilizando funcionas flecha (arrow functions). Veamos el siguiente ejemplo:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={5},               
+               linenos]{jsx}
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  saySomething = () =>  {
+    console.log(this.name + " is talking...");
+  }
+}
+let enrique = new Person("Enrique");
+enrique.saySomething(); //Enrique is talking...
+
+let o = enrique.saySomething; //assigning to a variable
+o(); //Enrique is talking...
+\end{minted}
+
+Definiendo el método \mintinline{js}{saySomething} de esta forma no tendremos el inconveniente que mostramos antes. Las funciones flecha le asignan al \mintinline{js}{this} el valor que tenga en el ámbito léxico en el que se crean. El cual en este caso es la clase. Sin embargo, lo métodos definidos de esta forma no son agregados al prototipo del objeto sino que son parte del objeto, provocando lo que ya hemos mencionado que cada nueva instancia tendrá una copia del código del método.
+
+\section{Módulos}
+
+En ECMAScript 2015 (ES6) incorporaron al lenguaje la posibilidad de definir módulos. En las versiones anteriores de JavaScript si queríamos definir módulos teníamos que utilizar alguna herramienta externa como \cite{requirejs}. Ahora esta soportado de forma nativa. 
+\newline
+
+Realmente es muy simple de utilizar. En un archivo JavaScript podemos definir funciones, clases, objetos, constantes, variables, etc y exportar aquellos que queremos sea utilizado fuera del módulo. Para exportar utilizando la palabra reservada \mintinline{js}{export}. Los clientes del módulo deben importar explícitamente aquello que quiere utilizar. Importan utilizando la palabra reservada \mintinline{js}{import}. Veamos algunos ejemplos:
+ 
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+//this is my complex-module.js module
+
+export function complexThing() {
+  console.log("a complex thing has been executed...");
+}
+
+export let obj = {
+  a: 1,
+  b: 2,
+};
+
+export class ASimpleClass {
+  constructor(name) {
+    this.name = name;
+  }
+
+  print() {
+    console.log("printing: ", this.name);
+  }
+}
+\end{minted}
+
+En el módulo \textit{complex-module.js} del ejemplo anterior exportamos una función, un objeto y una clase. También es posible realizar lo mismo de la siguiente forma:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={22},               
+               linenos]{jsx}
+//this is my complex-module.js module
+
+function complexThing() {
+  console.log("a complex thing has been executed...");
+}
+
+let obj = {
+  a: 1,
+  b: 2,
+};
+
+class ASimpleClass {
+  constructor(name) {
+    this.name = name;
+  }
+
+  print() {
+    console.log("printing: ", this.name);
+  }
+}
+
+export { obj, ASimpleClass, complexThing };
+\end{minted}
+
+Por supuesto, en un módulo solo debemos exportar aquellos que queremos exponer hacia afuera del módulo. Veamos ahora como podemos utilizar y consumir aquellos que exportamos.
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={22},               
+               linenos]{jsx}
+//this is my main-module.js module
+
+import { complexThing, obj, ASimpleClass } from "./module/complex-module.mjs";
+
+//calling the imported function
+complexThing();
+
+//printing the imported object
+console.log(obj);
+
+//instantiating the imported class
+let o = new ASimpleClass("Enrique");
+o.print();
+\end{minted}
+
+En la línea 3 importamos las tres abstracciones que \textit{complex-module.js} exporta. Y simplemente las utilizamos como si estuvieran definidas allí mismo. Es posible definir una abstracción a exportar por defecto. Observen en el siguiente ejemplo como exportamos las mismas abstracciones pero la clase la exportamos utilizando las palabras reservadas \textit{export default}:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={22},               
+               linenos]{jsx}
+//this is my complex-module.js module
+
+function complexThing() {
+  console.log("a complex thing has been executed...");
+}
+
+let obj = {
+  a: 1,
+  b: 2,
+};
+
+class ASimpleClass {
+  constructor(name) {
+    this.name = name;
+  }
+
+  print() {
+    console.log("printing: ", this.name);
+  }
+}
+
+export default ASimpleClass;
+export { obj, complexThing };
+\end{minted}
+
+Esto nos permite, como vemos en el siguiente ejemplo en la línea 3, importar la clase pero con un nombre diferente al que se definió en el módulo donde reside.
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={3},               
+               linenos]{jsx}
+//this is my main-module.js module
+
+import AClass from "./module/complex-module.mjs";
+//This line below is the same as the one above
+//import { default as AClass } from "./module/complex-module.mjs";
+import { obj, complexThing } from "./module/complex-module.mjs";
+
+let o = new AClass("Enrique");
+o.print();
+
+//... more code here
+\end{minted}
+
+
+\section{Single Thread Language} \label{single_thread}
+
+As per the definition about JavaScript we gave at the beginning of this chapter, we know that JavaScript is a \textbf{single threaded} language. This means that the execution of a statement is one at a time. However, as we know, JavaScript supports \textit{asynchronous} operations, like Ajax calls. So, how does this work? The thing is that the JavaScript interpreter receives some help from the Browser, where somehow, as we will see later, are returned to the JavaScript interpreter as \textit{callbacks}. There are a bunch of operations that the JavaScript interpreter delegates its execution to the Browser. These operations are called \textbf{Web APIs}. Among these Web APIs, we can find events (onclick, onmouseover, etc), fetch and XMLHttpRequest (ajax calls), setTimeout, etc.
+
+To handle this, the execution environment of JavaScript has use: a \textit{call stack}, the browser's Web APIs, a \textit{callback queue} and its \textit{event loop}. Lets see the following simple example:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+console.log("starting");
+
+setTimeout(() => {
+  console.log("callback");
+}, 1000);
+
+console.log("finishing");
+\end{minted}
+
+Here is the list of how this program is executed in a browser:
+\begin{enumerate}
+\item Statement on line 1 is pushed on to the \textit{call stack} and executed. \mintinline{js}{"starting"} is printed on the console. 
+\item The \mintinline{js}{setTimeout} on line 3 is delegated to the browser's Web API to be executed. Which basically wait for one second. However execution of the program continue, does not wait because the execution was delegated to the browser's Web API.
+\item Statement on line 7 is pushed on to the \textit{call stack} and executed. \mintinline{js}{"finishing"} is printed on the console.
+\item After the one second elapsed from the \mintinline{js}{setTimeout} function, the callback arrow function passed as the first argument is then pushed into the \textit{callback queue}. Since there are no more statements to be executed on the \textit{call stack}, the \textit{event loop} get from the top of the \textit{callback queue} the arrow function and push it into the \textit{call stack}. Finally it gets executed. \mintinline{js}{"callback"} is printed on the console.
+\end{enumerate}
+
+Note that all the callback functions that end up in the \textit{callback queue} gets executed after the call stack is empty and not before. To be very clear with this, look a the example below.
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={5},                              
+               linenos]{jsx}
+console.log("starting");
+
+setTimeout(() => {
+  console.log("callback");
+}, 0);
+
+console.log("finishing");
+\end{minted}
+
+Note that on line 5 we are passing \mintinline{js}{0} seconds to the \mintinline{js}{setTimeout} function telling the Web API to not wait to push the callback arrow function into the \textit{callback queue}. In any case, the result and the order of the console messages is the same as the example before: \mintinline{js}{"starting"}, \mintinline{js}{"finishing"}, \mintinline{js}{"callback"}.
+
+We can expect exactly the same behaviour from the example below that perform an ajax call:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+console.log("starting");
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+console.log("finishing");
+\end{minted}
+
+\mintinline{js}{fetch} is delegated to the Web API which performs an ajax call. Once the server respond, the callback arrow functions are pushed into the \textit{callback queue}. The first callback function, on line 3, transform the response obtained from the server to json and the next callback function on line 4 prints that json in the console. Only after printing on the console the text \mintinline{js}{"finishing"} on line 5, is when those callbacks functions are pushed into the \textit{call stack} and executed. You can find a more detailed explanation about the JavaScript interpreter and how it works, in the great talk by Philip Roberts\cite{loupe}.
+
+\section{The Promise Object and the async/await Keywords}
+
+The Promise Object was introduced in Javascript in ES2015. This object represents an asynchronous operation that might finish successfully or fail. See below how to create an instance of a Promise:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+let p = new Promise(function (resolve, reject) {
+  //function to be executed by the constructor
+});
+
+//do something with p
+\end{minted}
+
+As we can see above, the Promise constructor receives a function, called \textit{executor}, that will be invoked by the constructor. The \textit{executor} function receives two additional functions as parameters. The body of the \textit{executor} function perform typically an asynchronous operation and finish by calling the \mintinline{js}{resolve(value)} function if everything goes well or \mintinline{js}{reject(reason)} otherwise. See how this is done bellow:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+let p = new Promise(function (resolve, reject) {
+  //long async operation
+  setTimeout(() => resolve("finished"), 1000);
+});
+\end{minted}
+
+On the example above using \mintinline{js}{setTimeout} we are simulating an operation that takes one second to finish. After that operation finish it will call the \mintinline{js}{resolve} function passing as value the string \mintinline{js}{"finished"}. What can we do with that then?
+\newline
+
+The Promise object have the \mintinline{js}{then(handleResolved)} method that receives a function that allows you to work with the parameter passed when you invoke the \mintinline{js}{resolve} function like we do on line 3 below:   
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               highlightlines={6},
+               linenos]{jsx}
+let p = new Promise(function (resolve, reject) {
+  //long async operation
+  setTimeout(() => resolve("finished"), 1000);
+});
+
+p.then((value) => console.log(value));
+\end{minted}
+
+As we can see above, on line 6 we are passing the \mintinline{js}{"finished"} string as parameter named \mintinline{js}{value} to the function passed to the \mintinline{js}{then(handleResolved)}. Then that value is just printed. What is important to note here is that the \mintinline{js}{handleResolved} function passed to the \mintinline{js}{then(...)} method is executed only once the promise is resolved.
+\newline
+
+Suppose now something goes wrong withing the executor, then it can be handled in a different way, see below:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+let p = new Promise(function (resolve, reject) {
+  //long async operation
+  setTimeout(() => reject("can't be done..."), 1000);
+});
+
+p.then((value) => console.log("success: " + value))
+ .catch((value) => console.log(value));
+\end{minted}
+
+Note that on line 3 now we are calling the \mintinline{js}{reject(reason)} function passing the \mintinline{js}{reason} value as the string \mintinline{js}{"can't be done"}. Then, on line 7 note how the function passed to the \mintinline{js}{catch} method is the one that gets called.  
+\newline
+
+During this book, and usually in React we don't write promises, but we use them frequently. By using the \mintinline{js}{fetch} method to retrieve data from an external API, we have to deal with a promise. Look at the example below:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+function fetchPost() {
+ fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+}
+
+fetchPost();
+\end{minted}
+
+As you can see on line 2 above, the \mintinline{js}{fetch} method call returns a promise, which allows us to call the \mintinline{js}{then} method on it, to work with the fetched data.
+\newline
+
+Another way to write this is by using the \mintinline{js}{async} and \mintinline{js}{await} keywords. These keywords were added to Javascript on ES2017 allowing us to write asynchronous code in a synchronous way. Let's rewrite one of our previous examples to take advantage of these keywords. First we will create a function that return a promise. Functions that return promises are (usually) asynchronous:  
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+function thePromise() {
+  return new Promise(function (resolve, reject) {
+    //long async operation
+    setTimeout(() => resolve("finished"), 1000);
+  });
+}
+\end{minted}
+
+To call these functions the \mintinline{js}{await} keyword is used provoking to stop the execution until the promise is \mintinline{js}{resolved} or \mintinline{js}{rejected}. The call code must be a function declared with the \mintinline{js}{async} keyword. See below: 
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+async function testingKeywords() {
+  console.log("before");
+  const data = await thePromise();
+  console.log("after");
+  console.log(data);
+}
+\end{minted}
+
+Note that we declared the function \mintinline{js}{async}, line 1, and we use the \mintinline{js}{await} keyword before calling the asynchronous function on line 3. It is important to understand that the order of the messages printed on the console is the same as the order of the sentences inside the \mintinline{js}{testingKeywords()} function, as opposed to what we have discussed before on section \ref{single_thread}.
+\newline
+
+To finish this section we are going to rewrite the \mintinline{js}{fetchPost()} function to use these new keywords. See below:
+
+\begin{minted}[fontseries=mc,
+               framesep=5mm,
+               frame=leftline,
+               framerule=0.1pt,
+               breaklines=true,
+               linenos]{jsx}
+async function fetchPost() {
+  let data = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  data = await data.json();
+  console.log(data);
+}
+
+fetchPost();
+\end{minted}
+
+As you can see, again, we are declaring the function \mintinline{js}{async}, and in  this case the \mintinline{js}{fetch} call on line 2, is prepended with the \mintinline{js}{await} keyword. Prepended the \mintinline{js}{await} to the \mintinline{js}{fetch} function means that instead of returning a \href{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise}{Promise} object, it returns (if the promises resolve, you can use a try/catch block to handle errors) a \href{https://developer.mozilla.org/en-US/docs/Web/API/Response}{Response} object. That allows us to call on line 3 directly to the \mintinline{js}{json()} method of the \href{https://developer.mozilla.org/en-US/docs/Web/API/Response}{Response} object. As that method returns a Promise, we also prepend the sentence with the \mintinline{js}{await} keyword, giving us a Javascript object that is finally printed on the console.
+\newline
+
+It is important to note that \mintinline{js}{await} can only be used inside an \mintinline{js}{async} function.
+
+
+\begin{thebibliography}{100} % 100 is a random guess of the total number of
+%references
+\bibitem{mozilla} \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript}
+\bibitem{ecma} \url{https://www.ecma-international.org/}
+\bibitem{node} \url{https://nodejs.org/}
+\bibitem{requirejs} \url{https://requirejs.org/}
+\bibitem{loupe} \url{http://latentflip.com/loupe/}
+\end{thebibliography}
+
+
+\end{document}
+%token 1c5334cb5d68999c16e3dda57848c4dccbe61c83

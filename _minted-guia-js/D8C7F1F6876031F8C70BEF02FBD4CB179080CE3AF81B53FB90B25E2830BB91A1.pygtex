@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{class} \PYG{n+nx}{Book} \PYG{p}{\PYGZob{}}
+  \PYG{n+ni}{constructor}\PYG{p}{(}\PYG{n+nx}{name}\PYG{p}{,} \PYG{n+nx}{authors}\PYG{p}{,} \PYG{n+nx}{publishedYear}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{=} \PYG{n+nx}{name}\PYG{p}{;}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{authors} \PYG{o}{=} \PYG{n+nx}{authors}\PYG{p}{;}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{publishedYear} \PYG{o}{=} \PYG{n+nx}{publishedYear}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+
+  \PYG{c+c1}{//this method gets added to the Book.prototype}
+  \PYG{n+nx}{fullName}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{} by \PYGZdq{}} \PYG{o}{+} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{authors} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{}. \PYGZdq{}} \PYG{o}{+} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{publishedYear}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kr}{class} \PYG{n+nx}{EBook} \PYG{k+kr}{extends} \PYG{n+nx}{Book} \PYG{p}{\PYGZob{}}
+  \PYG{n+ni}{constructor}\PYG{p}{(}\PYG{n+nx}{filesize}\PYG{p}{,} \PYG{n+nx}{name}\PYG{p}{,} \PYG{n+nx}{authors}\PYG{p}{,} \PYG{n+nx}{publishedYear}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{super}\PYG{p}{(}\PYG{n+nx}{name}\PYG{p}{,} \PYG{n+nx}{authors}\PYG{p}{,} \PYG{n+nx}{publishedYear}\PYG{p}{);}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{filesize} \PYG{o}{=} \PYG{n+nx}{filesize}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

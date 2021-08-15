@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{function} \PYG{n+nx}{returnSomething}\PYG{p}{(}\PYG{n+nx}{string}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}This is it: \PYGZdq{}} \PYG{o}{+} \PYG{n+nx}{string}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{//receives a function as parameter}
+\PYG{c+c1}{//invokes it and return the value}
+\PYG{k+kd}{function} \PYG{n+nx}{saySomethingMore}\PYG{p}{(}\PYG{n+nx}{fn}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{k}{return} \PYG{n+nx}{fn}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Hey !\PYGZdq{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{//passing a function as argument}
+\PYG{n+nx}{saySomethingMore}\PYG{p}{(}\PYG{n+nx}{returnSomething}\PYG{p}{);} \PYG{c+c1}{//\PYGZdq{}This is it: Hey !\PYGZdq{}}
+\end{Verbatim}
