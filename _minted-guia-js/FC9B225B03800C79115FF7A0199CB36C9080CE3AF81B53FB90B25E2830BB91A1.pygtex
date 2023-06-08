@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nx}{fetch}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}https://jsonplaceholder.typicode.com/posts/\PYGZdq{}}\PYG{p}{,} \PYG{p}{\PYGZob{}}
+ \PYG{n+nx}{method}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}POST\PYGZdq{}}\PYG{p}{,}
+ \PYG{n+nx}{headers}\PYG{o}{:} \PYG{p}{\PYGZob{}}
+  \PYG{l+s+s2}{\PYGZdq{}Content\PYGZhy{}type\PYGZdq{}}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}application/json; charset=UTF\PYGZhy{}8\PYGZdq{}}\PYG{p}{,}
+ \PYG{p}{\PYGZcb{},}
+ \PYG{n+nx}{body}\PYG{o}{:} \PYG{n+nx}{JSON}\PYG{p}{.}\PYG{n+nx}{stringify}\PYG{p}{(\PYGZob{}}
+  \PYG{n+nx}{name}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nx}{userName}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}emolinari\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nx}{email}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}emolinari@unrn.edu.ar\PYGZdq{}}\PYG{p}{,}
+ \PYG{p}{\PYGZcb{}),}
+\PYG{p}{\PYGZcb{})}
+ \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{response}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{response}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{())}
+ \PYG{p}{.}\PYG{n+nx}{then}\PYG{p}{((}\PYG{n+nx}{json}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{json}\PYG{p}{));}
+\end{Verbatim}

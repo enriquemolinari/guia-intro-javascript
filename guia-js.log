@@ -1,25 +1,27 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.12)  15 AUG 2021 19:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.1.2)  8 JUN 2023 20:34
 entering extended mode
 **./guia-js.tex
 (guia-js.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03>
-(/home/enrique/.miktex/texmfs/install/tex/latex/base/book.cls
-Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
-(/home/enrique/.miktex/texmfs/install/tex/latex/base/bk12.clo
-File: bk12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(/home/enrique/.miktex/texmfs/install/tex/latex/paper/paper.cls
+Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
+\hours=\count177
+\minutes=\count178
+(/home/enrique/.miktex/texmfs/install/tex/latex/base/size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count177
-\c@chapter=\count178
-\c@section=\count179
-\c@subsection=\count180
-\c@subsubsection=\count181
-\c@paragraph=\count182
-\c@subparagraph=\count183
-\c@figure=\count184
-\c@table=\count185
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\exampleindent=\skip47
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
 \bibindent=\dimen138
 )
 (/home/enrique/.miktex/texmfs/install/tex/generic/babel/babel.sty
@@ -27,14 +29,14 @@ Package: babel 2020/12/16 3.52 The Babel package
 
 (/home/enrique/.miktex/texmfs/install/tex/generic/babel/babel.def
 File: babel.def 2020/12/16 3.52 Babel common definitions
-\babel@savecnt=\count186
+\babel@savecnt=\count187
 \U@D=\dimen139
 \l@babelnohyphens=\language1
 
 (/home/enrique/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count187
+\bbl@dirlevel=\count188
 
 *************************************
 * Local config file bblopts.cfg used
@@ -54,7 +56,7 @@ Package babel Warning: No hyphenation patterns were preloaded for
 (babel)                preloaded for \language=0 instead on input line 51.
 
 \es@quottoks=\toks15
-\es@quotdepth=\count188
+\es@quotdepth=\count189
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
@@ -75,9 +77,13 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@indent=\dimen144
 \caption@parindent=\dimen145
 \caption@hangindent=\dimen146
-Package caption Info: Standard document class detected.
-)
-\c@float@type=\count189
+Package caption Info: thesis document class detected.
+
+(/home/enrique/.miktex/texmfs/install/tex/latex/caption/caption-thesis.sto
+File: caption-thesis.sto 2020/08/22 v2.0 Adaption of the caption package to the
+ thesis document class (AR)
+))
+\c@float@type=\count190
 \float@exts=\toks17
 \float@box=\box47
 \@floatcapt=\box48
@@ -89,48 +95,48 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \FB@wd=\dimen147
 \FBo@wd=\dimen148
 \FBc@wd=\dimen149
-\FBo@ht=\skip49
-\FBc@ht=\skip50
-\FBf@ht=\skip51
-\FBo@max=\skip52
-\FBc@max=\skip53
-\FBf@max=\skip54
-\c@FBl@b=\count190
-\floatbox@depth=\count191
-\c@FRobj=\count192
-\c@FRsobj=\count193
-\Xhsize=\skip55
-\sXhsize=\skip56
-\Zhsize=\skip57
-\sZhsize=\skip58
+\FBo@ht=\skip50
+\FBc@ht=\skip51
+\FBf@ht=\skip52
+\FBo@max=\skip53
+\FBc@max=\skip54
+\FBf@max=\skip55
+\c@FBl@b=\count191
+\floatbox@depth=\count192
+\c@FRobj=\count193
+\c@FRsobj=\count194
+\Xhsize=\skip56
+\sXhsize=\skip57
+\Zhsize=\skip58
+\sZhsize=\skip59
 \flrow@rowbox=\box49
 \FR@Zunitlength=\dimen150
-\c@FBcnt=\count194
-\FPOScnt=\count195
-\LTleft=\skip59
-\LTright=\skip60
-\LTleft=\skip61
-\LTright=\skip62
+\c@FBcnt=\count195
+\FPOScnt=\count196
+\LTleft=\skip60
+\LTright=\skip61
+\LTleft=\skip62
+\LTright=\skip63
 \flrow@types=\toks19
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/listings/listings.sty
-\lst@mode=\count196
+\lst@mode=\count197
 \lst@gtempboxa=\box50
 \lst@token=\toks20
-\lst@length=\count197
+\lst@length=\count198
 \lst@currlwidth=\dimen151
-\lst@column=\count198
-\lst@pos=\count266
+\lst@column=\count266
+\lst@pos=\count267
 \lst@lostspace=\dimen152
 \lst@width=\dimen153
-\lst@newlines=\count267
-\lst@lineno=\count268
+\lst@newlines=\count268
+\lst@lineno=\count269
 \lst@maxwidth=\dimen154
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count269
-\lst@skipnumbers=\count270
+\c@lstnumber=\count270
+\lst@skipnumbers=\count271
 \lst@framebox=\box51
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/listings/listings.cfg
@@ -179,15 +185,15 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count271
+\etb@tempcnta=\count272
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count272
+\FV@CodeLineNo=\count273
 \FV@InFile=\read3
 \FV@TabBox=\box52
-\c@FancyVerbLine=\count273
-\FV@StepNumber=\count274
+\c@FancyVerbLine=\count274
+\FV@StepNumber=\count275
 \FV@OutFile=\write3
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/upquote/upquote.sty
@@ -196,57 +202,57 @@ tim
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count275
+\linenopenalty=\count276
 \output=\toks21
-\linenoprevgraf=\count276
+\linenoprevgraf=\count277
 \linenumbersep=\dimen155
 \linenumberwidth=\dimen156
-\c@linenumber=\count277
-\c@pagewiselinenumber=\count278
-\c@LN@truepage=\count279
-\c@internallinenumber=\count280
-\c@internallinenumbers=\count281
+\c@linenumber=\count278
+\c@pagewiselinenumber=\count279
+\c@LN@truepage=\count280
+\c@internallinenumber=\count281
+\c@internallinenumbers=\count282
 \quotelinenumbersep=\dimen157
 \bframerule=\dimen158
 \bframesep=\dimen159
 \bframebox=\box53
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count282
-\c@FV@TrueTabCounter=\count283
+\c@FV@TrueTabGroupLevel=\count283
+\c@FV@TrueTabCounter=\count284
 \FV@TabBox@Group=\box54
-\FV@TmpLength=\skip63
-\c@FV@HighlightLinesStart=\count284
-\c@FV@HighlightLinesStop=\count285
-\FV@LoopCount=\count286
+\FV@TmpLength=\skip64
+\c@FV@HighlightLinesStart=\count285
+\c@FV@HighlightLinesStop=\count286
+\FV@LoopCount=\count287
 \FV@NCharsBox=\box55
 \FV@BreakIndent=\dimen160
-\FV@BreakIndentNChars=\count287
+\FV@BreakIndentNChars=\count288
 \FV@BreakSymbolSepLeft=\dimen161
-\FV@BreakSymbolSepLeftNChars=\count288
+\FV@BreakSymbolSepLeftNChars=\count289
 \FV@BreakSymbolSepRight=\dimen162
-\FV@BreakSymbolSepRightNChars=\count289
+\FV@BreakSymbolSepRightNChars=\count290
 \FV@BreakSymbolIndentLeft=\dimen163
-\FV@BreakSymbolIndentLeftNChars=\count290
+\FV@BreakSymbolIndentLeftNChars=\count291
 \FV@BreakSymbolIndentRight=\dimen164
-\FV@BreakSymbolIndentRightNChars=\count291
-\c@FancyVerbLineBreakLast=\count292
+\FV@BreakSymbolIndentRightNChars=\count292
+\c@FancyVerbLineBreakLast=\count293
 \FV@LineBox=\box56
 \FV@LineIndentBox=\box57
 \FV@LineWidth=\dimen165
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/latex-tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count293
-\calc@Bcount=\count294
+\calc@Acount=\count294
+\calc@Bcount=\count295
 \calc@Adimen=\dimen166
 \calc@Bdimen=\dimen167
-\calc@Askip=\skip64
-\calc@Bskip=\skip65
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count295
-\calc@Cskip=\skip66
+\calc@Ccount=\count296
+\calc@Cskip=\skip67
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/latex-tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
@@ -287,14 +293,14 @@ runsystem(rm -- "guia-js.w18")...executed.
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/xstring/xstring.sty
 (/home/enrique/.miktex/texmfs/install/tex/generic/xstring/xstring.tex
-\integerpart=\count296
-\decimalpart=\count297
+\integerpart=\count297
+\decimalpart=\count298
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip67
+\OuterFrameSep=\skip68
 \fb@frw=\dimen168
 \fb@frh=\dimen169
 \FrameRule=\dimen170
@@ -303,16 +309,16 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \minted@appexistsfile=\read4
 \minted@bgbox=\box58
 \minted@code=\write4
-\c@minted@FancyVerbLineTemp=\count298
-\c@minted@pygmentizecounter=\count299
-\c@listing=\count300
+\c@minted@FancyVerbLineTemp=\count299
+\c@minted@pygmentizecounter=\count300
+\c@listing=\count301
 )
 runsystem(mkdir -p _minted-guia-js)...executed.
 
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip68
+\@mathmargin=\skip69
 
 For additional information on amsmath, use the `?' option.
 (/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
@@ -330,13 +336,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/home/enrique/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count301
+\inf@bad=\count302
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count302
-\leftroot@=\count303
+\uproot@=\count303
+\leftroot@=\count304
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count304
-\DOTSCASE@=\count305
+\classnum@=\count305
+\DOTSCASE@=\count306
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -345,15 +351,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen174
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count306
-\c@MaxMatrixCols=\count307
+\macc@depth=\count307
+\c@MaxMatrixCols=\count308
 \dotsspace@=\muskip16
-\c@parentequation=\count308
-\dspbrk@lvl=\count309
+\c@parentequation=\count309
+\dspbrk@lvl=\count310
 \tag@help=\toks23
-\row@=\count310
-\column@=\count311
-\maxfields@=\count312
+\row@=\count311
+\column@=\count312
+\maxfields@=\count313
 \andhelp@=\toks24
 \eqnshift@=\dimen175
 \alignsep@=\dimen176
@@ -362,8 +368,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen179
 \lineht@=\dimen180
 \@envbody=\toks25
-\multlinegap=\skip69
-\multlinetaggap=\skip70
+\multlinegap=\skip70
+\multlinetaggap=\skip71
 \mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
@@ -380,10 +386,10 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 \DT@rulewidth=\dimen185
 \DT@dotwidth=\dimen186
 \DTbaselineskip=\dimen187
-\DT@counti=\count313
-\DT@countii=\count314
-\DT@countiii=\count315
-\DT@countiv=\count316
+\DT@counti=\count314
+\DT@countii=\count315
+\DT@countiii=\count316
+\DT@countiv=\count317
 \DT@indent=\dimen188
 \DT@parskip=\dimen189
 \DT@baselineskip=\dimen190
@@ -425,8 +431,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen193
-\Hy@linkcounter=\count317
-\Hy@pagecounter=\count318
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
@@ -436,7 +442,7 @@ Now handling font encoding PD1 ...
 (/home/enrique/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count319
+\Hy@SavedSpaceFactor=\count320
 Package hyperref Info: Option `colorlinks' set `true' on input line 4338.
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
@@ -445,7 +451,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count320
+\c@Hy@tempcnt=\count321
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -461,7 +467,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count321
+\Fld@menulength=\count322
 \Field@Width=\dimen195
 \Fld@charsize=\dimen196
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -479,9 +485,9 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count322
-\c@Item=\count323
-\c@Hfootnote=\count324
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -493,8 +499,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count325
-\c@bookmark@seq@number=\count326
+\Fld@listcount=\count326
+\c@bookmark@seq@number=\count327
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.s
 ty
@@ -507,15 +513,15 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip71
+\Hy@SectionHShift=\skip72
 ) (/home/enrique/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count327
-\csq@gtype=\count328
-\csq@glevel=\count329
-\csq@qlevel=\count330
-\csq@maxlvl=\count331
-\csq@tshold=\count332
+\csq@reset=\count328
+\csq@gtype=\count329
+\csq@glevel=\count330
+\csq@qlevel=\count331
+\csq@maxlvl=\count332
+\csq@tshold=\count333
 \csq@ltx@everypar=\toks27
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
@@ -625,9 +631,9 @@ Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
 (/home/enrique/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\c@svg@param@lastpage=\count333
+\c@svg@param@lastpage=\count334
 \svg@box=\box61
-\c@svg@param@currpage=\count334
+\c@svg@param@currpage=\count335
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
@@ -676,14 +682,14 @@ x
 \pgf@yd=\dimen265
 \w@pgf@writea=\write5
 \r@pgf@reada=\read5
-\c@pgf@counta=\count335
-\c@pgf@countb=\count336
-\c@pgf@countc=\count337
-\c@pgf@countd=\count338
+\c@pgf@counta=\count336
+\c@pgf@countb=\count337
+\c@pgf@countc=\count338
+\c@pgf@countd=\count339
 \t@pgf@toka=\toks32
 \t@pgf@tokb=\toks33
 \t@pgf@tokc=\toks34
-\pgf@sys@id@count=\count339
+\pgf@sys@id@count=\count340
 
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
@@ -701,8 +707,8 @@ File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpat
 h.code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count340
-\pgfsyssoftpath@bigbuffer@items=\count341
+\pgfsyssoftpath@smallbuffer@items=\count341
+\pgfsyssoftpath@bigbuffer@items=\count342
 )
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotoco
 l.code.tex
@@ -730,7 +736,7 @@ Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.t
 ex
 \pgfmath@dimen=\dimen266
-\pgfmath@count=\count342
+\pgfmath@count=\count343
 \pgfmath@box=\box63
 \pgfmath@toks=\toks35
 \pgfmath@stack@operand=\toks36
@@ -756,7 +762,7 @@ c.code.tex)
 egerarithmetics.code.tex)))
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.te
 x
-\c@pgfmathroundto@lastzeros=\count343
+\c@pgfmathroundto@lastzeros=\count344
 )) (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.
 code.tex
@@ -794,7 +800,7 @@ File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfpic=\box64
 \pgf@hbox=\box65
 \pgf@layerbox@main=\box66
-\pgf@picture@serial@count=\count344
+\pgf@picture@serial@count=\count345
 )
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphic
 state.code.tex
@@ -829,8 +835,8 @@ File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ode.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@max=\dimen290
-\pgf@sys@shading@range@num=\count345
-\pgf@shadingcount=\count346
+\pgf@sys@shading@range@num=\count346
+\pgf@shadingcount=\count347
 )
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.c
 ode.tex
@@ -896,7 +902,7 @@ Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryploth
 andlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count347
+\pgf@plot@mark@count=\count348
 \pgfplotmarksize=\dimen295
 )
 \tikz@lastx=\dimen296
@@ -911,19 +917,19 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@figbox@bg=\box70
 \tikz@tempbox=\box71
 \tikz@tempbox@bg=\box72
-\tikztreelevel=\count348
-\tikznumberofchildren=\count349
-\tikznumberofcurrentchild=\count350
-\tikz@fig@count=\count351
+\tikztreelevel=\count349
+\tikznumberofchildren=\count350
+\tikznumberofcurrentchild=\count351
+\tikz@fig@count=\count352
 
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.c
 ode.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count352
-\pgfmatrixcurrentcolumn=\count353
-\pgf@matrix@numberofcolumns=\count354
+\pgfmatrixcurrentrow=\count353
+\pgfmatrixcurrentcolumn=\count354
+\pgf@matrix@numberofcolumns=\count355
 )
-\tikz@expandcount=\count355
+\tikz@expandcount=\count356
 
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librar
 ies/tikzlibrarytopaths.code.tex
@@ -1009,7 +1015,7 @@ File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 sections.code.tex
 (/home/enrique/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.c
 ode.tex)
-\pgf@intersect@solutions=\count356
+\pgf@intersect@solutions=\count357
 ) (/home/enrique/.miktex/texmfs/install/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@a@toks=\toks40
@@ -1027,7 +1033,7 @@ Package: expl3 2021-01-09 L3 programming layer (loader)
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count357
+\l__kernel_color_stack_int=\count358
 \l__pdf_internal_box=\box93
 ))
 Package: xparse 2020-10-27 L3 Experimental document command parser
@@ -1036,38 +1042,38 @@ Package: xparse 2020-10-27 L3 Experimental document command parser
 c.tex)) (/home/enrique/.miktex/texmfs/install/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \ID@toks=\toks42
-\ID@count=\count358
+\ID@count=\count359
 )
 \ID@usercommands=\toks43
-\safeloop@depth=\count359
-\safeRKloop@depth=\count360
+\safeloop@depth=\count360
+\safeRKloop@depth=\count361
 \forest@temp@dimen=\dimen304
-\forest@temp@count=\count361
-\forest@n=\count362
-\forest@temp@global@count=\count363
+\forest@temp@count=\count362
+\forest@n=\count363
+\forest@temp@global@count=\count364
 \forest@temp@toks=\toks44
-\forest@temparray@M=\count364
-\forest@temparray@N=\count365
-\forest@global@temparray@M=\count366
-\forest@global@temparray@N=\count367
-\forest@isnum@count=\count368
-\forest@isdim@nonintpart=\count369
+\forest@temparray@M=\count365
+\forest@temparray@N=\count366
+\forest@global@temparray@M=\count367
+\forest@global@temparray@N=\count368
+\forest@isnum@count=\count369
+\forest@isdim@nonintpart=\count370
 \forest@isdim@dimen=\dimen305
-\forest@sort@m=\count370
-\forest@sort@k=\count371
-\forest@sort@p=\count372
+\forest@sort@m=\count371
+\forest@sort@k=\count372
+\forest@sort@p=\count373
 \bracket@content=\toks45
 \bracket@afterthought=\toks46
-\forest@node@maxid=\count373
-\forest@process@left@M=\count374
-\forest@process@left@N=\count375
-\forest@process@right@M=\count376
-\forest@process@right@N=\count377
-\forest@process@saved@M=\count378
-\forest@process@saved@N=\count379
-\forest@process@result@M=\count380
-\forest@process@result@N=\count381
-\forest@process@n=\count382
+\forest@node@maxid=\count374
+\forest@process@left@M=\count375
+\forest@process@left@N=\count376
+\forest@process@right@M=\count377
+\forest@process@right@N=\count378
+\forest@process@saved@M=\count379
+\forest@process@saved@N=\count380
+\forest@process@result@M=\count381
+\forest@process@result@N=\count382
+\forest@process@n=\count383
 \forest@nodewalk@branch@toks=\toks47
 \forest@nodewalk@shortsteps@resolution=\toks48
 \forest@do@dynamics=\toks49
@@ -1082,8 +1088,8 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@PIii@toks=\toks53
 \forest@copy@in=\read6
 \forest@copy@out=\write6
-\forest@externalize@max@outer@n=\count383
-\forest@externalize@inner@n=\count384
+\forest@externalize@max@outer@n=\count384
+\forest@externalize@inner@n=\count385
 ) (/home/enrique/.miktex/texmfs/install/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
 
@@ -1095,7 +1101,7 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks54
 \XKV@tempa@toks=\toks55
 )
-\XKV@depth=\count385
+\XKV@depth=\count386
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/home/enrique/.miktex/texmfs/install/tex/latex/adjustbox/adjcalc.sty
@@ -1129,12 +1135,12 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 
 (/home/enrique/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count386
+\c@checkoddpage=\count387
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box96
-\sift@deathcycles=\count387
+\sift@deathcycles=\count388
 \@vwid@loff=\dimen322
 \@vwid@roff=\dimen323
 ))
@@ -1176,19 +1182,19 @@ Package caption Info: End \AtBeginDocument code.
  (/home/enrique/.miktex/texmfs/install/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-\c@lstlisting=\count388
+\c@lstlisting=\count389
  (/home/enrique/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count389
+\scratchcounter=\count390
 \scratchdimen=\dimen324
 \scratchbox=\box97
-\nofMPsegments=\count390
-\nofMParguments=\count391
+\nofMPsegments=\count391
+\nofMParguments=\count392
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count392
+\MPscratchCnt=\count393
 \MPscratchDim=\dimen325
-\MPnumerator=\count393
-\makeMPintoPDFobject=\count394
+\MPnumerator=\count394
+\makeMPintoPDFobject=\count395
 \everyMPtoPDFconversion=\toks57
 )
 (/home/enrique/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -1207,7 +1213,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 .sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count395
+\c@section@level=\count396
 )
 LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
@@ -1216,12 +1222,13 @@ LaTeX Info: Redefining \nameref on input line 58.
 \@outlinefile=\write7
 \openout7 = `guia-js.out'.
 
+LaTeX Info: Redefining \thanks on input line 61.
 
 
-LaTeX Warning: No \author given.
+LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 61.
 
 [1
-
 
 {/home/enrique/.miktex/texmfs/data/pdftex/config/pdftex.map}] (guia-js.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -1234,46 +1241,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63 \chapter
-             {Conceptos Esenciales de JavaScript} [1
-
-]
-Cap\'{\i }tulo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+l.65 \newpage
+              [1]
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Overfull \hbox (33.77478pt too wide) in paragraph at lines 68--69
+Overfull \hbox (33.77478pt too wide) in paragraph at lines 69--70
 []\OT1/cmr/m/n/12 En esta gua rapida explicaremos los conceptos de JavaScrip
 t y las construcciones
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
-
- []
-
-[2
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Overfull \hbox (0.38347pt too wide) in paragraph at lines 80--81
+[]\OT1/cmr/m/n/12 Finalmente, recomendamos configurar VS Code para formatear lo
+s fuentes
+ []
+
+
+Overfull \hbox (19.70471pt too wide) in paragraph at lines 80--81
+\OT1/cmr/m/n/12 al momento de guardar. Puede hacerlo yendo al menu \OT1/cmss/m
+/n/12 Archivo\OT1/cmr/m/n/12 , luego a \OT1/cmss/m/n/12 Preferencias
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
@@ -1290,14 +1305,12 @@ LaTeX Font Warning: Font shape `OT1/cmtt/c/n' undefined
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
-[3]
-Overfull \hbox (5.2834pt too wide) in paragraph at lines 103--104
+
+Overfull \hbox (5.2834pt too wide) in paragraph at lines 104--105
 []\OT1/cmr/m/n/12 Lo primero que en general aprendemos cuando nos iniciamos en 
 un lenguaje
  []
@@ -1312,7 +1325,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/c/n' undefined
 (Font)              using `OT1/cmr/m/n' instead on input line 2.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
@@ -1320,12 +1333,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
 
 (_minted-guia-js/E66A4AA6886217B24BDF97C73CCB2DC69080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-Overfull \hbox (6.36386pt too wide) in paragraph at lines 128--129
-[]\OT1/cmr/c/n/12 Cuando declaramos una variable sin inicializarla, el interpr
-ete la inicializara
- []
-
+A1.pygtex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [3])
 \openout3 = `guia-js.pyg'.
 
 
@@ -1336,7 +1347,7 @@ A1.pygtex)
 
 (_minted-guia-js/BA4ED0212D98BA4293653FD9FFBA273F9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 148--150
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
@@ -1354,21 +1365,21 @@ LaTeX Font Warning: Font shape `OT1/cmtt/c/it' undefined
 
 
 (_minted-guia-js/AA7E708979BB05ED007B7278F7B2FF039080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [4])
+A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/5625ADB602386051A90A77524F361DA09080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
+LaTeX Info: Redefining \. on input line 194.
+LaTeX Info: Redefining \% on input line 194.
+ [4]
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/D37CB922148C3532D6CEEC16972E0D879080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (1.70096pt too wide) in paragraph at lines 203--204
+Overfull \hbox (1.70096pt too wide) in paragraph at lines 204--205
 \OT1/cmr/c/n/12 pasarse por parametro o retornarse de otra funcion. El ejempl
 o a continuacion,
  []
@@ -1387,15 +1398,15 @@ DB.pygtex)
 
 
 (_minted-guia-js/3157C2D649E9FB3982A5A0230A8AB1919080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [5])
+A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/D015A072AC469816939A7C335782A4BD9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
+A1.pygtex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [5])
 \openout3 = `guia-js.pyg'.
 
 
@@ -1405,21 +1416,21 @@ A1.pygtex)
 
 
 (_minted-guia-js/B445AFF555C4DC232FA194FD6769A24E9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [6])
+A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/ECC5ABA9C6B1627510DD7878CFE5AAE09080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
+A1.pygtex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [6])
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/335D330E70F408B30A1717DAD5AC0FE79080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (1.98898pt too wide) in paragraph at lines 327--328
+Overfull \hbox (1.98898pt too wide) in paragraph at lines 328--329
 []\OT1/cmr/c/n/12 Si quisieramos incorporar todos los elementos de un arreglo 
 en otro arreglo,
  []
@@ -1429,7 +1440,7 @@ en otro arreglo,
 
 (_minted-guia-js/D35734416BB6B2DE17C7EF54A7E35C239080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (4.91672pt too wide) in paragraph at lines 345--346
+Overfull \hbox (4.91672pt too wide) in paragraph at lines 346--347
 []\OT1/cmr/c/n/12 Tambien es posible utilizar \OT1/cmr/m/it/12 spread syntax \
 OT1/cmr/c/n/12 en los parametros de las funciones
  []
@@ -1438,10 +1449,7 @@ OT1/cmr/c/n/12 en los parametros de las funciones
 
 
 (_minted-guia-js/FC9630217117D0511891E17F612EDD919080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
- [7])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1462,12 +1470,14 @@ DB.pygtex)
 
 (_minted-guia-js/59F243FA5572C5C6663E040C62D2ED589080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-Overfull \hbox (22.4873pt too wide) in paragraph at lines 371--1
+Overfull \hbox (22.4873pt too wide) in paragraph at lines 372--1
 []\OT1/cmr/c/n/12 Sin embargo, los arreglos proveen de un conjunto de metodos 
 muy convenientes
  []
 
-)
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[7])
 \openout4 = `guia-js.pyg'.
 
 
@@ -1508,25 +1518,22 @@ DB.pygtex)
 
 (_minted-guia-js/5E26D3003703BB4AC8ABF78D45BDF41A9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (0.49634pt too wide) in paragraph at lines 401--402
+Overfull \hbox (0.49634pt too wide) in paragraph at lines 402--403
 []\OT1/cmr/c/n/12 Un metodo mas interesante aun es [], el cual se utiliza pa
 ra procesar
  []
 
 
-Overfull \hbox (12.63278pt too wide) in paragraph at lines 401--402
-\OT1/cmr/c/n/12 elementos donde la funcion evalua a true. Veamos como se util
-iza a continuacion: 
+Overfull \hbox (12.63278pt too wide) in paragraph at lines 402--403
+\OT1/cmr/c/n/12 elementos donde la funcion evalua a true. Veamos como se uti
+liza a continuacion: 
  []
 
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/A188592DB687034386218AEFC26A03B99080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
- [8])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1541,7 +1548,10 @@ DB.pygtex)
 
 
 (_minted-guia-js/3AB4E6170AD52A55BF74E695A4C1CDF59080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
+A1.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [8])
 \openout4 = `guia-js.pyg'.
 
 
@@ -1552,7 +1562,7 @@ DB.pygtex)
 
 (_minted-guia-js/B0A7D09858B397D935C21D5B045851C19080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (1.47542pt too wide) in paragraph at lines 451--452
+Overfull \hbox (1.47542pt too wide) in paragraph at lines 452--453
 \OT1/cmr/c/n/12 variables que se denomina \OT1/cmr/bx/n/12 destructuring\OT1/cm
 r/c/n/12 . Veamos a continuacion el siguiente
  []
@@ -1561,30 +1571,27 @@ r/c/n/12 . Veamos a continuacion el siguiente
 
 
 (_minted-guia-js/84CCDC28DC85BB9E4C719B916B3AFE5C9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
- [9])
-Overfull \hbox (36.68948pt too wide) in paragraph at lines 476--477
+A1.pygtex)
+Overfull \hbox (36.68948pt too wide) in paragraph at lines 477--478
 \OT1/cmr/c/n/12 aquellas formas que utilizaremos con frecuencia programando en 
 React. Comencemos
  []
 
 
-Overfull \hbox (26.61375pt too wide) in paragraph at lines 476--477
+Overfull \hbox (26.61375pt too wide) in paragraph at lines 477--478
 \OT1/cmr/c/n/12 objeto literal se crea encerrando entre llaves una coleccion d
 e pares \OT1/cmr/m/it/12 propiedad\OT1/cmr/c/n/12 :\OT1/cmr/m/it/12 valor\OT1/c
 mr/c/n/12 ,
  []
 
+LaTeX Info: Redefining \. on input line 478.
+LaTeX Info: Redefining \% on input line 478.
+[9]
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/05CE2C582A868F43C228EE70CE8B06839080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-LaTeX Info: Redefining \. on input line 501.
-LaTeX Info: Redefining \% on input line 501.
- [10]
 \openout3 = `guia-js.pyg'.
 
 
@@ -1594,7 +1601,10 @@ A1.pygtex)
 
 
 (_minted-guia-js/9EDC8BF98D1E4C92D3B1308EE8C449309080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
+A1.pygtex
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [10])
 \openout4 = `guia-js.pyg'.
 
 
@@ -1610,7 +1620,7 @@ DB.pygtex)
 
 (_minted-guia-js/139C6C212D9F961775D5C64C1AA772199087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (5.83618pt too wide) in paragraph at lines 532--533
+Overfull \hbox (5.83618pt too wide) in paragraph at lines 533--534
 []\OT1/cmr/c/n/12 En JavaScript es posible agregar propiedades nuevas en tiempo
  de ejecucion
  []
@@ -1629,20 +1639,20 @@ A1.pygtex)
 
 
 (_minted-guia-js/4B2E95529EC20A6621C640060F5DAE579080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [11])
-Overfull \hbox (4.96059pt too wide) in paragraph at lines 580--582
+A1.pygtex)
+Overfull \hbox (4.96059pt too wide) in paragraph at lines 581--583
 \OT1/cmr/bx/n/12 constructor functions\OT1/cmr/c/n/12 . Tambien tenemos clases
  como veremos mas adelante,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--582
+Underfull \hbox (badness 10000) in paragraph at lines 581--583
 
  []
 
+LaTeX Info: Redefining \. on input line 583.
+LaTeX Info: Redefining \% on input line 583.
+[11]
 \openout3 = `guia-js.pyg'.
 
 
@@ -1668,21 +1678,20 @@ DB.pygtex)
 
 (_minted-guia-js/F1B3EF0E912B1EF67F58DE15DC454FB59087F0320A2974E689A35AC33027FA
 DB.pygtex)
-LaTeX Info: Redefining \. on input line 609.
-LaTeX Info: Redefining \% on input line 609.
- [12]
-Overfull \hbox (4.04825pt too wide) in paragraph at lines 612--614
+Overfull \hbox (4.04825pt too wide) in paragraph at lines 613--615
 \OT1/cmr/c/n/12 C#, para nombrar algunos, son conocidos como lenguajes \OT1/cmr
 /m/it/12 class-based \OT1/cmr/c/n/12 (basados
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--614
+Underfull \hbox (badness 10000) in paragraph at lines 613--615
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 615--617
+LaTeX Info: Redefining \. on input line 615.
+LaTeX Info: Redefining \% on input line 615.
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
@@ -1691,7 +1700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 615--617
 
 (_minted-guia-js/F70C2F87ED2BFDEDDDE86A8888C6DA219087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (9.8475pt too wide) in paragraph at lines 618--619
+Overfull \hbox (9.8475pt too wide) in paragraph at lines 619--620
 []\OT1/cmr/c/n/12 Tal cual implementamos la funcion constructora [] en el ejem
 plo anterior,
  []
@@ -1700,10 +1709,7 @@ plo anterior,
 
 
 (_minted-guia-js/ED72A8DBA679BF3E417287CAEA38F7159080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
- [13])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1719,17 +1725,19 @@ DB.pygtex)
 
 (_minted-guia-js/983B56E08BAD0D8BACFCBE7069BFCA8A9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 645--647
+Underfull \hbox (badness 10000) in paragraph at lines 646--648
+
+ []
+
+LaTeX Info: Redefining \. on input line 648.
+LaTeX Info: Redefining \% on input line 648.
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--650
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 651--653
+Underfull \hbox (badness 10000) in paragraph at lines 652--654
 
  []
 
@@ -1758,13 +1766,13 @@ DB.pygtex)
 
 (_minted-guia-js/F70C2F87ED2BFDEDDDE86A8888C6DA219087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (25.71513pt too wide) in paragraph at lines 654--655
+Overfull \hbox (25.71513pt too wide) in paragraph at lines 655--656
 []\OT1/cmr/c/n/12 Las funciones constructoras tienen acceso a una propiedad esp
 ecial denominada
  []
 
 
-Overfull \hbox (58.28145pt too wide) in paragraph at lines 654--655
+Overfull \hbox (58.28145pt too wide) in paragraph at lines 655--656
 \OT1/cmr/c/n/12 forma: [] o lo que es lo mismo: [].
  []
 
@@ -1773,8 +1781,8 @@ Overfull \hbox (58.28145pt too wide) in paragraph at lines 654--655
 
 (_minted-guia-js/8EF3843C25C3794E38398906066AF8EC9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
  [14])
 \openout4 = `guia-js.pyg'.
 
@@ -1796,7 +1804,7 @@ A1.pygtex)
 
 (_minted-guia-js/AF45E546ACAEA22183A5F4026D2D15C09087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 699--701
+Underfull \hbox (badness 10000) in paragraph at lines 700--702
 
  []
 
@@ -1835,8 +1843,8 @@ DB.pygtex)
 
 (_minted-guia-js/31F9A06F8AB92CB50A9EE2432AA1141E9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
  [15])
 \openout4 = `guia-js.pyg'.
 
@@ -1873,7 +1881,7 @@ DB.pygtex)
 
 (_minted-guia-js/21E44279CFB20A9393CA649CB0AD4C3B9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 737--739
+Underfull \hbox (badness 10000) in paragraph at lines 738--740
 
  []
 
@@ -1912,12 +1920,12 @@ A1.pygtex)
 
 (_minted-guia-js/FE3C9F61606068A7C81A7096CD28E8619087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 759--761
+Underfull \hbox (badness 10000) in paragraph at lines 760--762
 
  []
 
-LaTeX Info: Redefining \. on input line 761.
-LaTeX Info: Redefining \% on input line 761.
+LaTeX Info: Redefining \. on input line 762.
+LaTeX Info: Redefining \% on input line 762.
 [16]
 \openout4 = `guia-js.pyg'.
 
@@ -1948,10 +1956,7 @@ DB.pygtex)
 
 
 (_minted-guia-js/464358A17D55C90CA819C51818E8E8699080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
- [17])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1967,17 +1972,24 @@ DB.pygtex)
 
 (_minted-guia-js/AEF2B7F0B456E7CAE98D52A12BCE5CF69087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (5.47183pt too wide) in paragraph at lines 810--811
-\OT1/cmr/c/n/12 verificamos que [] esta seteado como el prototipo de la instanc
-ia
+Overfull \hbox (5.47183pt too wide) in paragraph at lines 811--812
+\OT1/cmr/c/n/12 verificamos que [] esta seteado como el prototipo de la instan
+cia
  []
+
+LaTeX Info: Redefining \. on input line 812.
+LaTeX Info: Redefining \% on input line 812.
+[17]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 813.
 
 \openout4 = `guia-js.pyg'.
 
 
 (_minted-guia-js/9E7B964750CF0BB08EE960FCE356B6D69087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 814--816
+Underfull \hbox (badness 10000) in paragraph at lines 815--817
 
  []
 
@@ -2031,7 +2043,7 @@ DB.pygtex)
 
 (_minted-guia-js/7296637793BED879D21B2B1465AB07B39087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 833--835
+Underfull \hbox (badness 10000) in paragraph at lines 834--836
 
  []
 
@@ -2045,8 +2057,10 @@ DB.pygtex)
 
 (_minted-guia-js/862057D1559FF060494B7F8D0B2C38AA9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 10.
  [18])
 \openout4 = `guia-js.pyg'.
 
@@ -2103,14 +2117,12 @@ DB.pygtex)
 
 (_minted-guia-js/7670E5A21C08366F8D789EAC7C7AF6BF9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 885--887
+Underfull \hbox (badness 10000) in paragraph at lines 886--888
 
  []
 
-LaTeX Info: Redefining \. on input line 887.
-LaTeX Info: Redefining \% on input line 887.
-[19]
-Overfull \hbox (5.18756pt too wide) in paragraph at lines 888--889
+
+Overfull \hbox (5.18756pt too wide) in paragraph at lines 889--890
 []\OT1/cmr/c/n/12 Otra forma de solucionar este mismo inconveniente es declaran
 do el metodo
  []
@@ -2119,7 +2131,10 @@ do el metodo
 
 
 (_minted-guia-js/898D5585A624DA671F2E1B616417C0CF9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
+A1.pygtex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [19])
 \openout4 = `guia-js.pyg'.
 
 
@@ -2130,13 +2145,13 @@ DB.pygtex)
 
 (_minted-guia-js/9E7B964750CF0BB08EE960FCE356B6D69087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (33.95058pt too wide) in paragraph at lines 913--914
+Overfull \hbox (33.95058pt too wide) in paragraph at lines 914--915
 []\OT1/cmr/c/n/12 Definiendo el metodo [] de esta forma no tendremos el inconv
 eniente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 917--919
+Underfull \hbox (badness 10000) in paragraph at lines 918--920
 
  []
 
@@ -2150,7 +2165,7 @@ DB.pygtex)
 
 (_minted-guia-js/451C6F6F942EBA07F20DE1721BE740029087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (18.84146pt too wide) in paragraph at lines 920--921
+Overfull \hbox (18.84146pt too wide) in paragraph at lines 921--922
 \OT1/cmr/c/n/12 palabra reservada []. Los clientes del modulo deben importar e
 xplcitamente
  []
@@ -2160,23 +2175,23 @@ xplcitamente
 
 (_minted-guia-js/441F0852F1BD5A9EE8A97FBE156B4C509080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
  [20])
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/6402F4C7825FCA5046A6DDEAB686ADF49080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
  [21])
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/FADC9205592E451D7D190B2A08FD84E89080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (1.79549pt too wide) in paragraph at lines 1007--1008
+Overfull \hbox (1.79549pt too wide) in paragraph at lines 1008--1009
 \OT1/cmr/c/n/12 exporta. Y simplemente las utilizamos como si estuvieran defini
 das all mismo.
  []
@@ -2186,32 +2201,149 @@ das all mismo.
 
 (_minted-guia-js/318F9FF335C6D187B6B35E000D74574B9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
  [22])
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/9F24DD376BCBFCDD8E9B4386AF953F9E9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-LaTeX Info: Redefining \. on input line 1067.
-LaTeX Info: Redefining \% on input line 1067.
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/DEAE39507D89129024D9823A433E50CB9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+LaTeX Info: Redefining \. on input line 1073.
+LaTeX Info: Redefining \% on input line 1073.
  [23]
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/3568211D6B5C3C6BF06C791C9687A1FE9080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/E8D1350B618E745D808A6EA384A5E4DC9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
+Overfull \hbox (11.0625pt too wide) in paragraph at lines 1086--1088
+[]\OT1/cmr/c/n/12 Observen que solo utilizamos el primer parametro que es el 
+unico obligatorio.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1088
+
+ []
+
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/548AD1A665FE358B56C51F96E3BA16649080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/8F0C077BDDE67CC0B1479119D1491F5C9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/548AD1A665FE358B56C51F96E3BA16649080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/8F0C077BDDE67CC0B1479119D1491F5C9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+Overfull \hbox (20.80954pt too wide) in paragraph at lines 1089--1091
+\OT1/cmr/c/n/12 que utilizaremos mucho: [] y [].
+ []
+
+
+Overfull \hbox (6.42783pt too wide) in paragraph at lines 1089--1091
+\OT1/cmr/c/n/12 del servicio que estamos consumiendo y como parametros tenemos
+ la respuesta.
+ []
+
+
+Overfull \hbox (57.54762pt too wide) in paragraph at lines 1089--1091
+\OT1/cmr/c/n/12 en la lnea 3 lo imprimimos en la consola. Finalmente el meto
+do []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1089--1091
+
+ []
+
+\openout3 = `guia-js.pyg'.
+
+
+(_minted-guia-js/FC9B225B03800C79115FF7A0199CB36C9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+ [24])
+Overfull \hbox (11.84583pt too wide) in paragraph at lines 1115--1116
+[]\OT1/cmr/c/n/12 Observemos que como segundo parametro del metodo fetch esta
+mos pasando
+ []
+
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/A451C7046BCFADBDB98BF874D05986EE9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/0A80EEEF90120BC68B6C20F1CE81CA419080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/AE6BA5B4C6EB1EFD4A9FAC3708046CBE9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/1C73CB1F7E832A3C7395B678947FAB709080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/9CD357AC73A6F2400FE1EE8C885DEFEB9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/7882ACAA2F4A6093433AE67C41A70AF79087F0320A2974E689A35AC33027FA
+DB.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1128--1130
+
+ []
+
+
+Overfull \hbox (59.58124pt too wide) in paragraph at lines 1131--1132
+\OT1/cmr/c/n/12 encontramos los eventos (onclick, onmouseover, etc), la funcio
+n Fetch o XMLHttpRequest
+ []
+
+\openout3 = `guia-js.pyg'.
+
+
+(_minted-guia-js/3568211D6B5C3C6BF06C791C9687A1FE9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [25])
 \openout4 = `guia-js.pyg'.
 
 
 (_minted-guia-js/3D30C0B76B6E990BFEC6F28BA704281E9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (18.70236pt too wide) in paragraph at lines 1087--1088
-[]\OT1/cmr/c/n/12 Statement on line 1 is pushed on to the \OT1/cmr/m/it/12 call
- stack \OT1/cmr/c/n/12 and executed. []
- []
-
 \openout4 = `guia-js.pyg'.
 
 
@@ -2222,11 +2354,11 @@ DB.pygtex)
 
 (_minted-guia-js/A3E23261E131174FDDA5EBA063E835019087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (24.87737pt too wide) in paragraph at lines 1089--1090
-[]\OT1/cmr/c/n/12 Statement on line 7 is pushed on to the \OT1/cmr/m/it/12 call
- stack \OT1/cmr/c/n/12 and executed. []
- []
+\openout4 = `guia-js.pyg'.
 
+
+(_minted-guia-js/A02D4CD0B2B03FC6967E49138E507BE99087F0320A2974E689A35AC33027FA
+DB.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -2237,19 +2369,11 @@ DB.pygtex)
 
 (_minted-guia-js/CCBDC1F7A2EA1FFCEC5F204C031F67399087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (2.17986pt too wide) in paragraph at lines 1090--1091
-[]\OT1/cmr/c/n/12 After the one second elapsed from the [] function, the callba
-ck
- []
-
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/AD1D479A23E42E54CE1894EA05D6ADAA9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
- [24])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -2275,6 +2399,18 @@ DB.pygtex)
 
 (_minted-guia-js/CCBDC1F7A2EA1FFCEC5F204C031F67399087F0320A2974E689A35AC33027FA
 DB.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/A02D4CD0B2B03FC6967E49138E507BE99087F0320A2974E689A35AC33027FA
+DB.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1176
+
+ []
+
+LaTeX Info: Redefining \. on input line 1176.
+LaTeX Info: Redefining \% on input line 1176.
+[26]
 \openout3 = `guia-js.pyg'.
 
 
@@ -2285,342 +2421,49 @@ A1.pygtex)
 
 (_minted-guia-js/58BAB5BFC8D55EF7DED3923F5EF0735F9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/A3E23261E131174FDDA5EBA063E835019087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Overfull \hbox (10.39575pt too wide) in paragraph at lines 1130--1130
-[]\OT1/cmr/bx/n/17.28 The Promise Object and the async/await
- []
-
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/08B8CB2C39C03FD166E904018331D2269080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/C2666ADFECF3E858CA5F11E7E71A22C59087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/0F127573A402C25760986AA03CB284379087F0320A2974E689A35AC33027FA
-DB.pygtex)
-LaTeX Info: Redefining \. on input line 1148.
-LaTeX Info: Redefining \% on input line 1148.
- [25]
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/A8CD81DEA0C11D66696908BE76DD17CF9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/A02D4CD0B2B03FC6967E49138E507BE99087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/8BE835534885846564B539E33CBC522B9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/98B95CA800C4926439BEBB42006EFE4E9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1161--1163
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1194
 
  []
 
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/26331F5CDDC0411D6757F7BA7B2C737A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/8BE835534885846564B539E33CBC522B9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Overfull \hbox (4.36531pt too wide) in paragraph at lines 1164--1165
-[]\OT1/cmr/c/n/12 The Promise object have the [] method that receives
- []
-
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/FA5DABAC9A0BAA18E965F15438D617B89080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/98B95CA800C4926439BEBB42006EFE4E9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/756C412732C9E787F483D35D939B8EF29087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/26331F5CDDC0411D6757F7BA7B2C737A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/A9F50A41A16DC5B4F7079FCB76D671199087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/2506CBD3CA69E4A5F3AFE399707A40519087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Overfull \hbox (6.35728pt too wide) in paragraph at lines 1181--1183
-\OT1/cmr/c/n/12 parameter named [] to the function passed to the [].
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1181--1183
-
- []
-
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/179C11B0E9A4566EC959737CC9B804D69080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/0F127573A402C25760986AA03CB284379087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/DBA2FEDA26DA30806B8AC672ED63A29C9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/8ADCF86750C21D15BB385D2F2FE648C39087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/5B006B4CC59E9EF298059F433D1756089087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1203
-
- []
-
-LaTeX Info: Redefining \. on input line 1203.
-LaTeX Info: Redefining \% on input line 1203.
-[26]
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/58BAB5BFC8D55EF7DED3923F5EF0735F9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/3167ED2A8B842F509A89381898FDACBD9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/58BAB5BFC8D55EF7DED3923F5EF0735F9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/E2DC32C08F2B46C3ECD83E7B06E4D93B9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1221--1223
-
- []
-
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F2341CC9525CBB4C1A810025E1BAC29A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F15838EDF195FE2D562763F2377AD2319087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Overfull \hbox (19.58688pt too wide) in paragraph at lines 1224--1225
-\OT1/cmr/c/n/12 that return a promise. Functions that return promises are (usua
-lly) asynchronous: 
- []
-
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/C64F96911762B586A500CC02A6EE9A6B9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F15838EDF195FE2D562763F2377AD2319087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/1D0413D4DA6866DAE63F9021657866149087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/FF879509D73125853577FB69F08D87B59087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F2341CC9525CBB4C1A810025E1BAC29A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/4253203A7580AB65272BA5A6A4EB39AD9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
- [27])
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F2341CC9525CBB4C1A810025E1BAC29A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F15838EDF195FE2D562763F2377AD2319087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/2933C0155539C455C9A3AA705E81A7339087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1256--1258
-
- []
-
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/DA941717A1942E4E883430527777A87A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/7574010981151E54D6539A231CA8CCDE9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F2341CC9525CBB4C1A810025E1BAC29A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/58BAB5BFC8D55EF7DED3923F5EF0735F9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F15838EDF195FE2D562763F2377AD2319087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F15838EDF195FE2D562763F2377AD2319087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/58BAB5BFC8D55EF7DED3923F5EF0735F9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/CA9AD8CB3C80B84C2A3634E8DB52E0B69087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F15838EDF195FE2D562763F2377AD2319087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1276--1278
-
- []
-
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F15838EDF195FE2D562763F2377AD2319087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F2341CC9525CBB4C1A810025E1BAC29A9087F0320A2974E689A35AC33027FA
-DB.pygtex)
-LaTeX Info: Redefining \. on input line 1282.
-LaTeX Info: Redefining \% on input line 1282.
- [28]
-runsystem(rm _minted-guia-js/B96A10C8EE1CB4E3C92567F88CCFA0B79087F0320A2974E689
-A35AC33027FADB.pygtex)...executed.
-
-runsystem(rm _minted-guia-js/BA02B6F75C3F197C6CE844F24183C5F39087F0320A2974E689
-A35AC33027FADB.pygtex)...executed.
-
- [29
-
-] (guia-js.aux
+LaTeX Info: Redefining \. on input line 1208.
+LaTeX Info: Redefining \% on input line 1208.
+[27] (guia-js.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `guia-js.out' has not changed.
-(rerunfilecheck)             Checksum: 52E82D06E2D8AD88CB2C1AC237D55E4B;863.
+(rerunfilecheck)             Checksum: BA4851368CDE42F0A95EC48B879CCE34;647.
 runsystem(rm guia-js.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 36316 strings out of 481551
- 836115 string characters out of 2916428
- 1220699 words of memory out of 3000000
- 52106 multiletter control sequences out of 15000+200000
- 412552 words of font info for 59 fonts, out of 3000000 for 9000
+ 36345 strings out of 481547
+ 827662 string characters out of 2916351
+ 1213185 words of memory out of 3000000
+ 52212 multiletter control sequences out of 15000+200000
+ 412926 words of font info for 60 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 97i,9n,102p,2539b,1085s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 97i,9n,102p,2539b,1084s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti1
-0.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcs
-c10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-mi6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-r6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cms
-l12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+fb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pf
+b></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.p
+fb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx1
+0.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss
+i10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb>
-Output written on guia-js.pdf (30 pages, 233686 bytes).
+Output written on guia-js.pdf (28 pages, 242748 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{catch}\PYG{p}{(}\PYG{n+nx}{funcion}\PYG{p}{(}\PYG{n+nx}{error}\PYG{p}{))}
+\end{Verbatim}
