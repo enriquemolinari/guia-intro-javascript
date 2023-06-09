@@ -1,2 +1,3 @@
-# guia-react
-# guia-intro-javascript
+# Guía de Iniciación a JavaScript
+
+Bases sólidas para comenzar a programar en React!

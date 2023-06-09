@@ -19,6 +19,7 @@
 \usepackage[section]{placeins} 
 \usepackage{forest}
 \usepackage{adjustbox}
+\usepackage{alertmessage}
 \graphicspath{ {./yed/} }
 \svgpath{{svg/}{./yed/}}
 \apptocmd{\dirtree}{\bigskip}{}{}
@@ -126,7 +127,11 @@ Comencemos a ver como utilizamos \textbf{variables} en JavaScript. Declaramos la
 let myFirstVariable;
 \end{minted}
 
-Cuando declaramos una variable sin inicializar, el intérprete la inicializará con el valor especial \textit{undefined}. Esto se puede observar si intentamos imprimir en la consola una variable no inicializada. Pruebenlo. El siguiente ejemplo muestra cómo declarar una variable y como inicializarla a la vez.
+Cuando declaramos una variable sin inicializar, el intérprete la inicializará con el valor especial \textit{undefined}. Esto se puede observar si intentamos imprimir en la consola una variable no inicializada. Pruébenlo. 
+
+\alertsuccess{Ejercicio: Declare una variable sin inicializar e imprímala en la consola}
+
+El siguiente ejemplo muestra cómo declarar una variable y como inicializarla a la vez.
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
