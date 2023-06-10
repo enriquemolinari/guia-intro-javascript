@@ -1,8 +1,8 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{//this is my complex\PYGZhy{}module.js module}
+\PYG{c+c1}{//mi modulo complex\PYGZhy{}module.js}
 
 \PYG{k+kd}{function} \PYG{n+nx}{complexThing}\PYG{p}{()} \PYG{p}{\PYGZob{}}
-  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}a complex thing has been executed...\PYGZdq{}}\PYG{p}{);}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}ejecutando algo complejo...\PYGZdq{}}\PYG{p}{);}
 \PYG{p}{\PYGZcb{}}
 
 \PYG{k+kd}{let} \PYG{n+nx}{obj} \PYG{o}{=} \PYG{p}{\PYGZob{}}

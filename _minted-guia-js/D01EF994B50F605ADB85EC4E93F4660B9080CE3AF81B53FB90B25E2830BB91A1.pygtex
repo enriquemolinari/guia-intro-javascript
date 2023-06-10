@@ -1,13 +1,13 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{//this is my main\PYGZhy{}module.js module}
+\PYG{c+c1}{//este es el módulo main\PYGZhy{}module.js}
 
 \PYG{k+kr}{import} \PYG{n+nx}{AClass} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}./module/complex\PYGZhy{}module.mjs\PYGZdq{}}\PYG{p}{;}
-\PYG{c+c1}{//This line below is the same as the one above}
+\PYG{c+c1}{//lo mismo que:}
 \PYG{c+c1}{//import \PYGZob{} default as AClass \PYGZcb{} from \PYGZdq{}./module/complex\PYGZhy{}module.mjs\PYGZdq{};}
 \PYG{k+kr}{import} \PYG{p}{\PYGZob{}} \PYG{n+nx}{obj}\PYG{p}{,} \PYG{n+nx}{complexThing} \PYG{p}{\PYGZcb{}} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}./module/complex\PYGZhy{}module.mjs\PYGZdq{}}\PYG{p}{;}
 
 \PYG{k+kd}{let} \PYG{n+nx}{o} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{AClass}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{);}
 \PYG{n+nx}{o}\PYG{p}{.}\PYG{n+nx}{print}\PYG{p}{();}
 
-\PYG{c+c1}{//... more code here}
+\PYG{c+c1}{//... más lineas de código aca}
 \end{Verbatim}

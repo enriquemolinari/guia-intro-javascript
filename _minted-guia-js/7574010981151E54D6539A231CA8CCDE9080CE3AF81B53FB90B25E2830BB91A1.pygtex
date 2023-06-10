@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+ni}{async} \PYG{k+kd}{function} \PYG{n+nx}{fetchPost}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+  \PYG{k+kd}{let} \PYG{n+nx}{data} \PYG{o}{=} \PYG{n+ni}{await} \PYG{n+nx}{fetch}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}https://jsonplaceholder.typicode.com/posts/1\PYGZdq{}}\PYG{p}{);}
+  \PYG{n+nx}{data} \PYG{o}{=} \PYG{n+ni}{await} \PYG{n+nx}{data}\PYG{p}{.}\PYG{n+nx}{json}\PYG{p}{();}
+  \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{data}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nx}{fetchPost}\PYG{p}{();}
+\end{Verbatim}

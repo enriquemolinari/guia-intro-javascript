@@ -2,14 +2,15 @@
 \PYG{k+kr}{class} \PYG{n+nx}{Person} \PYG{p}{\PYGZob{}}
   \PYG{n+ni}{constructor}\PYG{p}{(}\PYG{n+nx}{name}\PYG{p}{)} \PYG{p}{\PYGZob{}}
     \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{=} \PYG{n+nx}{name}\PYG{p}{;}
+    \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{saySomething} \PYG{o}{=} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{saySomething}\PYG{p}{.}\PYG{n+nx}{bind}\PYG{p}{(}\PYG{k}{this}\PYG{p}{);}
   \PYG{p}{\PYGZcb{}}
-  \PYG{n+nx}{saySomething} \PYG{o}{=} \PYG{p}{()} \PYG{p}{=\PYGZgt{}}  \PYG{p}{\PYGZob{}}
+  \PYG{n+nx}{saySomething}\PYG{p}{()} \PYG{p}{\PYGZob{}}
     \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{} is talking...\PYGZdq{}}\PYG{p}{);}
   \PYG{p}{\PYGZcb{}}
 \PYG{p}{\PYGZcb{}}
 \PYG{k+kd}{let} \PYG{n+nx}{enrique} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{Person}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{);}
 \PYG{n+nx}{enrique}\PYG{p}{.}\PYG{n+nx}{saySomething}\PYG{p}{();} \PYG{c+c1}{//Enrique is talking...}
 
-\PYG{k+kd}{let} \PYG{n+nx}{o} \PYG{o}{=} \PYG{n+nx}{enrique}\PYG{p}{.}\PYG{n+nx}{saySomething}\PYG{p}{;} \PYG{c+c1}{//assigning to a variable}
+\PYG{k+kd}{let} \PYG{n+nx}{o} \PYG{o}{=} \PYG{n+nx}{enrique}\PYG{p}{.}\PYG{n+nx}{saySomething}\PYG{p}{;}
 \PYG{n+nx}{o}\PYG{p}{();} \PYG{c+c1}{//Enrique is talking...}
 \end{Verbatim}

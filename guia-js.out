@@ -6,7 +6,8 @@
 \BOOKMARK [1][-]{section.6}{Objetos}{}% 6
 \BOOKMARK [2][-]{subsection.6.1}{Un Lenguaje basado en Prototipos}{section.6}% 7
 \BOOKMARK [1][-]{section.7}{Clases}{}% 8
-\BOOKMARK [1][-]{section.8}{\277C\363mo se comporta this en JavaScript?}{}% 9
+\BOOKMARK [1][-]{section.8}{\277C\363mo se comporta el this en JavaScript?}{}% 9
 \BOOKMARK [1][-]{section.9}{M\363dulos}{}% 10
 \BOOKMARK [1][-]{section.10}{Llamadas Ajax usando fetch}{}% 11
-\BOOKMARK [1][-]{section.11}{Lenguaje Single Thread}{}% 12
+\BOOKMARK [1][-]{section.11}{Async y Await Keywords}{}% 12
+\BOOKMARK [1][-]{section.12}{Lenguaje Single Thread}{}% 13
