@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{yo}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{);} \PYG{c+c1}{//Enrique}
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{yo}\PYG{p}{.}\PYG{n+nx}{sports}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]);}\PYG{c+c1}{//futbol}
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{yo}\PYG{p}{.}\PYG{n+nx}{address}\PYG{p}{.}\PYG{n+nx}{street}\PYG{p}{);}\PYG{c+c1}{//San Martin}
+\PYG{n+nx}{yo}\PYG{p}{.}\PYG{n+nx}{allSports}\PYG{p}{();} \PYG{c+c1}{//invocando a la funcion}
+\end{Verbatim}

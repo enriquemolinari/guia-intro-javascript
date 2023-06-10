@@ -1,7 +1,7 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{n+nb}{Object}\PYG{p}{.}\PYG{n+nx}{setPrototypeOf}\PYG{p}{(}\PYG{n+nx}{eBook}\PYG{p}{,} \PYG{n+nx}{Book}\PYG{p}{.}\PYG{n+nx}{prototype}\PYG{p}{);}
 
-\PYG{c+c1}{//Another way of doing the same as above is this:}
+\PYG{c+c1}{//Otra forma de hacer lo mismo de arriba:}
 \PYG{c+c1}{//thisEBook.\PYGZus{}\PYGZus{}proto\PYGZus{}\PYGZus{} = Book.prototype;}
-\PYG{c+c1}{//However \PYGZus{}\PYGZus{}proto\PYGZus{}\PYGZus{} is deprecated}
+\PYG{c+c1}{//Ojo que  \PYGZus{}\PYGZus{}proto\PYGZus{}\PYGZus{} esta deprecado}
 \end{Verbatim}

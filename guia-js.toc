@@ -2,12 +2,12 @@
 \contentsline {section}{\numberline {1}Entorno de Desarrollo}{2}{section.1}%
 \contentsline {section}{\numberline {2}Introducción}{2}{section.2}%
 \contentsline {section}{\numberline {3}Variables}{3}{section.3}%
-\contentsline {section}{\numberline {4}Funciones}{4}{section.4}%
+\contentsline {section}{\numberline {4}Funciones}{5}{section.4}%
 \contentsline {section}{\numberline {5}Arreglos}{7}{section.5}%
 \contentsline {section}{\numberline {6}Objetos}{10}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Un Lenguaje basado en Prototipos}{13}{subsection.6.1}%
 \contentsline {section}{\numberline {7}Clases}{17}{section.7}%
 \contentsline {section}{\numberline {8}¿Cómo se comporta \textit {this} en JavaScript?}{18}{section.8}%
-\contentsline {section}{\numberline {9}Módulos}{20}{section.9}%
-\contentsline {section}{\numberline {10}Llamadas Ajax usando fetch}{23}{section.10}%
-\contentsline {section}{\numberline {11}Lenguaje Single Thread}{25}{section.11}%
+\contentsline {section}{\numberline {9}Módulos}{21}{section.9}%
+\contentsline {section}{\numberline {10}Llamadas Ajax usando fetch}{24}{section.10}%
+\contentsline {section}{\numberline {11}Lenguaje Single Thread}{26}{section.11}%

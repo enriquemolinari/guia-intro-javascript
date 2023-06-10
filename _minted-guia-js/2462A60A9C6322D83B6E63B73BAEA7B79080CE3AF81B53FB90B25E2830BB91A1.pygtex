@@ -1,16 +1,16 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{//arrow function with no parameters}
+\PYG{c+c1}{//arrow function sin parámetros}
 \PYG{k+kr}{const} \PYG{n+nx}{arrowf1} \PYG{o}{=} \PYG{p}{()} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
   \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}arrowf1 was invoked!\PYGZdq{}}\PYG{p}{;}
 \PYG{p}{\PYGZcb{};}
 
-\PYG{c+c1}{//arrow function with one parameter}
-\PYG{c+c1}{//parenthesis is not necesary here}
+\PYG{c+c1}{//arrow function con un parámetro}
+\PYG{c+c1}{//los paréntesis no son necesarios aquí}
 \PYG{k+kr}{const} \PYG{n+nx}{arrowf2} \PYG{o}{=} \PYG{n+nx}{param} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
   \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}this is the argument: \PYGZdq{}} \PYG{o}{+} \PYG{n+nx}{param}\PYG{p}{;}
 \PYG{p}{\PYGZcb{};}
 
-\PYG{c+c1}{//arrow functions with one statement}
-\PYG{c+c1}{//in the body won\PYGZsq{}t need return}
+\PYG{c+c1}{//arrow functions con una sentencia, no necesita llaves}
+\PYG{c+c1}{//y tampoco es necesario el return, retorna solo}
 \PYG{k+kr}{const} \PYG{n+nx}{arrowf3} \PYG{o}{=} \PYG{p}{(}\PYG{n+nx}{a}\PYG{p}{,} \PYG{n+nx}{b}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{n+nx}{a} \PYG{o}{+} \PYG{n+nx}{b}\PYG{p}{;}
 \end{Verbatim}

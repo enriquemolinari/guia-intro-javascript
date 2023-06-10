@@ -6,7 +6,7 @@
     \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{publishedYear} \PYG{o}{=} \PYG{n+nx}{publishedYear}\PYG{p}{;}
   \PYG{p}{\PYGZcb{}}
 
-  \PYG{c+c1}{//this method gets added to the Book.prototype}
+  \PYG{c+c1}{//este método se agrega a Book.prototype}
   \PYG{n+nx}{fullName}\PYG{p}{()} \PYG{p}{\PYGZob{}}
     \PYG{k}{return} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{name} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{} by \PYGZdq{}} \PYG{o}{+} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{authors} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{}. \PYGZdq{}} \PYG{o}{+} \PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{publishedYear}\PYG{p}{;}
   \PYG{p}{\PYGZcb{}}

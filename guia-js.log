@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.1.2)  8 JUN 2023 20:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.1.2)  10 JUN 2023 11:21
 entering extended mode
 **./guia-js.tex
 (guia-js.tex
@@ -1231,7 +1231,6 @@ LaTeX Info: Redefining \nameref on input line 59.
 \@outlinefile=\write7
 \openout7 = `guia-js.out'.
 
- ()
 LaTeX Info: Redefining \thanks on input line 62.
 
 
@@ -1240,7 +1239,10 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
 
 [1
 
-{/home/enrique/.miktex/texmfs/data/pdftex/config/pdftex.map}] (guia-js.toc)
+{/home/enrique/.miktex/texmfs/data/pdftex/config/pdftex.map}] (guia-js.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 \tf@toc=\write8
 \openout8 = `guia-js.toc'.
 
@@ -1253,9 +1255,6 @@ l.66 \newpage
 Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
-
-
-LaTeX Warning: Citation `mozilla' on page 2 undefined on input line 70.
 
 
 Overfull \hbox (33.77478pt too wide) in paragraph at lines 70--71
@@ -1286,9 +1285,6 @@ Overfull \hbox (19.70471pt too wide) in paragraph at lines 81--82
  []
 
 
-LaTeX Warning: Citation `mozilla' on page 2 undefined on input line 85.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
@@ -1299,9 +1295,6 @@ LaTeX Info: Redefining \% on input line 89.
 Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
-
-
-LaTeX Warning: Citation `ecma' on page 3 undefined on input line 93.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--95
@@ -1353,13 +1346,13 @@ A1.pygtex
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
  [3])
-<img/alertmessage-success.png, id=49, 32.57239pt x 32.57239pt>
+<img/alertmessage-success.png, id=102, 32.57239pt x 32.57239pt>
 File: img/alertmessage-success.png Graphic file (type png)
 <use img/alertmessage-success.png>
 Package pdftex.def Info: img/alertmessage-success.png  used on input line 132.
 (pdftex.def)             Requested size: 16.28615pt x 16.28615pt.
 
-Overfull \hbox (38.07248pt too wide) in paragraph at lines 132--132
+Overfull \hbox (41.33633pt too wide) in paragraph at lines 132--132
  [] 
  []
 
@@ -1379,29 +1372,43 @@ A1.pygtex)
 
 (_minted-guia-js/BA4ED0212D98BA4293653FD9FFBA273F9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+File: img/alertmessage-success.png Graphic file (type png)
+<use img/alertmessage-success.png>
+Package pdftex.def Info: img/alertmessage-success.png  used on input line 156.
+(pdftex.def)             Requested size: 16.28615pt x 16.28615pt.
 
+Overfull \hbox (14.35263pt too wide) in paragraph at lines 156--156
+ [] 
  []
 
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/2EF04F201BF46992EBC5C3B5BA3F49A99080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/A13D2BC1F033005F057D8B2BA6DA21FF9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
 
 LaTeX Font Warning: Font shape `OT1/cmtt/c/it' undefined
 (Font)              using `OT1/cmtt/c/n' instead on input line 2.
 
 )
+File: img/alertmessage-success.png Graphic file (type png)
+<use img/alertmessage-success.png>
+Package pdftex.def Info: img/alertmessage-success.png  used on input line 173.
+(pdftex.def)             Requested size: 16.28615pt x 16.28615pt.
+
+Overfull \hbox (14.35263pt too wide) in paragraph at lines 173--173
+ [] 
+ []
+
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/AA7E708979BB05ED007B7278F7B2FF039080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-LaTeX Info: Redefining \. on input line 187.
-LaTeX Info: Redefining \% on input line 187.
+A1.pygtex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [4 </home/enrique/.miktex/texmfs/install/tex/latex/alertmessage/img/alertmessa
-ge-success.png>]
+ge-success.png>])
 \openout3 = `guia-js.pyg'.
 
 
@@ -1410,9 +1417,9 @@ A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/D37CB922148C3532D6CEEC16972E0D879080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/56A9A2B7C7F2D193DF45FA905A781D6C9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (1.70096pt too wide) in paragraph at lines 209--210
+Overfull \hbox (1.70096pt too wide) in paragraph at lines 214--215
 \OT1/cmr/c/n/12 pasarse por parametro o retornarse de otra funcion. El ejempl
 o a continuacion,
  []
@@ -1420,7 +1427,7 @@ o a continuacion,
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/AD66060AECE2E2C289F44547782822589080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/4AF65B08C8CA3C5CB64B4D7A1A0BA46C9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
@@ -1430,40 +1437,49 @@ DB.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/3157C2D649E9FB3982A5A0230A8AB1919080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/07E5BC013FFFEA51E332127DEC0803989080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
  [5])
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/D015A072AC469816939A7C335782A4BD9080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/F44A6796929286D153C39D1961F779BC9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/D0CCCE3790C7245A4A1AE8FBB7AA72389080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/2462A60A9C6322D83B6E63B73BAEA7B79080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+File: img/alertmessage-success.png Graphic file (type png)
+<use img/alertmessage-success.png>
+Package pdftex.def Info: img/alertmessage-success.png  used on input line 293.
+(pdftex.def)             Requested size: 16.28615pt x 16.28615pt.
+
+Overfull \hbox (14.35263pt too wide) in paragraph at lines 293--293
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
+[6]
+\openout3 = `guia-js.pyg'.
+
+
+(_minted-guia-js/D6251328031FDEDE531DCFFE504050429080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/B445AFF555C4DC232FA194FD6769A24E9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [6])
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/ECC5ABA9C6B1627510DD7878CFE5AAE09080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/17A7A2C5B87C8E8C4DF7DA3D4C7CE8229080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/335D330E70F408B30A1717DAD5AC0FE79080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/C1965E841EDD2100D7311C65CF2D55A59080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (1.98898pt too wide) in paragraph at lines 333--334
+Overfull \hbox (1.98898pt too wide) in paragraph at lines 339--340
 []\OT1/cmr/c/n/12 Si quisieramos incorporar todos los elementos de un arreglo 
 en otro arreglo,
  []
@@ -1472,8 +1488,11 @@ en otro arreglo,
 
 
 (_minted-guia-js/D35734416BB6B2DE17C7EF54A7E35C239080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-Overfull \hbox (4.91672pt too wide) in paragraph at lines 351--352
+A1.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [7])
+Overfull \hbox (4.91672pt too wide) in paragraph at lines 357--358
 []\OT1/cmr/c/n/12 Tambien es posible utilizar \OT1/cmr/m/it/12 spread syntax \
 OT1/cmr/c/n/12 en los parametros de las funciones
  []
@@ -1481,11 +1500,8 @@ OT1/cmr/c/n/12 en los parametros de las funciones
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/FC9630217117D0511891E17F612EDD919080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
- [7])
+(_minted-guia-js/5FC2BA46FF8BB56D8CAB6DBC7AEE24989080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1504,9 +1520,9 @@ DB.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/59F243FA5572C5C6663E040C62D2ED589080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/DD984F7E110785F39AC7AE28E39119219080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-Overfull \hbox (22.4873pt too wide) in paragraph at lines 377--1
+Overfull \hbox (22.4873pt too wide) in paragraph at lines 387--1
 []\OT1/cmr/c/n/12 Sin embargo, los arreglos proveen de un conjunto de metodos 
 muy convenientes
  []
@@ -1537,10 +1553,13 @@ DB.pygtex)
 
 (_minted-guia-js/756C412732C9E787F483D35D939B8EF29087F0320A2974E689A35AC33027FA
 DB.pygtex)
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+ [8]
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/D13BFF8966032598061491DB4704BA0A9080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/0B5F354B0A245710DFF3CF55CAB562D29080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
@@ -1552,13 +1571,13 @@ DB.pygtex)
 
 (_minted-guia-js/5E26D3003703BB4AC8ABF78D45BDF41A9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (0.49634pt too wide) in paragraph at lines 407--408
+Overfull \hbox (0.49634pt too wide) in paragraph at lines 417--418
 []\OT1/cmr/c/n/12 Un metodo mas interesante aun es [], el cual se utiliza pa
 ra procesar
  []
 
 
-Overfull \hbox (12.63278pt too wide) in paragraph at lines 407--408
+Overfull \hbox (12.63278pt too wide) in paragraph at lines 417--418
 \OT1/cmr/c/n/12 elementos donde la funcion evalua a true. Veamos como se uti
 liza a continuacion: 
  []
@@ -1567,10 +1586,7 @@ liza a continuacion:
 
 
 (_minted-guia-js/A188592DB687034386218AEFC26A03B99080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
- [8])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1581,6 +1597,11 @@ DB.pygtex)
 
 (_minted-guia-js/A55DCEF0C030A481A740D1C12F357E3C9087F0320A2974E689A35AC33027FA
 DB.pygtex)
+Overfull \hbox (3.0987pt too wide) in paragraph at lines 435--436
+\OT1/cmr/c/n/12 otro arreglo con el resultado de aplicar la funcion recibida s
+obre cada elemento.
+ []
+
 \openout3 = `guia-js.pyg'.
 
 
@@ -1595,8 +1616,11 @@ DB.pygtex)
 
 
 (_minted-guia-js/B0A7D09858B397D935C21D5B045851C19080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-Overfull \hbox (1.47542pt too wide) in paragraph at lines 457--458
+A1.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [9])
+Overfull \hbox (1.47542pt too wide) in paragraph at lines 467--468
 \OT1/cmr/c/n/12 variables que se denomina \OT1/cmr/bx/n/12 destructuring\OT1/cm
 r/c/n/12 . Veamos a continuacion el siguiente
  []
@@ -1604,40 +1628,47 @@ r/c/n/12 . Veamos a continuacion el siguiente
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/84CCDC28DC85BB9E4C719B916B3AFE5C9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
- [9])
-Overfull \hbox (36.68948pt too wide) in paragraph at lines 482--483
+(_minted-guia-js/D96B8B17F826B884D39430F9421FC0919080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
+File: img/alertmessage-success.png Graphic file (type png)
+<use img/alertmessage-success.png>
+Package pdftex.def Info: img/alertmessage-success.png  used on input line 490.
+(pdftex.def)             Requested size: 16.28615pt x 16.28615pt.
+
+Overfull \hbox (14.35263pt too wide) in paragraph at lines 490--490
+ [] 
+ []
+
+
+Overfull \hbox (36.68948pt too wide) in paragraph at lines 494--495
 \OT1/cmr/c/n/12 aquellas formas que utilizaremos con frecuencia programando en 
 React. Comencemos
  []
 
 
-Overfull \hbox (26.61375pt too wide) in paragraph at lines 482--483
+Overfull \hbox (26.61375pt too wide) in paragraph at lines 494--495
 \OT1/cmr/c/n/12 objeto literal se crea encerrando entre llaves una coleccion d
 e pares \OT1/cmr/m/it/12 propiedad\OT1/cmr/c/n/12 :\OT1/cmr/m/it/12 valor\OT1/c
 mr/c/n/12 ,
  []
 
+LaTeX Info: Redefining \. on input line 495.
+LaTeX Info: Redefining \% on input line 495.
+[10]
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/05CE2C582A868F43C228EE70CE8B06839080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/9C50138C3B58F904B788B961356E3F9E9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/65FE173E67B3137650CCD3C42F156EFD9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [10])
+(_minted-guia-js/48B34809F49F9A288DAAA405C99D03FD9080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/9EDC8BF98D1E4C92D3B1308EE8C449309080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/45432298313936D804C97906ECCCDB1B9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
@@ -1654,15 +1685,18 @@ DB.pygtex)
 
 (_minted-guia-js/139C6C212D9F961775D5C64C1AA772199087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (5.83618pt too wide) in paragraph at lines 538--539
+Overfull \hbox (5.83618pt too wide) in paragraph at lines 549--550
 []\OT1/cmr/c/n/12 En JavaScript es posible agregar propiedades nuevas en tiempo
  de ejecucion
  []
 
+LaTeX Info: Redefining \. on input line 550.
+LaTeX Info: Redefining \% on input line 550.
+[11]
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/251F480E338B66B749743187C0DF1D859080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/DFB55A5C666CE7E4295D9668623ABCEA9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout3 = `guia-js.pyg'.
 
@@ -1673,20 +1707,20 @@ A1.pygtex)
 
 
 (_minted-guia-js/4B2E95529EC20A6621C640060F5DAE579080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [11])
-Overfull \hbox (4.96059pt too wide) in paragraph at lines 586--588
+A1.pygtex)
+Overfull \hbox (4.96059pt too wide) in paragraph at lines 597--599
 \OT1/cmr/bx/n/12 constructor functions\OT1/cmr/c/n/12 . Tambien tenemos clases
  como veremos mas adelante,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--588
+Underfull \hbox (badness 10000) in paragraph at lines 597--599
 
  []
 
+LaTeX Info: Redefining \. on input line 601.
+LaTeX Info: Redefining \% on input line 601.
+[12]
 \openout3 = `guia-js.pyg'.
 
 
@@ -1712,30 +1746,30 @@ DB.pygtex)
 
 (_minted-guia-js/F1B3EF0E912B1EF67F58DE15DC454FB59087F0320A2974E689A35AC33027FA
 DB.pygtex)
-LaTeX Info: Redefining \. on input line 615.
-LaTeX Info: Redefining \% on input line 615.
- [12]
-Overfull \hbox (4.04825pt too wide) in paragraph at lines 618--620
+Overfull \hbox (4.04825pt too wide) in paragraph at lines 629--631
 \OT1/cmr/c/n/12 C#, para nombrar algunos, son conocidos como lenguajes \OT1/cmr
 /m/it/12 class-based \OT1/cmr/c/n/12 (basados
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--620
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--623
+Underfull \hbox (badness 10000) in paragraph at lines 632--634
 
  []
 
+LaTeX Info: Redefining \. on input line 634.
+LaTeX Info: Redefining \% on input line 634.
+[13]
 \openout4 = `guia-js.pyg'.
 
 
 (_minted-guia-js/F70C2F87ED2BFDEDDDE86A8888C6DA219087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (9.8475pt too wide) in paragraph at lines 624--625
+Overfull \hbox (9.8475pt too wide) in paragraph at lines 635--636
 []\OT1/cmr/c/n/12 Tal cual implementamos la funcion constructora [] en el ejem
 plo anterior,
  []
@@ -1744,10 +1778,7 @@ plo anterior,
 
 
 (_minted-guia-js/ED72A8DBA679BF3E417287CAEA38F7159080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
- [13])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1763,17 +1794,19 @@ DB.pygtex)
 
 (_minted-guia-js/983B56E08BAD0D8BACFCBE7069BFCA8A9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 651--653
+Underfull \hbox (badness 10000) in paragraph at lines 662--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--656
+Underfull \hbox (badness 10000) in paragraph at lines 665--667
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 657--659
+LaTeX Info: Redefining \. on input line 667.
+LaTeX Info: Redefining \% on input line 667.
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 668--670
 
  []
 
@@ -1797,29 +1830,34 @@ DB.pygtex)
 
 (_minted-guia-js/45664C4F5C8867B152F8459AAC900D879087F0320A2974E689A35AC33027FA
 DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F70C2F87ED2BFDEDDDE86A8888C6DA219087F0320A2974E689A35AC33027FA
-DB.pygtex)
-Overfull \hbox (25.71513pt too wide) in paragraph at lines 660--661
+Overfull \hbox (25.71513pt too wide) in paragraph at lines 671--673
 []\OT1/cmr/c/n/12 Las funciones constructoras tienen acceso a una propiedad esp
 ecial denominada
  []
 
 
-Overfull \hbox (58.28145pt too wide) in paragraph at lines 660--661
-\OT1/cmr/c/n/12 forma: [] o lo que es lo mismo: [].
+Overfull \hbox (58.28145pt too wide) in paragraph at lines 671--673
+\OT1/cmr/c/n/12 forma: [] o lo que es lo mismo: []. 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--673
+
+ []
+
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/F70C2F87ED2BFDEDDDE86A8888C6DA219087F0320A2974E689A35AC33027FA
+DB.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/8EF3843C25C3794E38398906066AF8EC9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
- [14])
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+ [15])
 \openout4 = `guia-js.pyg'.
 
 
@@ -1840,7 +1878,7 @@ A1.pygtex)
 
 (_minted-guia-js/AF45E546ACAEA22183A5F4026D2D15C09087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 705--707
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 
  []
 
@@ -1878,10 +1916,7 @@ DB.pygtex)
 
 
 (_minted-guia-js/31F9A06F8AB92CB50A9EE2432AA1141E9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [15])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -1917,10 +1952,13 @@ DB.pygtex)
 
 (_minted-guia-js/21E44279CFB20A9393CA649CB0AD4C3B9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 743--745
+Underfull \hbox (badness 10000) in paragraph at lines 757--759
 
  []
 
+LaTeX Info: Redefining \. on input line 759.
+LaTeX Info: Redefining \% on input line 759.
+[16]
 \openout4 = `guia-js.pyg'.
 
 
@@ -1949,20 +1987,17 @@ DB.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/B51CE6D3FFAB48E5FCF4BCBA55BC751B9080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/13178760F5EAF523F0147DD7DB4AE9169080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
 (_minted-guia-js/FE3C9F61606068A7C81A7096CD28E8619087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 765--767
+Underfull \hbox (badness 10000) in paragraph at lines 779--781
 
  []
 
-LaTeX Info: Redefining \. on input line 767.
-LaTeX Info: Redefining \% on input line 767.
-[16]
 \openout4 = `guia-js.pyg'.
 
 
@@ -1976,26 +2011,30 @@ DB.pygtex)
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/D8C7F1F6876031F8C70BEF02FBD4CB179080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/D6E85FB3980535785B218C7BE81014F59087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout4 = `guia-js.pyg'.
-
-
-(_minted-guia-js/F70C2F87ED2BFDEDDDE86A8888C6DA219087F0320A2974E689A35AC33027FA
-DB.pygtex)
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/464358A17D55C90CA819C51818E8E8699080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/202588978A2B76BE02946254C3C0CB619080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
  [17])
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/D6E85FB3980535785B218C7BE81014F59087F0320A2974E689A35AC33027FA
+DB.pygtex)
+\openout4 = `guia-js.pyg'.
+
+
+(_minted-guia-js/F70C2F87ED2BFDEDDDE86A8888C6DA219087F0320A2974E689A35AC33027FA
+DB.pygtex)
+\openout3 = `guia-js.pyg'.
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-guia-js/7F3646CE4B94EB218301D38E0ACABB569080CE3AF81B53FB90B25E2830BB91A1.py
+gtex guia-js.pyg)...executed.
+
+
+(_minted-guia-js/7F3646CE4B94EB218301D38E0ACABB569080CE3AF81B53FB90B25E2830BB91
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -2011,24 +2050,30 @@ DB.pygtex)
 
 (_minted-guia-js/AEF2B7F0B456E7CAE98D52A12BCE5CF69087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (5.47183pt too wide) in paragraph at lines 816--817
+Overfull \hbox (5.47183pt too wide) in paragraph at lines 830--831
 \OT1/cmr/c/n/12 verificamos que [] esta seteado como el prototipo de la instan
 cia
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 818.
+(Font)              using `OT1/cmss/bx/n' instead on input line 832.
 
 \openout4 = `guia-js.pyg'.
 
 
 (_minted-guia-js/9E7B964750CF0BB08EE960FCE356B6D69087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 820--822
+Underfull \hbox (badness 10000) in paragraph at lines 834--836
 
  []
 
+LaTeX Info: Redefining \. on input line 836.
+LaTeX Info: Redefining \% on input line 836.
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 836.
+
+[18]
 \openout4 = `guia-js.pyg'.
 
 
@@ -2079,7 +2124,7 @@ DB.pygtex)
 
 (_minted-guia-js/7296637793BED879D21B2B1465AB07B39087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 839--841
+Underfull \hbox (badness 10000) in paragraph at lines 853--855
 
  []
 
@@ -2092,12 +2137,7 @@ DB.pygtex)
 
 
 (_minted-guia-js/862057D1559FF060494B7F8D0B2C38AA9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 4.
- [18])
+A1.pygtex)
 \openout4 = `guia-js.pyg'.
 
 
@@ -2133,6 +2173,9 @@ DB.pygtex)
 
 (_minted-guia-js/353A3C1DF73C9E1C2CAA2642C21B68E09087F0320A2974E689A35AC33027FA
 DB.pygtex)
+LaTeX Info: Redefining \. on input line 880.
+LaTeX Info: Redefining \% on input line 880.
+ [19]
 \openout3 = `guia-js.pyg'.
 
 
@@ -2153,14 +2196,12 @@ DB.pygtex)
 
 (_minted-guia-js/7670E5A21C08366F8D789EAC7C7AF6BF9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 891--893
+Underfull \hbox (badness 10000) in paragraph at lines 905--907
 
  []
 
-LaTeX Info: Redefining \. on input line 893.
-LaTeX Info: Redefining \% on input line 893.
-[19]
-Overfull \hbox (5.18756pt too wide) in paragraph at lines 894--895
+
+Overfull \hbox (5.18756pt too wide) in paragraph at lines 908--909
 []\OT1/cmr/c/n/12 Otra forma de solucionar este mismo inconveniente es declaran
 do el metodo
  []
@@ -2169,7 +2210,10 @@ do el metodo
 
 
 (_minted-guia-js/898D5585A624DA671F2E1B616417C0CF9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex)
+A1.pygtex
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+ [20])
 \openout4 = `guia-js.pyg'.
 
 
@@ -2180,16 +2224,13 @@ DB.pygtex)
 
 (_minted-guia-js/9E7B964750CF0BB08EE960FCE356B6D69087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (33.95058pt too wide) in paragraph at lines 919--920
+Overfull \hbox (33.95058pt too wide) in paragraph at lines 933--934
 []\OT1/cmr/c/n/12 Definiendo el metodo [] de esta forma no tendremos el inconv
 eniente
  []
 
 
-LaTeX Warning: Citation `requirejs' on page 20 undefined on input line 923.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 923--925
+Underfull \hbox (badness 10000) in paragraph at lines 937--939
 
  []
 
@@ -2203,7 +2244,7 @@ DB.pygtex)
 
 (_minted-guia-js/451C6F6F942EBA07F20DE1721BE740029087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Overfull \hbox (18.84146pt too wide) in paragraph at lines 926--927
+Overfull \hbox (18.84146pt too wide) in paragraph at lines 940--941
 \OT1/cmr/c/n/12 palabra reservada []. Los clientes del modulo deben importar e
 xplcitamente
  []
@@ -2213,23 +2254,23 @@ xplcitamente
 
 (_minted-guia-js/441F0852F1BD5A9EE8A97FBE156B4C509080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [20])
-\openout3 = `guia-js.pyg'.
-
-
-(_minted-guia-js/6402F4C7825FCA5046A6DDEAB686ADF49080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
  [21])
 \openout3 = `guia-js.pyg'.
 
 
-(_minted-guia-js/FADC9205592E451D7D190B2A08FD84E89080CE3AF81B53FB90B25E2830BB91
+(_minted-guia-js/6402F4C7825FCA5046A6DDEAB686ADF49080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (1.79549pt too wide) in paragraph at lines 1013--1014
+\openout3 = `guia-js.pyg'.
+
+
+(_minted-guia-js/FADC9205592E451D7D190B2A08FD84E89080CE3AF81B53FB90B25E2830BB91
+A1.pygtex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [22])
+Overfull \hbox (1.79549pt too wide) in paragraph at lines 1027--1028
 \OT1/cmr/c/n/12 exporta. Y simplemente las utilizamos como si estuvieran defini
 das all mismo.
  []
@@ -2239,9 +2280,9 @@ das all mismo.
 
 (_minted-guia-js/318F9FF335C6D187B6B35E000D74574B9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
- [22])
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+ [23])
 \openout3 = `guia-js.pyg'.
 
 
@@ -2252,24 +2293,24 @@ A1.pygtex)
 
 (_minted-guia-js/DEAE39507D89129024D9823A433E50CB9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-LaTeX Info: Redefining \. on input line 1078.
-LaTeX Info: Redefining \% on input line 1078.
- [23]
 \openout3 = `guia-js.pyg'.
 
 
 (_minted-guia-js/E8D1350B618E745D808A6EA384A5E4DC9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (11.0625pt too wide) in paragraph at lines 1091--1093
+Overfull \hbox (11.0625pt too wide) in paragraph at lines 1105--1107
 []\OT1/cmr/c/n/12 Observen que solo utilizamos el primer parametro que es el 
 unico obligatorio.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1093
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1107
 
  []
 
+LaTeX Info: Redefining \. on input line 1107.
+LaTeX Info: Redefining \% on input line 1107.
+[24]
 \openout4 = `guia-js.pyg'.
 
 
@@ -2290,24 +2331,24 @@ A1.pygtex)
 
 (_minted-guia-js/8F0C077BDDE67CC0B1479119D1491F5C9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
-Overfull \hbox (20.80954pt too wide) in paragraph at lines 1094--1096
+Overfull \hbox (20.80954pt too wide) in paragraph at lines 1108--1110
 \OT1/cmr/c/n/12 que utilizaremos mucho: [] y [].
  []
 
 
-Overfull \hbox (6.42783pt too wide) in paragraph at lines 1094--1096
+Overfull \hbox (6.42783pt too wide) in paragraph at lines 1108--1110
 \OT1/cmr/c/n/12 del servicio que estamos consumiendo y como parametros tenemos
  la respuesta.
  []
 
 
-Overfull \hbox (57.54762pt too wide) in paragraph at lines 1094--1096
+Overfull \hbox (57.54762pt too wide) in paragraph at lines 1108--1110
 \OT1/cmr/c/n/12 en la lnea 3 lo imprimimos en la consola. Finalmente el meto
 do []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1110
 
  []
 
@@ -2315,11 +2356,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1094--1096
 
 
 (_minted-guia-js/FC9B225B03800C79115FF7A0199CB36C9080CE3AF81B53FB90B25E2830BB91
-A1.pygtex
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
- [24])
-Overfull \hbox (11.84583pt too wide) in paragraph at lines 1120--1121
+A1.pygtex)
+Overfull \hbox (11.84583pt too wide) in paragraph at lines 1134--1135
 []\OT1/cmr/c/n/12 Observemos que como segundo parametro del metodo fetch esta
 mos pasando
  []
@@ -2349,29 +2387,29 @@ A1.pygtex)
 
 (_minted-guia-js/9CD357AC73A6F2400FE1EE8C885DEFEB9080CE3AF81B53FB90B25E2830BB91
 A1.pygtex)
+LaTeX Info: Redefining \. on input line 1140.
+LaTeX Info: Redefining \% on input line 1140.
+ [25]
 \openout4 = `guia-js.pyg'.
 
 
 (_minted-guia-js/7882ACAA2F4A6093433AE67C41A70AF79087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1130--1132
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1133--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1147--1149
 
  []
 
 
-Overfull \hbox (59.58124pt too wide) in paragraph at lines 1136--1137
+Overfull \hbox (59.58124pt too wide) in paragraph at lines 1150--1151
 \OT1/cmr/c/n/12 encontramos los eventos (onclick, onmouseover, etc), la funcio
 n Fetch o XMLHttpRequest
  []
 
-LaTeX Info: Redefining \. on input line 1137.
-LaTeX Info: Redefining \% on input line 1137.
-[25]
 \openout3 = `guia-js.pyg'.
 
 
@@ -2387,6 +2425,9 @@ DB.pygtex)
 
 (_minted-guia-js/A02D4CD0B2B03FC6967E49138E507BE99087F0320A2974E689A35AC33027FA
 DB.pygtex)
+LaTeX Info: Redefining \. on input line 1171.
+LaTeX Info: Redefining \% on input line 1171.
+ [26]
 \openout4 = `guia-js.pyg'.
 
 
@@ -2442,13 +2483,10 @@ DB.pygtex)
 
 (_minted-guia-js/A02D4CD0B2B03FC6967E49138E507BE99087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1195
 
  []
 
-LaTeX Info: Redefining \. on input line 1181.
-LaTeX Info: Redefining \% on input line 1181.
-[26]
 \openout3 = `guia-js.pyg'.
 
 
@@ -2459,44 +2497,35 @@ A1.pygtex)
 
 (_minted-guia-js/58BAB5BFC8D55EF7DED3923F5EF0735F9087F0320A2974E689A35AC33027FA
 DB.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 1197--1199
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1213
 
  []
 
-
-LaTeX Warning: Citation `loupe' on page 27 undefined on input line 1200.
-
 LaTeX Info: Redefining \. on input line 1213.
 LaTeX Info: Redefining \% on input line 1213.
-[27] (guia-js.aux
+[27]
+runsystem(rm _minted-guia-js/464358A17D55C90CA819C51818E8E8699080CE3AF81B53FB90
+B25E2830BB91A1.pygtex)...executed.
+
+LaTeX Info: Redefining \. on input line 1227.
+LaTeX Info: Redefining \% on input line 1227.
+ [28] (guia-js.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `guia-js.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `guia-js.out':
-(rerunfilecheck)             Before: 585ACBCA5677B1C47A1A35772E39B851;150
-(rerunfilecheck)             After:  BA4851368CDE42F0A95EC48B879CCE34;647.
+Package rerunfilecheck Info: File `guia-js.out' has not changed.
+(rerunfilecheck)             Checksum: BA4851368CDE42F0A95EC48B879CCE34;647.
 runsystem(rm guia-js.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 36468 strings out of 481547
- 830156 string characters out of 2916351
- 1204684 words of memory out of 3000000
- 52322 multiletter control sequences out of 15000+200000
+ 36481 strings out of 481547
+ 830507 string characters out of 2916351
+ 1215893 words of memory out of 3000000
+ 52336 multiletter control sequences out of 15000+200000
  412926 words of font info for 60 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  97i,14n,102p,2539b,1084s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2514,9 +2543,9 @@ i10.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></home/enrique/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb>
-Output written on guia-js.pdf (28 pages, 239347 bytes).
+Output written on guia-js.pdf (29 pages, 248807 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

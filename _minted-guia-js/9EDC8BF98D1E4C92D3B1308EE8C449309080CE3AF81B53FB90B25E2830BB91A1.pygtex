@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{mi}\PYG{p}{.}\PYG{n+nx}{name}\PYG{p}{);} \PYG{c+c1}{//Enrique}
-\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{mi}\PYG{p}{.}\PYG{n+nx}{sports}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]);}\PYG{c+c1}{//football}
-\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{mi}\PYG{p}{.}\PYG{n+nx}{address}\PYG{p}{.}\PYG{n+nx}{street}\PYG{p}{);}\PYG{c+c1}{//San Martin}
-\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{mi}\PYG{p}{.}\PYG{n+nx}{phone}\PYG{p}{);}\PYG{c+c1}{//+54 2920 259031}
-\PYG{n+nx}{mi}\PYG{p}{.}\PYG{n+nx}{allSports}\PYG{p}{();} \PYG{c+c1}{//invoke the function and prints the sports array}
-\end{Verbatim}

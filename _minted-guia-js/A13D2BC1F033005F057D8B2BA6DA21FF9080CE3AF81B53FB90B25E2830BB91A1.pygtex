@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//mi tipo string}
+\PYG{k+kd}{let} \PYG{n+nx}{changeMyType} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Hello String!\PYGZdq{}}\PYG{p}{;}
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{k}{typeof} \PYG{n+nx}{changeMyType}\PYG{p}{);}
+\PYG{c+c1}{//ahora es number}
+\PYG{n+nx}{changeMyType} \PYG{o}{=} \PYG{l+m+mi}{100}\PYG{p}{;}
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{k}{typeof} \PYG{n+nx}{changeMyType}\PYG{p}{);}
+\end{Verbatim}

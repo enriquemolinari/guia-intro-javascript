@@ -1,5 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{//assigning the function}
+\PYG{c+c1}{//asignación}
 \PYG{k+kr}{const} \PYG{n+nx}{returnSomething} \PYG{o}{=} \PYG{k+kd}{function} \PYG{p}{(}\PYG{n+nx}{string}\PYG{p}{)} \PYG{p}{\PYGZob{}}
   \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}This is it: \PYGZdq{}} \PYG{o}{+} \PYG{n+nx}{string}\PYG{p}{;}
 \PYG{p}{\PYGZcb{};}

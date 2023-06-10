@@ -1,4 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{k+kd}{let} \PYG{n+nx}{x} \PYG{o}{=} \PYG{n+nx}{saySomething}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Hello Function!\PYGZdq{}}\PYG{p}{);}
-\PYG{c+c1}{//x is undefined}
+\PYG{c+c1}{//x es undefined}
 \end{Verbatim}

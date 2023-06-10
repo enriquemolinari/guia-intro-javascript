@@ -1,7 +1,7 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{k+kd}{let} \PYG{n+nx}{aproperty} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}phone\PYGZdq{}}\PYG{p}{;}
-\PYG{c+c1}{//an object literal with a computed property name}
-\PYG{k+kd}{let} \PYG{n+nx}{mi} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+\PYG{c+c1}{//un objeto literal con una computed property name}
+\PYG{k+kd}{let} \PYG{n+nx}{computed} \PYG{o}{=} \PYG{p}{\PYGZob{}}
   \PYG{n+nx}{name}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Enrique\PYGZdq{}}\PYG{p}{,}
   \PYG{n+nx}{surname}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}Molinari\PYGZdq{}}\PYG{p}{,}
   \PYG{p}{[}\PYG{n+nx}{aproperty}\PYG{p}{]}\PYG{o}{:} \PYG{l+s+s2}{\PYGZdq{}+54 2920 259031\PYGZdq{}}

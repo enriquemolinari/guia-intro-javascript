@@ -129,7 +129,7 @@ let myFirstVariable;
 
 Cuando declaramos una variable sin inicializar, el intérprete la inicializará con el valor especial \textit{undefined}. Esto se puede observar si intentamos imprimir en la consola una variable no inicializada. Pruébenlo. 
 
-\alertsuccess{Ejercicio: Declare una variable sin inicializar e imprímala en la consola}
+\alertsuccess{Ejercicio: Declare una variable sin inicializar e imprímala en la consola.}
 
 El siguiente ejemplo muestra cómo declarar una variable y como inicializarla a la vez.
 
@@ -141,7 +141,7 @@ El siguiente ejemplo muestra cómo declarar una variable y como inicializarla a 
 let myFirstVariable = "Hello value!";
 \end{minted}
 
-Tambén es posible declarar una variable utilizando la palabra reservada \textit{const}:
+También es posible declarar una variable utilizando la palabra reservada \textit{const}:
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -151,8 +151,9 @@ Tambén es posible declarar una variable utilizando la palabra reservada \textit
 const myFirstConst = "Hello constant value!";
 \end{minted}
 
-Al declarar la variable con \textit{const} no podremos modificar su valor, si lo intentan el intérprete lanzará un error. Pruebenlo.  
-\newline
+Al declarar la variable con \textit{const} no podremos modificar su valor, si lo intentan el intérprete lanzará un error. Pruébenlo.  
+
+\alertsuccess{Ejercicio: Declare una variable utilizando la palabra reservada \textit{const} y luego intente asignarle un nuevo valor.}
 
 Dijimos que JavaScript es un \textbf{lenguaje dinámico}. Ésto, entre otras cosas, significa que el tipo de una variable puede cambiar en tiempo de ejecución. A diferencia de los lenguajes estáticos donde los tipos de las variables se definen durante la compilación y no pueden cambiar durante la ejecución.
 
@@ -161,15 +162,19 @@ Dijimos que JavaScript es un \textbf{lenguaje dinámico}. Ésto, entre otras cos
                frame=leftline,
                linenos,
                framerule=0.1pt]{jsx}
-//my type is string
+//mi tipo string
 let changeMyType = "Hello String!";
-//now it is number
+console.log(typeof changeMyType);
+//ahora es number
 changeMyType = 100;
+console.log(typeof changeMyType);
 \end{minted}
+
+\alertsuccess{Ejercicio: Pruebe el ejemplo anterior y revise el tipo de la variable \textsf{changeMyType} utilizando \textbf{typeof}.}.
 
 \section{Funciones} \label{functions}
 
-Estudiemos ahora las \textbf{functions}. A continuación declaramos una función y luego la invocamos:
+Estudiemos ahora las funciones. A continuación declaramos una función y luego la invocamos:
 
 \begin{minted}[fontseries=mc,
                framesep=2mm,
@@ -203,7 +208,7 @@ Las funciones siempre retornan un valor. Si se omite el uso de \textit{return} p
                linenos,
                framerule=0.1pt]{jsx}
 let x = saySomething("Hello Function!");
-//x is undefined
+//x es undefined
 \end{minted}
 
 También hemos mencionado que las funciones son objetos de \textbf{primera clase}. Ésto significa que al igual que las variables, éstas pueden asignarse, pasarse por parámetro o retornarse de otra función. El ejemplo a continuación, en la línea 6, nos encontramos con una función que se asigna a la variable \colorbox{verylight}{\lstinline{say}}. Y luego en la línea 10 utilizamos esta variable para invocar la función.
@@ -214,13 +219,13 @@ También hemos mencionado que las funciones son objetos de \textbf{primera clase
                linenos,
                framerule=0.1pt]{jsx}
 function returnSomething(string) {
-  return "This is it: " + string;
+  return "Esto es: " + string;
 }
 
-//assigning a function to a variable
+//asignando la función a una variable
 let say = returnSomething;
 
-//calling the function
+//Invocando la función
 returnSomething("Hello js!");
 say("Hello again!");
 \end{minted}
@@ -233,17 +238,17 @@ En el siguiente ejemplo, en la línea 12, estamos invocando una función pasando
                framerule=0.1pt,
                linenos]{jsx}
 function returnSomething(string) {
-  return "This is it: " + string;
+  return "Hola: " + string;
 }
 
-//receives a function as parameter
-//invokes it and return the value
+//recibe una función como parámetro
+//la invoca y retorna 
 function saySomethingMore(fn) {
   return fn("Hey !");
 }
 
-//passing a function as argument
-saySomethingMore(returnSomething); //"This is it: Hey !"
+//pasa una función como parámetro
+saySomethingMore(returnSomething); //"Hola: Hey !"
 \end{minted}
 
 También podemos asignar una función a una variable directamente en su declaración, tal como se muestra a continuación:
@@ -253,7 +258,7 @@ También podemos asignar una función a una variable directamente en su declarac
                frame=leftline,
                framerule=0.1pt,
                linenos]{jsx}
-//assigning the function
+//asignación
 const returnSomething = function (string) {
   return "This is it: " + string;
 };
@@ -269,21 +274,23 @@ Otra forma de declarar funciones en JavaScript, de una forma algo menos verbosa,
                framerule=0.1pt,
                linenos]{jsx}
                
-//arrow function with no parameters
+//arrow function sin parámetros
 const arrowf1 = () => {
   return "arrowf1 was invoked!";
 };
 
-//arrow function with one parameter
-//parenthesis is not necesary here
+//arrow function con un parámetro
+//los paréntesis no son necesarios aquí
 const arrowf2 = param => {
   return "this is the argument: " + param;
 };
 
-//arrow functions with one statement 
-//in the body won't need return 
+//arrow functions con una sentencia, no necesita llaves 
+//y tampoco es necesario el return, retorna solo 
 const arrowf3 = (a, b) => a + b;
 \end{minted}
+
+\alertsuccess{Ejercicio: Cree una función que reciba una cadena como parámetro y devuelva la cantidad de caracteres que tiene. Utilice la función clásica con el keyword \textbf{function}. Luego implemente lo mismo pero usando una \textbf{arrow function}.}.
 
 \section{Arreglos} \label{arrays}
 
@@ -294,10 +301,10 @@ Vamos a utilizar \textbf{arreglos} de forma frecuente en React en general y a lo
                frame=leftline,
                framerule=0.1pt,
                linenos]{jsx}
-//an empty array
+//un arreglo vacio
 let empty = [];
 
-//an array
+//un arreglo de cuatro elementos
 let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
 \end{minted}
 
@@ -308,7 +315,6 @@ Los elementos de un arreglo se acceden a través de su índice, donde 0 es el pr
                frame=leftline,
                framerule=0.1pt,
                linenos]{jsx}
-//an array
 let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
 family[0]; //Jóse
 family[1]; //Nicolas
@@ -326,7 +332,7 @@ Dado que los arreglos en JavaScript son objetos, tenemos varios métodos útiles
 
 let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
 
-//adding an element at the end of an array
+//agrega un elemento al final del arreglo
 family.push("Pablo");
 \end{minted}
 
@@ -356,8 +362,12 @@ También es posible utilizar \textit{spread syntax} en los parámetros de las fu
                framerule=0.1pt,
                linenos]{jsx}
 function restParams(param1, param2, ...params) {
+ //param1 es 1	
+ //param2 es 2	
  //params is [3, 4, 5]	
 }
+
+//invoco a la función restParams
 restParams(1, 2, 3, 4, 5);
 \end{minted}
 
@@ -383,9 +393,9 @@ Sin embargo, los arreglos proveen de un conjunto de métodos muy convenientes y 
 let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
 
 family.forEach(function (value, index, array) {
-  //value is the element being processed
-  //index is the index of the current value
-  //array is the entire array
+  //value es el elemento que se esta procesando
+  //index es el índice del elemento que se esta procesando
+  //array el arreglo completo
   console.log(value, index, array);
 });
 \end{minted}
@@ -400,7 +410,7 @@ family.forEach(function (value, index, array) {
 let family = ["Jóse", "Nicolas", "Lucia", "Enrique"];
 
 family.forEach((value) => {
-  //do something with the value here	
+  //acá hacemos algo con value	
 });
 \end{minted}
 
@@ -420,9 +430,9 @@ const members = family.filter((member) => {
 //members = ['Nicolas', 'Enrique']
 \end{minted}
 
-\mintinline{js}{.filter} recibe una función que evalúa por cada elemento del arreglo si es mayour a 5. Aquellos elementos que sean mayores a 5 serán parte del nuevo arreglo que se retorna. El arreglo donde se aplica el filtro no es modificado.
+\mintinline{js}{.filter} recibe una función que evalúa por cada elemento del arreglo si es mayor a 5. Aquellos elementos que sean mayores a 5 serán parte del nuevo arreglo que se retorna. El arreglo donde se aplica el filtro \textbf{no} es modificado.
 
-Otro de los métodos interesantes, y principalmente útil para React como veremos más adelante, es \mintinline{js}{.map}. Éste método, al igual que el anterior, recibe una función como parámetro y retorna otro arreglo con el resultado de aplicar la función recibida sobre cada elemento. Veamos el siguiente ejemplo:
+Otro de los métodos interesantes, y principalmente útil para React como veremos más adelante, es \mintinline{js}{.map}. Éste método, al igual que el anterior, recibe una función (note que es una \textbf{arrow function}) como parámetro y retorna otro arreglo con el resultado de aplicar la función recibida sobre cada elemento. Veamos el siguiente ejemplo:
 
 \begin{minted}[fontseries=mc,
                framesep=5mm,
@@ -466,31 +476,33 @@ let [one, two, three] = [1, 2, 3];
 //two = 2
 //three = 3
 
-//same as the previous
+//igual al ejemplo previo
 let fewNumbers = [1, 2, 3];
 [one, two, three] = fewNumbers;
 
-//and here using spread syntax
+//y acá ademas usando spread syntax
 let [a, b, ...rest] = [1, 2, 3, 4, 5];
 //a = 1
 //b = 2
 //rest = [3, 4, 5]
 \end{minted}
 
+\alertsuccess{Ejercicio: Escriba una \textbf{arrow function} que reciba un arreglo de strings por parámetro, y transforme el arreglo utilizando \textbf{map} invirtiendo cada uno de sus elementos. Es decir, si el arreglo de entrada es: ['abc123','456cde'], el resultado debería ser: ['321cba','edc654'].}
+
 \section{Objetos}\label{jsobjects}
 
-Existen varias formas de crear objetos en JavaScript. Aquí estudiaremos aquellas formas que utilizaremos con frecuencia programando en React. Comencemos estudiando cómo crear objetos con notación literal: \textbf{Object Literal}. Un objeto literal se crea encerrando entre llaves una colección de pares \textit{propiedad}:\textit{valor}, separadas por coma. Veamos el siguiente ejemplo: 
+Existen varias formas de crear objetos en JavaScript. Aquí estudiaremos aquellas formas que utilizaremos con frecuencia programando en React. Comencemos estudiando como crear objetos con notación literal: \textbf{Object Literal}. Un objeto literal se crea encerrando entre llaves una colección de pares \textit{propiedad}:\textit{valor}, separadas por coma. Veamos el siguiente ejemplo: 
 
 \begin{minted}[fontseries=mc,
                framesep=5mm,
                frame=leftline,
                framerule=0.1pt,
                linenos]{jsx}
-//an object literal
-let mi = {
+//object literal
+let yo = {
   name: "Enrique",
   surname: "Molinari",
-  sports: ["football", "tennis"],
+  sports: ["futbol", "tenis"],
   address: {
     street: "San Martin",
     number: 125,
@@ -499,11 +511,11 @@ let mi = {
     console.log(this.sports);
   },
 };
-//this is an empty object
+//un objeto vacio
 let obj = {};
 \end{minted}
 
-Como se puede ver del ejemplo anterior, en un objeto literal, los valores pueden ser arreglos, funciones o incluso otros objetos. Por otro lado, desde ES6, es posible crear objetos literales utilizando variables como nombre de propiedad. Veamos a continuación como se utiliza en la línea 6: 
+Como se puede ver del ejemplo anterior, en un objeto literal, los valores pueden ser arreglos (línea 5), funciones (línea 10) o incluso otros objetos (línea 6). Por otro lado, desde ES6, es posible crear objetos literales utilizando variables como nombre de propiedad. Veamos a continuación como se utiliza en la línea 6: 
 
 \begin{minted}[fontseries=mc,
                framesep=5mm,
@@ -512,8 +524,8 @@ Como se puede ver del ejemplo anterior, en un objeto literal, los valores pueden
                highlightlines={6},
                linenos]{jsx}
 let aproperty = "phone";               
-//an object literal with a computed property name 
-let mi = {
+//un objeto literal con una computed property name 
+let computed = {
   name: "Enrique",
   surname: "Molinari",
   [aproperty]: "+54 2920 259031"
@@ -528,11 +540,10 @@ Cada vez que el intérprete de JavaScript evalúa un objeto literal se crea la i
                frame=leftline,
                framerule=0.1pt,
                linenos]{jsx}
-console.log(mi.name); //Enrique
-console.log(mi.sports[0]);//football
-console.log(mi.address.street);//San Martin
-console.log(mi.phone);//+54 2920 259031
-mi.allSports(); //invoke the function and prints the sports array               
+console.log(yo.name); //Enrique
+console.log(yo.sports[0]);//futbol
+console.log(yo.address.street);//San Martin
+yo.allSports(); //invocando a la funcion               
 \end{minted}
 
 En JavaScript es posible agregar propiedades nuevas en tiempo de ejecución a los objetos. Éste concepto es sumamente importante para entender algunas cuestiones más adelante. Observen el siguiente ejemplo. En las línes 3 y 4, se agregan las propiedades \mintinline{js}{x} e \mintinline{js}{y} (inicializadas) al objeto \mintinline{js}{obj}.
@@ -543,12 +554,12 @@ En JavaScript es posible agregar propiedades nuevas en tiempo de ejecución a lo
                framerule=0.1pt,
                linenos]{jsx}
 let obj = {a: 1, b: 2};
-//add properties to the obj object
+//agrego nuevas propiedades al objeto
 obj.x = 3;
 obj.y = 4;
 \end{minted}
 
-Podemos utilizar la expresión denominada spread syntax con objetos también:
+Podemos utilizar la expresión denominada \textbf{spread syntax} con objetos también:
 
 \begin{minted}[fontseries=mc,
                framesep=5mm,
@@ -657,7 +668,10 @@ En el ejemplo anterior, creamos dos instancias: \mintinline{js}{thisBook} y \min
 Cada objeto en JavaScript (y en general en cualquier lenguaje basado en prototipos) puede estar asociado a lo que se denomina un \textbf{objeto prototipo}, del cual hereda todas sus propiedades y métodos. Si sobre una instancia queremos acceder a una propiedad y ésta no está definida allí, se \textbf{delega} su búsqueda en el objeto prototipo asociado. Como los prototipos pueden tener también un prototipo, se delegará en ellos hasta que se encuentre la propiedad o termina la ejecución con error al no encontrarla. Ésto se conoce como \textbf{prototype chain}.
 \newline
 
-Las funciones constructoras tienen acceso a una propiedad especial denominada \mintinline{js}{prototype} y la podemos acceder de la siguiente forma: \mintinline{js}{Book.prototype}. Con una instancia de un objeto es posible acceder a esta propiedad de la siguiente forma: \mintinline{js}{thisBook.__proto__} o lo que es lo mismo: \mintinline{js}{Object.getPrototypeOf(thisBook)}. Sabiendo esto, entonces si queremos mejorar la función constructora \mintinline{js}{Book} de modo de que cada instancia no cuente con los métodos que se definen, la creamos de la siguiente forma:
+Las funciones constructoras tienen acceso a una propiedad especial denominada \mintinline{js}{prototype} y la podemos acceder de la siguiente forma: \mintinline{js}{Book.prototype}. Con una instancia de un objeto es posible acceder a esta propiedad de la siguiente forma: \mintinline{js}{thisBook.__proto__} o lo que es lo mismo: \mintinline{js}{Object.getPrototypeOf(thisBook)}. 
+\newline
+
+Sabiendo esto, entonces si queremos mejorar la función constructora \mintinline{js}{Book} de modo de que cada instancia no cuente con los métodos que se definen, la creamos de la siguiente forma:
 
 \begin{minted}[fontseries=mc,
                framesep=5mm,
@@ -702,7 +716,7 @@ En el ejemplo anterior, definimos el método \mintinline{js}{fullName()} en el p
 thisBook.fullName();
 \end{minted}
 
-JavaScript buscará primero el método en la instancia \mintinline{js}{thisBook}. Al no encontrarlo, irá por su prototipo y lo ejecutará.
+JavaScript buscará primero el método en la instancia \mintinline{js}{thisBook}. Al no encontrarlo, irá por su prototipo y la ejecutará.
 \newline
 
 Toda cadena de prototipos finaliza en \mintinline{js}{Object.prototype}, dado que todo objeto en JavaScript es descendiente de \href{https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object}{Object}. Con lo cual, si ejecutamos la siguiente invocación:
@@ -740,7 +754,7 @@ let eBook = new EBook(2048, "Coding in React", ["Enrique Molinari"], 2021);
 //}
 \end{minted}
 
-En el ejemplo anterior creamos la función constructora \mintinline{js}{EBook}. En la línea 2, invocamos a la función constructora \mintinline{js}{Book} y para ello utilizamos el método \mintinline{js}{call} (\href{https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/call}{Function.prototype.call}) que permite invocar una función pasándole como parámetro el valor que utilizará para \mintinline{js}{this}. En éste caso observen que le pasamos aquella instancia de \mintinline{js}{EBook} que se sea creada vía el operador \mintinline{js}{new}, como en la línea 5. Éste que estamos haciendo es similar a utilizar \mintinline{js}{super(...)} dentro de un constructor de una clase, para instanciar e inicializar la superclase. 
+En el ejemplo anterior creamos la función constructora \mintinline{js}{EBook}. En la línea 2, invocamos a la función constructora \mintinline{js}{Book} y para ello utilizamos el método \mintinline{js}{call} (\href{https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/call}{Function.prototype.call}) que permite invocar una función pasándole como parámetro el valor que utilizará para \mintinline{js}{this}. En éste caso observen que le pasamos aquella instancia de \mintinline{js}{EBook} que se crea vía el operador \mintinline{js}{new}, en la línea 5. Esto que estamos haciendo es similar a utilizar \mintinline{js}{super(...)} dentro de un constructor de una clase, para instanciar e inicializar la superclase. 
 \newline
 
 En la línea 5, como mencionamos, creamos una instancia de \mintinline{js}{EBook} e imprimimos la instancia. Vemos como resultado de la impresión que contamos con las propiedades de \mintinline{js}{Book} también. Sin embargo, no tenemos el método \mintinline{js}{fullName()} definido en \mintinline{js}{Book.prototype}. Para heredarlo necesitamos setear como prototipo a \mintinline{js}{Book.prototype}. Lo hacemos de la siguiente manera:
@@ -753,9 +767,9 @@ En la línea 5, como mencionamos, creamos una instancia de \mintinline{js}{EBook
 
 Object.setPrototypeOf(eBook, Book.prototype);
 
-//Another way of doing the same as above is this:
+//Otra forma de hacer lo mismo de arriba:
 //thisEBook.__proto__ = Book.prototype;
-//However __proto__ is deprecated
+//Ojo que  __proto__ esta deprecado
 \end{minted}
 
 \mintinline{js}{Object.setPrototypeOf} recibe dos parámetros, el primero es la instancia a la cual le asigno un prototipo y el segundo parámetro es el prototipo a asignar.
@@ -781,7 +795,7 @@ class Book {
     this.publishedYear = publishedYear;
   }
 
-  //this method gets added to the Book.prototype
+  //este método se agrega a Book.prototype
   fullName() {
     return this.name + " by " + this.authors + ". " + this.publishedYear;
   }
@@ -805,11 +819,11 @@ En el ejemplo anterior construimos la relación de herencia entre \mintinline{js
                linenos]{jsx}
 
 let ebook = new EBook(2048, "Coding in React", ["Enrique, Molinari"], 2021);
-//Book.prototype is the prototype of the ebook instance
+//Book.prototype es el prototype de la instancia ebook
 console.log(Book.prototype.isPrototypeOf(ebook)); //true
-//fullName method is found on the prototype
+//el método fullName esta en prototype
 console.log(ebook.fullName()); //Coding in React by Enrique, Molinari. 2021
-//EBook is a function not a class
+//EBook es una función, no una clase
 console.log(typeof EBook); //function
 \end{minted}
 

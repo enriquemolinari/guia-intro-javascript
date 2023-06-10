@@ -1,6 +1,10 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{k+kd}{function} \PYG{n+nx}{restParams}\PYG{p}{(}\PYG{n+nx}{param1}\PYG{p}{,} \PYG{n+nx}{param2}\PYG{p}{,} \PYG{p}{...}\PYG{n+nx}{params}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+ \PYG{c+c1}{//param1 es 1	}
+ \PYG{c+c1}{//param2 es 2	}
  \PYG{c+c1}{//params is [3, 4, 5]	}
 \PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{//invoco a la función restParams}
 \PYG{n+nx}{restParams}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{);}
 \end{Verbatim}
